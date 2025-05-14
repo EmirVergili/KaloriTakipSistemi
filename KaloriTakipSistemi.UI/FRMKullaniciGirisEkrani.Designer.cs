@@ -77,6 +77,7 @@
             chbGoster.TabIndex = 3;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
+            chbGoster.CheckedChanged += chbGoster_CheckedChanged;
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             txtSifre.Location = new Point(197, 157);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
+            txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(170, 29);
             txtSifre.TabIndex = 1;
             // 
