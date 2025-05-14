@@ -12,7 +12,7 @@ using KaloriTakipSistemi.UI.Context;
 namespace KaloriTakipSistemi.UI
 {
     public partial class FRMKullaniciGirisEkrani : Form
-        
+
     {
         private readonly MyDbContext _context;
 
@@ -34,7 +34,7 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz.");
                 return;
             }
-         
+
             //else
             //{
             //    MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
@@ -52,8 +52,15 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
                 return;
             }
-            
-            
+
+
+        }
+
+        private void lnkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FRMKayitOl frmKayitOl = new FRMKayitOl();
+            frmKayitOl.Show();
+            this.Hide();
         }
     }
 }
