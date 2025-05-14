@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,7 +41,7 @@ namespace KaloriTakipSistemi.UI
             //    MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
             //}
             if (
-                _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == txtSifre.Text))
+                _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash( txtSifre.Text)))
             {
                 MessageBox.Show("Giriş Başarılı");
                 FRMKullaniciAnaMenu kullaniciAnaMenu = new FRMKullaniciAnaMenu();
@@ -54,6 +55,11 @@ namespace KaloriTakipSistemi.UI
             }
 
 
+        }
+        public string sha256_hash(string sifre)
+        {
+            using (SHA256 hash = SHA256Managed.Create())
+            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); }
         }
 
         private void lnkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

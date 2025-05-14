@@ -23,7 +23,7 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
 
         }
-        private string sha256_hash(string sifre) { using (SHA256 hash = SHA256Managed.Create())
+        public string sha256_hash(string sifre) { using (SHA256 hash = SHA256Managed.Create())
             { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); } }
 
         private void btnKayitOl_Click(object sender, EventArgs e)
