@@ -16,6 +16,9 @@ namespace KaloriTakipSistemi.UI
     public partial class FRMKullaniciGirisEkrani : Form
     {
         private readonly MyDbContext _context;
+       
+
+        public static int AktifKullaniciId { get; private set; }
         
         public FRMKullaniciGirisEkrani()
         {
@@ -41,7 +44,7 @@ namespace KaloriTakipSistemi.UI
 
             if (kullanici!=null)
             {
-                int kullaniciId = kullanici.Id;
+                AktifKullaniciId = kullanici.Id;
                 if (kullanici.HesapDurumu != true)
                 {
                     kullanici.HesapDurumu = true;
