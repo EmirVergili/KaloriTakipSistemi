@@ -15,6 +15,8 @@ namespace KaloriTakipSistemi.UI.Models
         public string KullaniciAdi { get; set; }
         public byte Yas { get; set; }
         public bool HesapDurumu { get; set; }
+
+        public string DondurmaSebebi { get; set; }
         public List<KullaniciYemek> KullaniciYemek { get; set; }
     }
 }
