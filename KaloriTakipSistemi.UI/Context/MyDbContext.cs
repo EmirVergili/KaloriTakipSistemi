@@ -10,11 +10,12 @@ namespace KaloriTakipSistemi.UI.Context
 {
     public class MyDbContext:DbContext
     {
-        public DbSet<KullaniciYemek> KullaniciYemek { get; set; }
-        public DbSet<Ogun> Ogun { get; set; }
-        public DbSet<Kullanici> Kullanici { get; set; }
-        public DbSet<Yemek> Yemek { get; set; }
-        public DbSet<Yonetici> Yonetici { get; set; }
+        public DbSet<KullaniciYemek> KullaniciYemekler { get; set; }
+        public DbSet<Ogun> Ogunler { get; set; }
+        public DbSet<Kullanici> Kullanicilar { get; set; }
+        public DbSet<Yemek> Yemekler { get; set; }
+        public DbSet<Yonetici> Yoneticiler { get; set; }
+
 
     }
 }
