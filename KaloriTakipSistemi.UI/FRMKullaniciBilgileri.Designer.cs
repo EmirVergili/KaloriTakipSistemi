@@ -137,6 +137,7 @@
             btnGuncelle.TabIndex = 12;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // lblKullaniciAdi
             // 
