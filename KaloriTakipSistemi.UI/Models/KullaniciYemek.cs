@@ -8,6 +8,9 @@ namespace KaloriTakipSistemi.UI.Models
 {
     public class KullaniciYemek
     {
+        public int Id { get; set; }
+
+
         public int KullaniciId { get; set; }
 
         public Kullanici Kullanici { get; set; }
@@ -16,10 +19,10 @@ namespace KaloriTakipSistemi.UI.Models
 
         public Yemek Yemek { get; set; }
 
-        public DateTime YemekTarihi { get; set; }
-        public int Miktar { get; set; }
         public int OgunId { get; set; }
         public Ogun Ogun { get; set; }
 
+        public DateTime YemekTarihi { get; set; }
+        public int Miktar { get; set; }
     }
 }

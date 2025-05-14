@@ -18,11 +18,13 @@ namespace KaloriTakipSistemi.UI.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=True;TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Kullanici>().HasIndex(k => k.KullaniciAdi).IsUnique();
+
+
             modelBuilder.Entity<Ogun>().HasData(
                 new Ogun { Id =1,Ad = "Sabah"},
                 new Ogun { Id =2,Ad = "Öğle"},
