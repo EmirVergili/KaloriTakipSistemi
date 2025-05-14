@@ -1,5 +1,6 @@
 ﻿using KaloriTakipSistemi.UI.Context;
 using KaloriTakipSistemi.UI.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,7 @@ namespace KaloriTakipSistemi.UI
         {
             _context = new MyDbContext();
             InitializeComponent();
-            DataGridGoster();
+            Listele();
         }
 
         private void FRMKullaniciOgunCRUD_Load(object sender, EventArgs e)
@@ -47,11 +48,24 @@ namespace KaloriTakipSistemi.UI
             };
                         _context.KullaniciYemekler.Add(ogunEkle);
             _context.SaveChanges();
-            DataGridGoster();
+            Listele();
         }
-        private void DataGridGoster()
+       
+        private void Listele()
         {
-            dgvOgunler.DataSource = _context.KullaniciYemekler.ToList();
+            var kullaniciYemek = _context.KullaniciYemekler.Select(a => new
+            {
+                
+                a.Yemek.Ad,
+                ogunAdi = a.Ogun.Ad,
+                a.YemekTarihi,
+                a.Miktar,
+                kullaniciAdi=a.Kullanici.Ad,
+                a.Yemek.Kalori
+                
+            }).ToList();
+            dgvOgunler.DataSource = kullaniciYemek;
+
         }
     }
 }
