@@ -44,6 +44,7 @@
             btnKisiselBilgiler.TabIndex = 0;
             btnKisiselBilgiler.Text = "Kişisel Bilgiler";
             btnKisiselBilgiler.UseVisualStyleBackColor = true;
+            btnKisiselBilgiler.Click += btnKisiselBilgiler_Click;
             // 
             // btnOgunEkle
             // 
@@ -53,6 +54,7 @@
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Öğün Ekle";
             btnOgunEkle.UseVisualStyleBackColor = true;
+            btnOgunEkle.Click += btnOgunEkle_Click;
             // 
             // btnOgunlerim
             // 
@@ -62,6 +64,7 @@
             btnOgunlerim.TabIndex = 0;
             btnOgunlerim.Text = "Öğünlerim";
             btnOgunlerim.UseVisualStyleBackColor = true;
+            btnOgunlerim.Click += btnOgunlerim_Click;
             // 
             // btnHesapDondur
             // 
@@ -71,6 +74,7 @@
             btnHesapDondur.TabIndex = 0;
             btnHesapDondur.Text = "Hesap Dondur";
             btnHesapDondur.UseVisualStyleBackColor = true;
+            btnHesapDondur.Click += btnHesapDondur_Click;
             // 
             // btnEnCokAzYediklerim
             // 
@@ -80,19 +84,20 @@
             btnEnCokAzYediklerim.TabIndex = 0;
             btnEnCokAzYediklerim.Text = "En Çok/Az Yediklerim";
             btnEnCokAzYediklerim.UseVisualStyleBackColor = true;
+            btnEnCokAzYediklerim.Click += btnEnCokAzYediklerim_Click;
             // 
             // pnlKullaniciAnaMenuIcerik
             // 
             pnlKullaniciAnaMenuIcerik.Location = new Point(245, 12);
             pnlKullaniciAnaMenuIcerik.Name = "pnlKullaniciAnaMenuIcerik";
-            pnlKullaniciAnaMenuIcerik.Size = new Size(843, 606);
+            pnlKullaniciAnaMenuIcerik.Size = new Size(997, 719);
             pnlKullaniciAnaMenuIcerik.TabIndex = 1;
             // 
             // FRMKullaniciAnaMenu
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1100, 630);
+            ClientSize = new Size(1254, 743);
             Controls.Add(pnlKullaniciAnaMenuIcerik);
             Controls.Add(btnEnCokAzYediklerim);
             Controls.Add(btnHesapDondur);
@@ -100,7 +105,8 @@
             Controls.Add(btnOgunlerim);
             Controls.Add(btnKisiselBilgiler);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            IsMdiContainer = true;
+            Margin = new Padding(4);
             Name = "FRMKullaniciAnaMenu";
             Text = "Kullanıcı Ana Menü";
             ResumeLayout(false);
