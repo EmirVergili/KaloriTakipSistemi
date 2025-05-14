@@ -86,7 +86,18 @@ namespace KaloriTakipSistemi.UI
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+            int ogunId = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
+            var ogun = _context.KullaniciYemekler.Find(ogunId);
 
+            if (ogun != null)
+            {
+                ogun.YemekTarihi = dtpYemekTarihi.Value;
+                ogun.OgunId = ((Ogun)cmbOgun.SelectedItem).Id;
+                ogun.YemekId = ((Yemek)cmbYemek.SelectedItem).Id;
+                ogun.Miktar = Convert.ToInt32(nudMiktar.Value);                               
+            }
+            _context.SaveChanges();
+            Listele();
         }
     }
 }
