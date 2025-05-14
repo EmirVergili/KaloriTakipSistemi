@@ -34,12 +34,7 @@ namespace KaloriTakipSistemi.UI
             {
                 MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz.");
                 return;
-            }
-
-            //else
-            //{
-            //    MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
-            //}
+            }            
             if (
                 _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash(txtSifre.Text)))
             {
