@@ -39,43 +39,43 @@
             // lblKullaniciAdi
             // 
             lblKullaniciAdi.AutoSize = true;
-            lblKullaniciAdi.Location = new Point(15, 26);
+            lblKullaniciAdi.Location = new Point(13, 73);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(95, 21);
+            lblKullaniciAdi.Size = new Size(120, 28);
             lblKullaniciAdi.TabIndex = 0;
             lblKullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(15, 100);
+            lblSifre.Location = new Point(13, 147);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(42, 21);
+            lblSifre.Size = new Size(51, 28);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(149, 26);
-            txtKullaniciAdi.Margin = new Padding(4, 4, 4, 4);
+            txtKullaniciAdi.Location = new Point(147, 73);
+            txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(127, 29);
+            txtKullaniciAdi.Size = new Size(127, 34);
             txtKullaniciAdi.TabIndex = 2;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(149, 100);
-            txtSifre.Margin = new Padding(4, 4, 4, 4);
+            txtSifre.Location = new Point(147, 147);
+            txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(127, 29);
+            txtSifre.Size = new Size(127, 34);
             txtSifre.TabIndex = 3;
             // 
             // btnGiris
             // 
-            btnGiris.Location = new Point(149, 214);
-            btnGiris.Margin = new Padding(4, 4, 4, 4);
+            btnGiris.Location = new Point(147, 261);
+            btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(96, 32);
             btnGiris.TabIndex = 4;
@@ -85,17 +85,17 @@
             // chbGoster
             // 
             chbGoster.AutoSize = true;
-            chbGoster.Location = new Point(315, 104);
-            chbGoster.Margin = new Padding(4, 4, 4, 4);
+            chbGoster.Location = new Point(313, 151);
+            chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
-            chbGoster.Size = new Size(129, 25);
+            chbGoster.Size = new Size(158, 32);
             chbGoster.TabIndex = 6;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
             // 
             // FRMYoneticiGiris
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 373);
             Controls.Add(chbGoster);
@@ -105,7 +105,7 @@
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FRMYoneticiGiris";
             Text = "Yönetici Giriş";
             ResumeLayout(false);
