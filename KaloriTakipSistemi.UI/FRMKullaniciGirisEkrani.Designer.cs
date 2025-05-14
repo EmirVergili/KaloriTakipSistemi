@@ -34,6 +34,7 @@
             chbGoster = new CheckBox();
             label2 = new Label();
             txtSifre = new TextBox();
+            lnkKayitOl = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -50,15 +51,15 @@
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.Location = new Point(197, 76);
-            txtKullaniciAdi.Margin = new Padding(4, 4, 4, 4);
+            txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(170, 34);
             txtKullaniciAdi.TabIndex = 1;
             // 
             // btnGirisYap
             // 
-            btnGirisYap.Location = new Point(144, 282);
-            btnGirisYap.Margin = new Padding(4, 4, 4, 4);
+            btnGirisYap.Location = new Point(151, 319);
+            btnGirisYap.Margin = new Padding(4);
             btnGirisYap.Name = "btnGirisYap";
             btnGirisYap.Size = new Size(158, 49);
             btnGirisYap.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             chbGoster.AutoSize = true;
             chbGoster.Location = new Point(69, 213);
-            chbGoster.Margin = new Padding(4, 4, 4, 4);
+            chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(158, 32);
             chbGoster.TabIndex = 3;
@@ -94,11 +95,22 @@
             txtSifre.Size = new Size(170, 34);
             txtSifre.TabIndex = 1;
             // 
+            // lnkKayitOl
+            // 
+            lnkKayitOl.AutoSize = true;
+            lnkKayitOl.Location = new Point(69, 258);
+            lnkKayitOl.Name = "lnkKayitOl";
+            lnkKayitOl.Size = new Size(81, 28);
+            lnkKayitOl.TabIndex = 4;
+            lnkKayitOl.TabStop = true;
+            lnkKayitOl.Text = "Kayıt Ol";
+            // 
             // FRMKullaniciGirisEkrani
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(482, 412);
+            Controls.Add(lnkKayitOl);
             Controls.Add(chbGoster);
             Controls.Add(btnGirisYap);
             Controls.Add(txtSifre);
@@ -106,7 +118,7 @@
             Controls.Add(txtKullaniciAdi);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FRMKullaniciGirisEkrani";
             Text = "Kullanıcı Giriş Ekranı";
             ResumeLayout(false);
@@ -121,5 +133,6 @@
         private CheckBox chbGoster;
         private Label label2;
         private TextBox txtSifre;
+        private LinkLabel lnkKayitOl;
     }
 }
