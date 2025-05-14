@@ -28,6 +28,10 @@ namespace KaloriTakipSistemi.UI
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
+            if (txtSifre.Text!=txtSifreTekrar.Text)
+            {
+                MessageBox.Show("Sifreler Uyuşmuyor !!!!!");
+            }
             var YeniKullanici = new Kullanici()
             {
                 KullaniciAdi = txtKullaniciAdi.Text,
