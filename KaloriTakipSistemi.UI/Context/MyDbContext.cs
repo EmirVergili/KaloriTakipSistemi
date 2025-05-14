@@ -14,7 +14,7 @@ namespace KaloriTakipSistemi.UI.Context
         public DbSet<Ogun> Ogun { get; set; }
         public DbSet<Kullanici> Kullanici { get; set; }
         public DbSet<Yemek> Yemek { get; set; }
-        public DbSet<Yonetici> yonetici { get; set; }
+        public DbSet<Yonetici> Yonetici { get; set; }
 
     }
 }
