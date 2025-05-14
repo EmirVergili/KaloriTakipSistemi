@@ -54,7 +54,6 @@
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(170, 34);
             txtKullaniciAdi.TabIndex = 1;
-            txtKullaniciAdi.TextChanged += this.txtKullaniciAdi_TextChanged;
             // 
             // btnGirisYap
             // 
@@ -65,7 +64,6 @@
             btnGirisYap.TabIndex = 2;
             btnGirisYap.Text = "Giriş Yap";
             btnGirisYap.UseVisualStyleBackColor = true;
-            btnGirisYap.Click += this.btnGirisYap_Click;
             // 
             // chbGoster
             // 
@@ -77,7 +75,6 @@
             chbGoster.TabIndex = 3;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
-            chbGoster.CheckedChanged += this.chbGoster_CheckedChanged;
             // 
             // label2
             // 
@@ -88,7 +85,6 @@
             label2.Size = new Size(51, 28);
             label2.TabIndex = 0;
             label2.Text = "Şifre";
-            label2.Click += this.label2_Click;
             // 
             // txtSifre
             // 
@@ -97,7 +93,6 @@
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(170, 34);
             txtSifre.TabIndex = 1;
-            txtSifre.TextChanged += this.txtSifre_TextChanged;
             // 
             // FRMKullaniciGirisEkrani
             // 
