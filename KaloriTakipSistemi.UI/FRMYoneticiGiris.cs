@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KaloriTakipSistemi.UI.Context;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,28 @@ namespace KaloriTakipSistemi.UI
 {
     public partial class FRMYoneticiGiris : Form
     {
+        private readonly MyDbContext _context;
         public FRMYoneticiGiris()
         {
+            _context = new MyDbContext();
             InitializeComponent();
+            
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text)||(string.IsNullOrWhiteSpace(txtSifre.Text)))
+            {
+                MessageBox.Show("Lütfen boş alan bırakmayınız !!! ");
+            }
+            if (
+               _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == txtSifre.Text))
+            {
+                MessageBox.Show("Giriş Başarılı");
+                FRMYoneticiAnaMenu fRMYoneticiAnaMenu = new FRMYoneticiAnaMenu();
+                fRMYoneticiAnaMenu.Show();
+                this.Hide();
+            }
         }
     }
 }

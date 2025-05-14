@@ -59,7 +59,7 @@
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.Location = new Point(149, 26);
-            txtKullaniciAdi.Margin = new Padding(4, 4, 4, 4);
+            txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(127, 29);
             txtKullaniciAdi.TabIndex = 2;
@@ -67,7 +67,7 @@
             // txtSifre
             // 
             txtSifre.Location = new Point(149, 100);
-            txtSifre.Margin = new Padding(4, 4, 4, 4);
+            txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(127, 29);
             txtSifre.TabIndex = 3;
@@ -75,18 +75,19 @@
             // btnGiris
             // 
             btnGiris.Location = new Point(149, 214);
-            btnGiris.Margin = new Padding(4, 4, 4, 4);
+            btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(96, 32);
             btnGiris.TabIndex = 4;
             btnGiris.Text = "Giriş";
             btnGiris.UseVisualStyleBackColor = true;
+            btnGiris.Click += btnGiris_Click;
             // 
             // chbGoster
             // 
             chbGoster.AutoSize = true;
             chbGoster.Location = new Point(315, 104);
-            chbGoster.Margin = new Padding(4, 4, 4, 4);
+            chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(129, 25);
             chbGoster.TabIndex = 6;
@@ -105,7 +106,7 @@
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FRMYoneticiGiris";
             Text = "Yönetici Giriş";
             ResumeLayout(false);
