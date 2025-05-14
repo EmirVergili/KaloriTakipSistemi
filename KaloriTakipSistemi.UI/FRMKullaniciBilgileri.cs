@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KaloriTakipSistemi.UI.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,28 @@ namespace KaloriTakipSistemi.UI
 {
     public partial class FRMKullaniciBilgileri : Form
     {
+        MyDbContext _context = new MyDbContext();
         public FRMKullaniciBilgileri()
         {
             InitializeComponent();
+        }
+
+        private void FRMKullaniciBilgileri_Load(object sender, EventArgs e)
+        {
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
+            if (kullanici != null)
+            {
+                lblKullaniciAdi.Text = kullanici.KullaniciAdi;
+                txtAd.Text = kullanici.Ad;
+                txtSoyad.Text = kullanici.Soyad;
+                txtYas.Text = kullanici.Yas.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı bulunamadı.");
+            }
+         
+
         }
     }
 }
