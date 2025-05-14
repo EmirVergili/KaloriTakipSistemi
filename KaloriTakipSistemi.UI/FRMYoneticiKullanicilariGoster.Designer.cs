@@ -1,6 +1,6 @@
 ﻿namespace KaloriTakipSistemi.UI
 {
-    partial class FRMKullanicilariGoster
+    partial class FRMYoneticiKullanicilariGoster
     {
         /// <summary>
         /// Required designer variable.
