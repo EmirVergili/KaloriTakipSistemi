@@ -16,6 +16,10 @@ namespace KaloriTakipSistemi.UI.Context
         public DbSet<Yemek> Yemekler { get; set; }
         public DbSet<Yonetici> Yoneticiler { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=true;TrustServerCertificate=true");
+        }
 
     }
 }
