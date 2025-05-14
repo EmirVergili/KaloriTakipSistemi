@@ -33,6 +33,8 @@
             btnDondur = new Button();
             txtSifre = new TextBox();
             txtDondurmaSebebi = new TextBox();
+            dgvDondurulanHesaplar = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvDondurulanHesaplar).BeginInit();
             SuspendLayout();
             // 
             // lblDondurmaSebebi
@@ -58,17 +60,18 @@
             // btnDondur
             // 
             btnDondur.Location = new Point(202, 308);
-            btnDondur.Margin = new Padding(4, 4, 4, 4);
+            btnDondur.Margin = new Padding(4);
             btnDondur.Name = "btnDondur";
             btnDondur.Size = new Size(96, 32);
             btnDondur.TabIndex = 2;
             btnDondur.Text = "Dondur";
             btnDondur.UseVisualStyleBackColor = true;
+            btnDondur.Click += btnDondur_Click;
             // 
             // txtSifre
             // 
             txtSifre.Location = new Point(202, 151);
-            txtSifre.Margin = new Padding(4, 4, 4, 4);
+            txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(127, 29);
             txtSifre.TabIndex = 3;
@@ -76,25 +79,36 @@
             // txtDondurmaSebebi
             // 
             txtDondurmaSebebi.Location = new Point(202, 55);
-            txtDondurmaSebebi.Margin = new Padding(4, 4, 4, 4);
+            txtDondurmaSebebi.Margin = new Padding(4);
             txtDondurmaSebebi.Name = "txtDondurmaSebebi";
             txtDondurmaSebebi.Size = new Size(127, 29);
             txtDondurmaSebebi.TabIndex = 4;
+            // 
+            // dgvDondurulanHesaplar
+            // 
+            dgvDondurulanHesaplar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDondurulanHesaplar.Location = new Point(25, 391);
+            dgvDondurulanHesaplar.Name = "dgvDondurulanHesaplar";
+            dgvDondurulanHesaplar.Size = new Size(961, 215);
+            dgvDondurulanHesaplar.TabIndex = 5;
             // 
             // FRMHesapDondur
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(dgvDondurulanHesaplar);
             Controls.Add(txtDondurmaSebebi);
             Controls.Add(txtSifre);
             Controls.Add(btnDondur);
             Controls.Add(lblSifre);
             Controls.Add(lblDondurmaSebebi);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FRMHesapDondur";
             Text = "FRMHesapDondur";
+            Load += FRMHesapDondur_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvDondurulanHesaplar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -106,5 +120,6 @@
         private Button btnDondur;
         private TextBox txtSifre;
         private TextBox txtDondurmaSebebi;
+        private DataGridView dgvDondurulanHesaplar;
     }
 }
