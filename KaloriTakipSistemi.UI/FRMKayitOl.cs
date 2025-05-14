@@ -32,7 +32,12 @@ namespace KaloriTakipSistemi.UI
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
                 Yas = Convert.ToByte(txtYas.Text)
+               
             };
+            _context.Add(YeniKullanici);
+            _context.SaveChanges();
+            MessageBox.Show("Kayıt Başarılı");
+
         }
     }
 }
