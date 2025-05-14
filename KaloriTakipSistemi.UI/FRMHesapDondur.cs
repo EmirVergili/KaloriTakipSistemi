@@ -22,11 +22,11 @@ namespace KaloriTakipSistemi.UI
         }
         private void btnDondur_Click(object sender, EventArgs e)
         {
-            var kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Id == 1);
+            var kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Id == 2);
 
             if(kullanici!=null)
             {
-                kullanici.HesapDurumu = true;
+                kullanici.HesapDurumu = false;
                 kullanici.DondurmaSebebi = txtDondurmaSebebi.Text;
             };
             _context.SaveChanges();
@@ -44,7 +44,7 @@ namespace KaloriTakipSistemi.UI
                 k.Soyad,
                 k.DondurmaSebebi,
                 k.Yas,
-                HesapDurumuMetin = k.HesapDurumu ? "DONDURULMUŞ" : "AKTİF"
+                HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ"
 
             }).ToList();
             dgvDondurulanHesaplar.DataSource = kullanicilar;

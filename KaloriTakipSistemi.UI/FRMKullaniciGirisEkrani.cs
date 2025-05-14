@@ -36,11 +36,20 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz.");
                 return;
             }
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash(txtSifre.Text));
             
-            
-            if (
-                _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash(txtSifre.Text)))
-            {                
+
+            if (kullanici!=null)
+            {
+                int kullaniciId = kullanici.Id;
+                if (kullanici.HesapDurumu != true)
+                {
+                    kullanici.HesapDurumu = true;
+                    _context.SaveChanges();
+                    MessageBox.Show("Hesabınız Aktif Edildi");
+                }
+
+                
                 MessageBox.Show("Giriş Başarılı");
                 
                 FRMKullaniciAnaMenu kullaniciAnaMenu = new FRMKullaniciAnaMenu();
