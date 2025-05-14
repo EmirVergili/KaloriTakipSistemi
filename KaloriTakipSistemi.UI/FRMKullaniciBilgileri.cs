@@ -33,8 +33,21 @@ namespace KaloriTakipSistemi.UI
             {
                 MessageBox.Show("Kullanıcı bulunamadı.");
             }
-         
 
+
+
+        }
+
+        private void chbBilgilerimiGuncelle_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbBilgilerimiGuncelle.Checked)
+            {
+                txtAd.ReadOnly = false;
+                txtSoyad.ReadOnly = false;
+                txtYas.ReadOnly = false;
+                txtSifre.ReadOnly= false;
+            }
+            
         }
     }
 }

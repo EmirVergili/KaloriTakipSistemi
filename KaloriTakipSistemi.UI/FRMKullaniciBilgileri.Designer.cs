@@ -55,7 +55,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 111);
+            label2.Location = new Point(109, 106);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(37, 28);
@@ -65,7 +65,7 @@
             // lblSoyad
             // 
             lblSoyad.AutoSize = true;
-            lblSoyad.Location = new Point(37, 183);
+            lblSoyad.Location = new Point(76, 170);
             lblSoyad.Margin = new Padding(4, 0, 4, 0);
             lblSoyad.Name = "lblSoyad";
             lblSoyad.Size = new Size(70, 28);
@@ -75,7 +75,7 @@
             // lblYas
             // 
             lblYas.AutoSize = true;
-            lblYas.Location = new Point(37, 256);
+            lblYas.Location = new Point(107, 251);
             lblYas.Margin = new Padding(4, 0, 4, 0);
             lblYas.Name = "lblYas";
             lblYas.Size = new Size(39, 28);
@@ -85,7 +85,7 @@
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(37, 318);
+            lblSifre.Location = new Point(95, 320);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
             lblSifre.Size = new Size(51, 28);
@@ -94,42 +94,46 @@
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(140, 179);
+            txtSoyad.Location = new Point(172, 179);
             txtSoyad.Margin = new Padding(4);
             txtSoyad.Name = "txtSoyad";
+            txtSoyad.ReadOnly = true;
             txtSoyad.Size = new Size(127, 34);
             txtSoyad.TabIndex = 6;
             // 
             // txtYas
             // 
-            txtYas.Location = new Point(140, 245);
+            txtYas.Location = new Point(172, 245);
             txtYas.Margin = new Padding(4);
             txtYas.Name = "txtYas";
+            txtYas.ReadOnly = true;
             txtYas.Size = new Size(127, 34);
             txtYas.TabIndex = 7;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(140, 314);
+            txtSifre.Location = new Point(172, 314);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
+            txtSifre.ReadOnly = true;
             txtSifre.Size = new Size(127, 34);
             txtSifre.TabIndex = 8;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(140, 106);
+            txtAd.Location = new Point(172, 106);
             txtAd.Margin = new Padding(4);
             txtAd.Name = "txtAd";
+            txtAd.ReadOnly = true;
             txtAd.Size = new Size(127, 34);
             txtAd.TabIndex = 10;
             // 
             // btnGuncelle
             // 
-            btnGuncelle.Location = new Point(231, 451);
+            btnGuncelle.Location = new Point(300, 384);
             btnGuncelle.Margin = new Padding(4);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(96, 32);
+            btnGuncelle.Size = new Size(138, 77);
             btnGuncelle.TabIndex = 12;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
@@ -147,12 +151,13 @@
             // chbBilgilerimiGuncelle
             // 
             chbBilgilerimiGuncelle.AutoSize = true;
-            chbBilgilerimiGuncelle.Location = new Point(74, 414);
+            chbBilgilerimiGuncelle.Location = new Point(431, 43);
             chbBilgilerimiGuncelle.Name = "chbBilgilerimiGuncelle";
-            chbBilgilerimiGuncelle.Size = new Size(201, 32);
+            chbBilgilerimiGuncelle.Size = new Size(196, 32);
             chbBilgilerimiGuncelle.TabIndex = 14;
-            chbBilgilerimiGuncelle.Text = "Bilgilerimi Güncelle";
+            chbBilgilerimiGuncelle.Text = "Bilgilerimi Düzenle";
             chbBilgilerimiGuncelle.UseVisualStyleBackColor = true;
+            chbBilgilerimiGuncelle.CheckedChanged += chbBilgilerimiGuncelle_CheckedChanged;
             // 
             // FRMKullaniciBilgileri
             // 
