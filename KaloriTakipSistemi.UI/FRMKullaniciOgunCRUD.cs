@@ -46,25 +46,46 @@ namespace KaloriTakipSistemi.UI
                 Miktar = Convert.ToInt32(nudMiktar.Value),
                 KullaniciId = kullanici.Id
             };
-                        _context.KullaniciYemekler.Add(ogunEkle);
+            _context.KullaniciYemekler.Add(ogunEkle);
             _context.SaveChanges();
             Listele();
         }
-       
+
         private void Listele()
         {
             var kullaniciYemek = _context.KullaniciYemekler.Select(a => new
             {
-                
+                a.Id,
                 a.Yemek.Ad,
                 ogunAdi = a.Ogun.Ad,
                 a.YemekTarihi,
                 a.Miktar,
-                kullaniciAdi=a.Kullanici.Ad,
+                kullaniciAdi = a.Kullanici.Ad,
                 a.Yemek.Kalori
-                
+
             }).ToList();
             dgvOgunler.DataSource = kullaniciYemek;
+
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if (dgvOgunler.CurrentRow == null) return;
+
+            int ogunıd = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
+
+            var ogun = _context.KullaniciYemekler.Find(ogunıd);
+
+            if (ogun != null)
+            {
+                _context.KullaniciYemekler.Remove(ogun);
+                _context.SaveChanges();
+                Listele();
+            }
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -122,6 +122,7 @@
             btnSil.TabIndex = 4;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = true;
+            btnSil.Click += btnSil_Click;
             // 
             // btnGuncelle
             // 
@@ -131,6 +132,7 @@
             btnGuncelle.TabIndex = 4;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // label4
             // 
