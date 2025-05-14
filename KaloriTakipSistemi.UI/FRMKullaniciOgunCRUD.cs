@@ -16,6 +16,7 @@ namespace KaloriTakipSistemi.UI
     public partial class FRMKullaniciOgunCRUD : Form
     {
         private readonly MyDbContext _context;
+
         public FRMKullaniciOgunCRUD()
         {
             _context = new MyDbContext();
@@ -37,14 +38,15 @@ namespace KaloriTakipSistemi.UI
         private void btnEkle_Click(object sender, EventArgs e)
         {
 
-            var kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Id == 1);
+
             var ogunEkle = new KullaniciYemek()
             {
                 YemekTarihi = dtpYemekTarihi.Value,
                 OgunId = ((Ogun)cmbOgun.SelectedItem).Id,
                 YemekId = ((Yemek)cmbYemek.SelectedItem).Id,
                 Miktar = Convert.ToInt32(nudMiktar.Value),
-                KullaniciId = kullanici.Id
+                KullaniciId = FRMKullaniciGirisEkrani.AktifKullaniciId
+
             };
             _context.KullaniciYemekler.Add(ogunEkle);
             _context.SaveChanges();
@@ -53,19 +55,19 @@ namespace KaloriTakipSistemi.UI
 
         private void Listele()
         {
-            var kullaniciYemek = _context.KullaniciYemekler.Select(a => new
-            {
-                a.Id,
-                a.Yemek.Ad,
-                ogunAdi = a.Ogun.Ad,
-                a.YemekTarihi,
-                a.Miktar,
-                kullaniciAdi = a.Kullanici.Ad,
-                a.Yemek.Kalori
-
-            }).ToList();
+            var kullaniciYemek = _context.KullaniciYemekler
+                .Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId)
+                .Select(a => new
+                {
+                    a.Id,
+                    a.Yemek.Ad,
+                    ogunAdi = a.Ogun.Ad,
+                    a.YemekTarihi,
+                    a.Miktar,
+                    kullaniciAdi = a.Kullanici.Ad,
+                    a.Yemek.Kalori
+                }).ToList();
             dgvOgunler.DataSource = kullaniciYemek;
-
         }
 
         private void btnSil_Click(object sender, EventArgs e)
