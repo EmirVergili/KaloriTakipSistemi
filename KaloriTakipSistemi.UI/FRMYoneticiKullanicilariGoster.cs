@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KaloriTakipSistemi.UI
 {
-    public partial class FRMKullanicilariGoster : Form
+    public partial class FRMYoneticiKullanicilariGoster : Form
     {
-        public FRMKullanicilariGoster()
+        public FRMYoneticiKullanicilariGoster()
         {
             InitializeComponent();
         }
