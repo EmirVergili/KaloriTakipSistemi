@@ -41,7 +41,7 @@ namespace KaloriTakipSistemi.UI
             //    MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
             //}
             if (
-                _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash( txtSifre.Text)))
+                _context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash(txtSifre.Text)))
             {
                 MessageBox.Show("Giriş Başarılı");
                 FRMKullaniciAnaMenu kullaniciAnaMenu = new FRMKullaniciAnaMenu();
@@ -67,6 +67,19 @@ namespace KaloriTakipSistemi.UI
             FRMKayitOl frmKayitOl = new FRMKayitOl();
             frmKayitOl.Show();
             this.Hide();
+        }
+
+        private void chbGoster_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbGoster.Checked)
+            {
+                txtSifre.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSifre.PasswordChar = '*';              
+
+            }
         }
     }
 }
