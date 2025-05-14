@@ -90,14 +90,14 @@
             // 
             pnlKullaniciAnaMenuIcerik.Location = new Point(245, 12);
             pnlKullaniciAnaMenuIcerik.Name = "pnlKullaniciAnaMenuIcerik";
-            pnlKullaniciAnaMenuIcerik.Size = new Size(997, 719);
+            pnlKullaniciAnaMenuIcerik.Size = new Size(1270, 719);
             pnlKullaniciAnaMenuIcerik.TabIndex = 1;
             // 
             // FRMKullaniciAnaMenu
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1254, 743);
+            ClientSize = new Size(1527, 743);
             Controls.Add(pnlKullaniciAnaMenuIcerik);
             Controls.Add(btnEnCokAzYediklerim);
             Controls.Add(btnHesapDondur);

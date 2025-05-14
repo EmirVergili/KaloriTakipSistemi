@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dateTimePicker1 = new DateTimePicker();
+            dtpYemekTarihi = new DateTimePicker();
             cmbOgun = new ComboBox();
             label1 = new Label();
             btnEkle = new Button();
@@ -45,12 +45,12 @@
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).BeginInit();
             SuspendLayout();
             // 
-            // dateTimePicker1
+            // dtpYemekTarihi
             // 
-            dateTimePicker1.Location = new Point(295, 63);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(271, 29);
-            dateTimePicker1.TabIndex = 0;
+            dtpYemekTarihi.Location = new Point(295, 12);
+            dtpYemekTarihi.Name = "dtpYemekTarihi";
+            dtpYemekTarihi.Size = new Size(271, 29);
+            dtpYemekTarihi.TabIndex = 0;
             // 
             // cmbOgun
             // 
@@ -63,7 +63,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(180, 68);
+            label1.Location = new Point(180, 20);
             label1.Name = "label1";
             label1.Size = new Size(43, 21);
             label1.TabIndex = 3;
@@ -77,6 +77,7 @@
             btnEkle.TabIndex = 4;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.Click += btnEkle_Click;
             // 
             // label2
             // 
@@ -174,7 +175,7 @@
             Controls.Add(label1);
             Controls.Add(cmbYemek);
             Controls.Add(cmbOgun);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dtpYemekTarihi);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "FRMKullaniciOgunCRUD";
@@ -188,7 +189,7 @@
 
         #endregion
 
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpYemekTarihi;
         private ComboBox cmbOgun;
         private Label label1;
         private Button btnEkle;
