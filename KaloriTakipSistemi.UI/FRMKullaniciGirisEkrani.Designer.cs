@@ -105,6 +105,7 @@
             lnkKayitOl.TabIndex = 4;
             lnkKayitOl.TabStop = true;
             lnkKayitOl.Text = "Kayıt Ol";
+            lnkKayitOl.LinkClicked += lnkKayitOl_LinkClicked;
             // 
             // FRMKullaniciGirisEkrani
             // 

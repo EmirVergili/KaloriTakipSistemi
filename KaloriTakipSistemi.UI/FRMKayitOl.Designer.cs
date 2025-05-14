@@ -86,7 +86,7 @@
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.Location = new Point(153, 62);
-            txtKullaniciAdi.Margin = new Padding(4, 4, 4, 4);
+            txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(127, 29);
             txtKullaniciAdi.TabIndex = 5;
@@ -94,7 +94,7 @@
             // txtSifre
             // 
             txtSifre.Location = new Point(139, 109);
-            txtSifre.Margin = new Padding(4, 4, 4, 4);
+            txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(127, 29);
             txtSifre.TabIndex = 6;
@@ -102,7 +102,7 @@
             // txtSifreTekrar
             // 
             txtSifreTekrar.Location = new Point(127, 164);
-            txtSifreTekrar.Margin = new Padding(4, 4, 4, 4);
+            txtSifreTekrar.Margin = new Padding(4);
             txtSifreTekrar.Name = "txtSifreTekrar";
             txtSifreTekrar.Size = new Size(127, 29);
             txtSifreTekrar.TabIndex = 7;
@@ -110,7 +110,7 @@
             // txtAd
             // 
             txtAd.Location = new Point(127, 232);
-            txtAd.Margin = new Padding(4, 4, 4, 4);
+            txtAd.Margin = new Padding(4);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(127, 29);
             txtAd.TabIndex = 8;
@@ -118,7 +118,7 @@
             // txtSoyad
             // 
             txtSoyad.Location = new Point(127, 300);
-            txtSoyad.Margin = new Padding(4, 4, 4, 4);
+            txtSoyad.Margin = new Padding(4);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.Size = new Size(127, 29);
             txtSoyad.TabIndex = 9;
@@ -126,12 +126,13 @@
             // btnKayitOl
             // 
             btnKayitOl.Location = new Point(139, 486);
-            btnKayitOl.Margin = new Padding(4, 4, 4, 4);
+            btnKayitOl.Margin = new Padding(4);
             btnKayitOl.Name = "btnKayitOl";
             btnKayitOl.Size = new Size(115, 49);
             btnKayitOl.TabIndex = 10;
             btnKayitOl.Text = "Kayıt Ol";
             btnKayitOl.UseVisualStyleBackColor = true;
+            btnKayitOl.Click += btnKayitOl_Click;
             // 
             // lblSoyad
             // 
@@ -178,7 +179,7 @@
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FRMKayitOl";
             Text = "FRMKayitOl";
             ResumeLayout(false);

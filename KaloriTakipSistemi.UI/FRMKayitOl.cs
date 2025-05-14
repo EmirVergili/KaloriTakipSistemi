@@ -1,4 +1,7 @@
-﻿using System;
+﻿using KaloriTakipSistemi.UI.Context;
+using KaloriTakipSistemi.UI.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,24 @@ namespace KaloriTakipSistemi.UI
 {
     public partial class FRMKayitOl : Form
     {
+        private readonly MyDbContext _context;
         public FRMKayitOl()
         {
+            _context = new MyDbContext();
             InitializeComponent();
+
+        }
+
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+            var YeniKullanici = new Kullanici()
+            {
+                KullaniciAdi = txtKullaniciAdi.Text,
+                Sifre = txtSifre.Text,
+                Ad = txtAd.Text,
+                Soyad = txtSoyad.Text,
+                Yas = Convert.ToByte(txtYas.Text)
+            };
         }
     }
 }
