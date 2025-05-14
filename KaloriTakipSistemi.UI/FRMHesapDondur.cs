@@ -22,15 +22,26 @@ namespace KaloriTakipSistemi.UI
         }
         private void btnDondur_Click(object sender, EventArgs e)
         {
-            var kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Id == 2);
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k=>k.Id==FRMKullaniciGirisEkrani.AktifKullaniciId);
+            if (string.IsNullOrWhiteSpace(txtDondurmaSebebi.Text))
+            {
+                MessageBox.Show("Lütfen bir dondurma sebebi giriniz.");
+                return;
+            }
 
-            if(kullanici!=null)
+            if (kullanici != null)
             {
                 kullanici.HesapDurumu = false;
                 kullanici.DondurmaSebebi = txtDondurmaSebebi.Text;
-            };
-            _context.SaveChanges();
-            MessageBox.Show("Hesap Başarıyla Donduruldu");
+
+                _context.SaveChanges(); 
+                MessageBox.Show("Hesap başarıyla donduruldu");
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı bulunamadı. İşlem gerçekleştirilemedi.");
+            }
+            
 
             DataListele();
         }
