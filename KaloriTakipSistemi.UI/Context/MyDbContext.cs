@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -85,7 +86,11 @@ namespace KaloriTakipSistemi.UI.Context
                 new Yemek { Id = 50, Ad = "Mücver", Kalori = 240 }
             );
         }
-
+        public string sha256_hash(string sifre)
+        {
+            using (SHA256 hash = SHA256Managed.Create())
+            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); }
+        }
 
 
     }
