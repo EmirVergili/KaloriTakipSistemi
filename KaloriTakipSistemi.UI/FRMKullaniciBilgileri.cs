@@ -19,6 +19,7 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
         }
 
+
         private void FRMKullaniciBilgileri_Load(object sender, EventArgs e)
         {
             var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
@@ -45,9 +46,36 @@ namespace KaloriTakipSistemi.UI
                 txtAd.ReadOnly = false;
                 txtSoyad.ReadOnly = false;
                 txtYas.ReadOnly = false;
-                txtSifre.ReadOnly= false;
+                txtSifre.ReadOnly = false;
             }
-            
+            else
+            {
+                txtAd.ReadOnly = true;
+                txtSoyad.ReadOnly = true;
+                txtYas.ReadOnly = true;
+                txtSifre.ReadOnly = true;
+            }
+
+
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
+            if (kullanici != null)
+            {
+                kullanici.Ad=txtAd.Text;
+                kullanici.Soyad = txtSoyad.Text;
+                kullanici.Yas = byte.Parse(txtYas.Text);
+                kullanici.Sifre = txtSifre.Text;
+                _context.SaveChanges();
+                MessageBox.Show("Bilgileriniz güncellendi.");
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı bulunamadı.");
+            }
+        
         }
     }
 }
