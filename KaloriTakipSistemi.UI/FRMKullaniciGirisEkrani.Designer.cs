@@ -43,7 +43,7 @@
             label1.Location = new Point(69, 82);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(120, 28);
+            label1.Size = new Size(95, 21);
             label1.TabIndex = 0;
             label1.Text = "Kullanıcı Adı";
             label1.Click += label1_Click;
@@ -53,7 +53,7 @@
             txtKullaniciAdi.Location = new Point(197, 76);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(170, 34);
+            txtKullaniciAdi.Size = new Size(170, 29);
             txtKullaniciAdi.TabIndex = 1;
             // 
             // btnGirisYap
@@ -65,6 +65,7 @@
             btnGirisYap.TabIndex = 2;
             btnGirisYap.Text = "Giriş Yap";
             btnGirisYap.UseVisualStyleBackColor = true;
+            btnGirisYap.Click += btnGirisYap_Click;
             // 
             // chbGoster
             // 
@@ -72,7 +73,7 @@
             chbGoster.Location = new Point(69, 213);
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
-            chbGoster.Size = new Size(158, 32);
+            chbGoster.Size = new Size(129, 25);
             chbGoster.TabIndex = 3;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
@@ -83,7 +84,7 @@
             label2.Location = new Point(69, 163);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(51, 28);
+            label2.Size = new Size(42, 21);
             label2.TabIndex = 0;
             label2.Text = "Şifre";
             // 
@@ -92,7 +93,7 @@
             txtSifre.Location = new Point(197, 157);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(170, 34);
+            txtSifre.Size = new Size(170, 29);
             txtSifre.TabIndex = 1;
             // 
             // lnkKayitOl
@@ -100,14 +101,14 @@
             lnkKayitOl.AutoSize = true;
             lnkKayitOl.Location = new Point(69, 258);
             lnkKayitOl.Name = "lnkKayitOl";
-            lnkKayitOl.Size = new Size(81, 28);
+            lnkKayitOl.Size = new Size(64, 21);
             lnkKayitOl.TabIndex = 4;
             lnkKayitOl.TabStop = true;
             lnkKayitOl.Text = "Kayıt Ol";
             // 
             // FRMKullaniciGirisEkrani
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(482, 412);
             Controls.Add(lnkKayitOl);
