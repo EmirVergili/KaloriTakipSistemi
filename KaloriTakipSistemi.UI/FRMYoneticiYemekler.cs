@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KaloriTakipSistemi.UI.Context;
+using KaloriTakipSistemi.UI.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +14,11 @@ namespace KaloriTakipSistemi.UI
 {
     public partial class FRMYoneticiYemekler : Form
     {
+        private readonly MyDbContext _db;
+        Yemek secilenYemek = new();
         public FRMYoneticiYemekler()
         {
+            _db = new MyDbContext();
             InitializeComponent();
         }
         private void FRMYoneticiYemekler_Load(object sender, EventArgs e)
