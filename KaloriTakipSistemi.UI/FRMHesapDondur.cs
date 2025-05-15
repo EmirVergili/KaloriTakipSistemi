@@ -22,7 +22,7 @@ namespace KaloriTakipSistemi.UI
         }
         private void btnDondur_Click(object sender, EventArgs e)
         {
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k=>k.Id==FRMKullaniciGirisEkrani.AktifKullaniciId);
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k=>k.Id==FRMKullaniciGirisEkrani.AktifKullaniciId&&k.Sifre==_context.sha256_hash(txtSifre.Text));
             if (string.IsNullOrWhiteSpace(txtDondurmaSebebi.Text))
             {
                 MessageBox.Show("Lütfen bir dondurma sebebi giriniz.");
