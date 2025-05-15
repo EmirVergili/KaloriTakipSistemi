@@ -33,10 +33,13 @@ namespace KaloriTakipSistemi.UI
                     Ogun=o.Ogun.Ad,
                     Yemek=o.Yemek.Ad,
                     Kalori=o.Yemek.Kalori,
-                    Tarih=o.YemekTarihi
+                    Tarih=o.YemekTarihi,
+                    ToplamKalori = o.Miktar*o.Yemek.Kalori  
 
                 }).ToList();
-              
+            var toplamkalori = _context.KullaniciYemekler.Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId && dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date).Sum(o=>o.Miktar*o.Yemek.Kalori);
+            lblToplamkalori.Text = "Günlük toplam kalori : "+toplamkalori.ToString() + " kcal";
+
             dgvKullaniciOgunlerim.DataSource = ogunler;
 
         }
