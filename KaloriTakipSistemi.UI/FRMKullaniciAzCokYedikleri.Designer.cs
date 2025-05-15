@@ -34,6 +34,7 @@
             label2 = new Label();
             lblEnAzYedigimYemek = new Label();
             lblEnCokYedigimYemek = new Label();
+            btnGoster = new Button();
             SuspendLayout();
             // 
             // dtpBitisTarihi
@@ -86,11 +87,22 @@
             lblEnCokYedigimYemek.TabIndex = 5;
             lblEnCokYedigimYemek.Text = "label4";
             // 
+            // btnGoster
+            // 
+            btnGoster.Location = new Point(601, 12);
+            btnGoster.Name = "btnGoster";
+            btnGoster.Size = new Size(101, 38);
+            btnGoster.TabIndex = 6;
+            btnGoster.Text = "Göster";
+            btnGoster.UseVisualStyleBackColor = true;
+            btnGoster.Click += btnGoster_Click;
+            // 
             // FRMKullaniciAzCokYedikleri
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnGoster);
             Controls.Add(lblEnCokYedigimYemek);
             Controls.Add(lblEnAzYedigimYemek);
             Controls.Add(label2);
@@ -112,5 +124,6 @@
         private Label label2;
         private Label lblEnAzYedigimYemek;
         private Label lblEnCokYedigimYemek;
+        private Button btnGoster;
     }
 }

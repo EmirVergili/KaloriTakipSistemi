@@ -21,39 +21,38 @@ namespace KaloriTakipSistemi.UI.Models
 
         private void FRMKullaniciAzCokYedikleri_Load(object sender, EventArgs e)
         {
-           // en cok yedigi yemek
-           this.DataContext = _context;
-            var enCokYedigiYemek = _context.KullaniciYemekler
-                .GroupBy(k => k.YemekId)
+           
+
+        }
+
+        private void btnGoster_Click(object sender, EventArgs e)
+        {
+            DateTime baslangicTarihi = dtpBaslangicTarihi.Value.Date;
+            DateTime bitisTarihi = dtpBitisTarihi.Value.Date;
+
+            var filtrelenmisYemekler = _context.KullaniciYemekler
+                .Where(y =>y.KullaniciId==FRMKullaniciGirisEkrani.AktifKullaniciId && y.YemekTarihi >= baslangicTarihi && y.YemekTarihi <= bitisTarihi)
+                .GroupBy(y => y.Yemek.Ad)
                 .Select(g => new
                 {
-                    YemekId = g.Key,
-                    YemekAdet = g.Count()
+                    YemekAd = g.Key,
+                    ToplamMiktar = g.Sum(y => y.Miktar)
                 })
-                .OrderByDescending(g => g.YemekAdet)
-                .FirstOrDefault();
-            if (enCokYedigiYemek != null)
-            {
-                var yemek = _context.Yemekler.Find(enCokYedigiYemek.YemekId);
-                lblEnCokYedigimYemek.Text = yemek?.Ad;
-            }
-            // en az yedigi yemek
-            var enAzYedigiYemek = _context.KullaniciYemekler
-                .GroupBy(k => k.YemekId)
-                .Select(g => new
-                {
-                    YemekId = g.Key,
-                    YemekAdet = g.Count()
-                })
-                .OrderBy(g => g.YemekAdet)
-                .FirstOrDefault();
-            if (enAzYedigiYemek != null)
-            {
-                var yemek = _context.Yemekler.Find(enAzYedigiYemek.YemekId);
-                lblEnAzYedigimYemek.Text = yemek?.Ad;
-            }
+                .ToList();
 
+            if (filtrelenmisYemekler.Any())
+            {
+                var enCokYemek = filtrelenmisYemekler.OrderByDescending(y => y.ToplamMiktar).First();
+                var enAzYemek = filtrelenmisYemekler.OrderBy(y => y.ToplamMiktar).First();
 
+                lblEnCokYedigimYemek.Text = $"En Çok Yenen Yemek: {enCokYemek.YemekAd} - Miktar: {enCokYemek.ToplamMiktar}";
+                lblEnAzYedigimYemek.Text = $"En Az Yenen Yemek: {enAzYemek.YemekAd} - Miktar: {enAzYemek.ToplamMiktar}";
+            }
+            else
+            {
+                lblEnCokYedigimYemek.Text = "Hiç yemek bulunamadı.";
+                lblEnAzYedigimYemek.Text = "";
+            }
         }
     }
 }
