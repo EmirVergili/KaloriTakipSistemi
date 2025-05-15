@@ -43,6 +43,10 @@ namespace KaloriTakipSistemi.UI
             _context.Add(YeniKullanici);
             _context.SaveChanges();
             MessageBox.Show("Kayıt Başarılı");
+            FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani();
+            fRMKullaniciGirisEkrani.Show();
+            this.Hide();
+
 
         }
     }
