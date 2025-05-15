@@ -127,12 +127,16 @@ namespace KaloriTakipSistemi.UI
             TemizleOgun();
             OgunDgvListele();
             MessageBox.Show("Öğün başarıyla eklendi.");
-
         }
 
         private void btnOgunSil_Click(object sender, EventArgs e)
         {
-
+            if (!GirdiKontrolOgun()) return;
+            _db.Ogunler.Remove(secilenOgun);
+            _db.SaveChanges();
+            TemizleOgun();
+            OgunDgvListele();
+            MessageBox.Show("Öğün başarıyla silindi.");
         }
 
         private void btnOgunGuncelle_Click(object sender, EventArgs e)
