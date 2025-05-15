@@ -16,8 +16,47 @@ namespace KaloriTakipSistemi.UI
         {
             InitializeComponent();
         }
+        private void FRMYoneticiYemekler_Load(object sender, EventArgs e)
+        {
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        }
+
+        private void btnYemekEkle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnYemekSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnYemekGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvYemekler_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnOgunEkle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOgunSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOgunGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvOgunler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

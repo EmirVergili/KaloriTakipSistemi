@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEkle = new Button();
-            btnSil = new Button();
-            btnGuncelle = new Button();
+            btnYemekEkle = new Button();
+            btnYemekSil = new Button();
+            btnYemekGuncelle = new Button();
             dgvYemekler = new DataGridView();
             txtYemekAdi = new TextBox();
             nudKalori = new NumericUpDown();
@@ -47,35 +47,38 @@
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).BeginInit();
             SuspendLayout();
             // 
-            // btnEkle
+            // btnYemekEkle
             // 
-            btnEkle.Location = new Point(68, 243);
-            btnEkle.Margin = new Padding(4);
-            btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(129, 41);
-            btnEkle.TabIndex = 0;
-            btnEkle.Text = "Ekle";
-            btnEkle.UseVisualStyleBackColor = true;
+            btnYemekEkle.Location = new Point(68, 243);
+            btnYemekEkle.Margin = new Padding(4);
+            btnYemekEkle.Name = "btnYemekEkle";
+            btnYemekEkle.Size = new Size(129, 41);
+            btnYemekEkle.TabIndex = 0;
+            btnYemekEkle.Text = "Ekle";
+            btnYemekEkle.UseVisualStyleBackColor = true;
+            btnYemekEkle.Click += btnYemekEkle_Click;
             // 
-            // btnSil
+            // btnYemekSil
             // 
-            btnSil.Location = new Point(206, 243);
-            btnSil.Margin = new Padding(4);
-            btnSil.Name = "btnSil";
-            btnSil.Size = new Size(129, 41);
-            btnSil.TabIndex = 0;
-            btnSil.Text = "Sil";
-            btnSil.UseVisualStyleBackColor = true;
+            btnYemekSil.Location = new Point(206, 243);
+            btnYemekSil.Margin = new Padding(4);
+            btnYemekSil.Name = "btnYemekSil";
+            btnYemekSil.Size = new Size(129, 41);
+            btnYemekSil.TabIndex = 0;
+            btnYemekSil.Text = "Sil";
+            btnYemekSil.UseVisualStyleBackColor = true;
+            btnYemekSil.Click += btnYemekSil_Click;
             // 
-            // btnGuncelle
+            // btnYemekGuncelle
             // 
-            btnGuncelle.Location = new Point(343, 243);
-            btnGuncelle.Margin = new Padding(4);
-            btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(129, 41);
-            btnGuncelle.TabIndex = 0;
-            btnGuncelle.Text = "Guncelle";
-            btnGuncelle.UseVisualStyleBackColor = true;
+            btnYemekGuncelle.Location = new Point(343, 243);
+            btnYemekGuncelle.Margin = new Padding(4);
+            btnYemekGuncelle.Name = "btnYemekGuncelle";
+            btnYemekGuncelle.Size = new Size(129, 41);
+            btnYemekGuncelle.TabIndex = 0;
+            btnYemekGuncelle.Text = "Guncelle";
+            btnYemekGuncelle.UseVisualStyleBackColor = true;
+            btnYemekGuncelle.Click += btnYemekGuncelle_Click;
             // 
             // dgvYemekler
             // 
@@ -84,8 +87,10 @@
             dgvYemekler.Margin = new Padding(4);
             dgvYemekler.Name = "dgvYemekler";
             dgvYemekler.RowHeadersWidth = 51;
-            dgvYemekler.Size = new Size(452, 263);
+            dgvYemekler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvYemekler.Size = new Size(477, 263);
             dgvYemekler.TabIndex = 1;
+            dgvYemekler.CellClick += dgvYemekler_CellClick;
             // 
             // txtYemekAdi
             // 
@@ -94,7 +99,6 @@
             txtYemekAdi.Name = "txtYemekAdi";
             txtYemekAdi.Size = new Size(208, 34);
             txtYemekAdi.TabIndex = 2;
-            txtYemekAdi.TextChanged += textBox1_TextChanged;
             // 
             // nudKalori
             // 
@@ -133,6 +137,7 @@
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Ekle";
             btnOgunEkle.UseVisualStyleBackColor = true;
+            btnOgunEkle.Click += btnOgunEkle_Click;
             // 
             // btnOgunSil
             // 
@@ -143,6 +148,7 @@
             btnOgunSil.TabIndex = 0;
             btnOgunSil.Text = "Sil";
             btnOgunSil.UseVisualStyleBackColor = true;
+            btnOgunSil.Click += btnOgunSil_Click;
             // 
             // btnOgunGuncelle
             // 
@@ -153,6 +159,7 @@
             btnOgunGuncelle.TabIndex = 0;
             btnOgunGuncelle.Text = "Guncelle";
             btnOgunGuncelle.UseVisualStyleBackColor = true;
+            btnOgunGuncelle.Click += btnOgunGuncelle_Click;
             // 
             // dgvOgunler
             // 
@@ -161,8 +168,10 @@
             dgvOgunler.Margin = new Padding(4);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
+            dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOgunler.Size = new Size(452, 263);
             dgvOgunler.TabIndex = 1;
+            dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 
             // txtOgunAdi
             // 
@@ -171,7 +180,6 @@
             txtOgunAdi.Name = "txtOgunAdi";
             txtOgunAdi.Size = new Size(208, 34);
             txtOgunAdi.TabIndex = 2;
-            txtOgunAdi.TextChanged += textBox1_TextChanged;
             // 
             // label4
             // 
@@ -198,14 +206,15 @@
             Controls.Add(btnOgunGuncelle);
             Controls.Add(dgvYemekler);
             Controls.Add(btnOgunSil);
-            Controls.Add(btnGuncelle);
+            Controls.Add(btnYemekGuncelle);
             Controls.Add(btnOgunEkle);
-            Controls.Add(btnSil);
-            Controls.Add(btnEkle);
+            Controls.Add(btnYemekSil);
+            Controls.Add(btnYemekEkle);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             Margin = new Padding(4);
             Name = "FRMYoneticiYemekler";
             Text = "FRMYoneticiYemekler";
+            Load += FRMYoneticiYemekler_Load;
             ((System.ComponentModel.ISupportInitialize)dgvYemekler).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudKalori).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).EndInit();
@@ -215,9 +224,9 @@
 
         #endregion
 
-        private Button btnEkle;
-        private Button btnSil;
-        private Button btnGuncelle;
+        private Button btnYemekEkle;
+        private Button btnYemekSil;
+        private Button btnYemekGuncelle;
         private DataGridView dgvYemekler;
         private TextBox txtYemekAdi;
         private NumericUpDown nudKalori;
