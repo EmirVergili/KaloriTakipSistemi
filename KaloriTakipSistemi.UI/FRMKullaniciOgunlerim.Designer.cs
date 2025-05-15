@@ -31,6 +31,7 @@
             dgvKullaniciOgunlerim = new DataGridView();
             dtpKullaniciOgunGoruntuleme = new DateTimePicker();
             label1 = new Label();
+            lblToplamkalori = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvKullaniciOgunlerim).BeginInit();
             SuspendLayout();
             // 
@@ -60,11 +61,21 @@
             label1.TabIndex = 2;
             label1.Text = "Yediğiniz öğünleri görüntülemek istediğiniz günü seçiniz";
             // 
+            // lblToplamkalori
+            // 
+            lblToplamkalori.AutoSize = true;
+            lblToplamkalori.Location = new Point(48, 29);
+            lblToplamkalori.Name = "lblToplamkalori";
+            lblToplamkalori.Size = new Size(102, 20);
+            lblToplamkalori.TabIndex = 3;
+            lblToplamkalori.Text = "Toplam Kalori";
+            // 
             // FRMKullaniciOgunlerim
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(966, 571);
+            Controls.Add(lblToplamkalori);
             Controls.Add(label1);
             Controls.Add(dtpKullaniciOgunGoruntuleme);
             Controls.Add(dgvKullaniciOgunlerim);
@@ -81,5 +92,6 @@
         private DataGridView dgvKullaniciOgunlerim;
         private DateTimePicker dtpKullaniciOgunGoruntuleme;
         private Label label1;
+        private Label lblToplamkalori;
     }
 }
