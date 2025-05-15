@@ -78,7 +78,6 @@
             dgvYoneticiOgunleri.Name = "dgvYoneticiOgunleri";
             dgvYoneticiOgunleri.Size = new Size(683, 268);
             dgvYoneticiOgunleri.TabIndex = 3;
-            dgvYoneticiOgunleri.CellContentClick += dataGridView1_CellContentClick;
             // 
             // FRMYoneticiKullaniciOgunleri
             // 
