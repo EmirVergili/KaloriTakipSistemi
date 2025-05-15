@@ -99,6 +99,7 @@
             Controls.Add(dtpBitisTarihi);
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
+            Load += FRMKullaniciAzCokYedikleri_Load;
             ResumeLayout(false);
             PerformLayout();
         }
