@@ -39,7 +39,15 @@ namespace KaloriTakipSistemi.UI
             }
             return true;
         }
-
+        public void YemekDgvListele()
+        {
+            dgvYemekler.DataSource = _db.Yemekler
+                .Select(y => new
+                {
+                    y.Ad,
+                    y.Kalori
+                }).ToList();
+        }
         private void btnYemekEkle_Click(object sender, EventArgs e)
         {
 
