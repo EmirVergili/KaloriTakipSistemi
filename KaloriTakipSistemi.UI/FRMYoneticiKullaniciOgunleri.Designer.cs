@@ -32,8 +32,8 @@
             label2 = new Label();
             cmbKullanici = new ComboBox();
             dtpTarih = new DateTimePicker();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvY = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvY).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -61,6 +61,7 @@
             cmbKullanici.Name = "cmbKullanici";
             cmbKullanici.Size = new Size(430, 23);
             cmbKullanici.TabIndex = 1;
+            cmbKullanici.SelectedIndexChanged += cmbKullanici_SelectedIndexChanged;
             // 
             // dtpTarih
             // 
@@ -68,28 +69,31 @@
             dtpTarih.Name = "dtpTarih";
             dtpTarih.Size = new Size(430, 23);
             dtpTarih.TabIndex = 2;
+            dtpTarih.ValueChanged += dtpTarih_ValueChanged;
             // 
-            // dataGridView1
+            // dgvY
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(46, 151);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(683, 268);
-            dataGridView1.TabIndex = 3;
+            dgvY.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvY.Location = new Point(46, 151);
+            dgvY.Name = "dgvY";
+            dgvY.Size = new Size(683, 268);
+            dgvY.TabIndex = 3;
+            dgvY.CellContentClick += dataGridView1_CellContentClick;
             // 
             // FRMYoneticiKullaniciOgunleri
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvY);
             Controls.Add(dtpTarih);
             Controls.Add(cmbKullanici);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FRMYoneticiKullaniciOgunleri";
             Text = "FRMYoneticiKullaniciOgunleri";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FRMYoneticiKullaniciOgunleri_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvY).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -103,7 +107,7 @@
         private ComboBox comboBox1;
         private ComboBox cmbKullanici;
         private DateTimePicker dtpTarih;
-        private DataGridView dataGridView1;
+        private DataGridView dgvY;
         private ComboBox comboBox3;
         private ComboBox comboBox4;
     }
