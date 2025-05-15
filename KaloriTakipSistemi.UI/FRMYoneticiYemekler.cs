@@ -56,12 +56,23 @@ namespace KaloriTakipSistemi.UI
         }
         private void btnYemekEkle_Click(object sender, EventArgs e)
         {
-
+            if (!GirdiKontrolYemek()) return;
+            Yemek yemek = new Yemek { Ad = txtYemekAdi.Text, Kalori = (double)(nudKalori.Value) };
+            _db.Yemekler.Add(yemek);
+            _db.SaveChanges();
+            TemizleYemek();
+            YemekDgvListele();
+            MessageBox.Show("Yemek başarıyla eklendi.");
         }
 
         private void btnYemekSil_Click(object sender, EventArgs e)
         {
-
+            if (!GirdiKontrolYemek()) return;
+            _db.Yemekler.Remove(secilenYemek);
+            _db.SaveChanges();
+            TemizleYemek();
+            YemekDgvListele();
+            MessageBox.Show("Yemek başarıyla silindi.");
         }
 
         private void btnYemekGuncelle_Click(object sender, EventArgs e)
@@ -71,7 +82,10 @@ namespace KaloriTakipSistemi.UI
 
         private void dgvYemekler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            TemizleYemek();
+            secilenYemek = dgvYemekler.SelectedRows[0].DataBoundItem as Yemek;
+            txtYemekAdi.Text = secilenYemek.Ad;
+            nudKalori.Value = (decimal)secilenYemek.Kalori;
         }
 
         public void OgunDgvListele()
