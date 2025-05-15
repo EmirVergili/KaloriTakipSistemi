@@ -16,6 +16,7 @@ namespace KaloriTakipSistemi.UI
     {
         private readonly MyDbContext _db;
         Yemek secilenYemek = new();
+        Ogun secilenOgun = new();
         public FRMYoneticiYemekler()
         {
             _db = new MyDbContext();
@@ -23,9 +24,10 @@ namespace KaloriTakipSistemi.UI
         }
         private void FRMYoneticiYemekler_Load(object sender, EventArgs e)
         {
-
+            YemekDgvListele();
+            OgunDgvListele();
         }
-        public bool GirdiKontrolYemek()
+        private bool GirdiKontrolYemek()
         {
             if (string.IsNullOrWhiteSpace(txtYemekAdi.Text))
             {
@@ -39,7 +41,7 @@ namespace KaloriTakipSistemi.UI
             }
             return true;
         }
-        public void YemekDgvListele()
+        private void YemekDgvListele()
         {
             dgvYemekler.DataSource = _db.Yemekler
                 .Select(y => new
@@ -48,7 +50,7 @@ namespace KaloriTakipSistemi.UI
                     y.Kalori
                 }).ToList();
         }
-        public void TemizleYemek()
+        private void TemizleYemek()
         {
             txtYemekAdi.Text = string.Empty;
             nudKalori.Text = string.Empty;
@@ -94,19 +96,37 @@ namespace KaloriTakipSistemi.UI
             nudKalori.Value = (decimal)secilenYemek.Kalori;
         }
 
-        public void OgunDgvListele()
+        private bool GirdiKontrolOgun()
+        {
+            if(string.IsNullOrWhiteSpace(txtOgunAdi.Text))
+            {
+                MessageBox.Show("Öğün adı boş geçilemez!");
+                return false;
+            }
+            return true;
+
+        }
+        private void OgunDgvListele()
         {
             dgvOgunler.DataSource = _db.Ogunler.Select(o => new
             {
                 o.Ad
             }).ToList();
         }
-        public void TemizleOgun()
+        private void TemizleOgun()
         {
             txtOgunAdi.Text = string.Empty;
+            secilenOgun = null;
         }
         private void btnOgunEkle_Click(object sender, EventArgs e)
         {
+            if (!GirdiKontrolOgun()) return;
+            Ogun ogun = new Ogun { Ad = txtOgunAdi.Text};
+            _db.Ogunler.Add(ogun);
+            _db.SaveChanges();
+            TemizleOgun();
+            OgunDgvListele();
+            MessageBox.Show("Öğün başarıyla eklendi.");
 
         }
 
@@ -122,7 +142,9 @@ namespace KaloriTakipSistemi.UI
 
         private void dgvOgunler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            TemizleOgun();
+            secilenOgun = dgvOgunler.SelectedRows[0].DataBoundItem as Ogun;
+            txtOgunAdi.Text = secilenOgun.Ad;
         }
     }
 }
