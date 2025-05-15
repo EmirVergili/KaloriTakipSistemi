@@ -26,12 +26,13 @@ namespace KaloriTakipSistemi.UI
             cmbKullanici.DataSource = _context.Kullanicilar
                .Select(k => new
                {
-
-                   k.Ad,
-                   k.Soyad,
+                   Id= k.Id,
+                   AdSoyad = k.Ad+" "+k.Soyad,
 
                }).ToList();
 
+            cmbKullanici.DisplayMember = "AdSoyad";
+            cmbKullanici.ValueMember = "Id";
         }
 
         private void cmbKullanici_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,30 +48,42 @@ namespace KaloriTakipSistemi.UI
 
         private void dtpTarih_ValueChanged(object sender, EventArgs e)
         {
+            if (cmbKullanici.SelectedItem == null)
+            {
+                MessageBox.Show("Kisi Seç.");
+                return;
+            }
+
             //cmbden secilen kullanıcıya ve tarihe göre veritabanından yemekleri listele
-            var kullanici = cmbKullanici.SelectedItem;
-            var kullaniciAdi = kullanici.GetType().GetProperty("Ad").GetValue(kullanici, null).ToString();
-            var kullaniciSoyadi = kullanici.GetType().GetProperty("Soyad").GetValue(kullanici, null).ToString();
-            var kullaniciId = _context.Kullanicilar
-                .Where(k => k.Ad == kullaniciAdi && k.Soyad == kullaniciSoyadi)
-                .Select(k => k.Id)
-                .FirstOrDefault();
+            if (cmbKullanici.SelectedValue == null)
+                return;
+
+            int kullaniciId = (int)cmbKullanici.SelectedValue;
+
             var ogunler = _context.KullaniciYemekler
                 .Where(k => k.KullaniciId == kullaniciId && k.YemekTarihi.Date == dtpTarih.Value.Date)
                 .Select(k => new
                 {
                     k.Yemek.Ad,
                     k.Yemek.Kalori,
-                    k.YemekTarihi
+                    OgunAd = k.Ogun.Ad,
+                   Porsiyon= k.Miktar,
+                   YTarih= k.YemekTarihi.Date
                 })
                 .ToList();
-           dgvYoneticiOgunleri.DataSource = ogunler;
-            dgvYoneticiOgunleri.Columns["YemekTarihi"].HeaderText = "Yemek Tarihi";
+
+            dgvYoneticiOgunleri.DataSource = ogunler;
             dgvYoneticiOgunleri.Columns["Ad"].HeaderText = "Yemek Adı";
+            dgvYoneticiOgunleri.Columns["YTarih"].HeaderText = "Yemek Tarihi";
+            dgvYoneticiOgunleri.Columns["OgunAd"].HeaderText = "Öğün Adı";
             dgvYoneticiOgunleri.Columns["Kalori"].HeaderText = "Kalori";
+            dgvYoneticiOgunleri.Columns["Porsiyon"].HeaderText = "Porsiyon";
             dgvYoneticiOgunleri.Columns["Ad"].Width = 200;
             dgvYoneticiOgunleri.Columns["Kalori"].Width = 100;
-            dgvYoneticiOgunleri.Columns["YemekTarihi"].Width = 150;
+            dgvYoneticiOgunleri.Columns["YTarih"].Width = 150;
+            dgvYoneticiOgunleri.Columns["OgunAd"].Width = 100;
+            dgvYoneticiOgunleri.Columns["Porsiyon"].Width = 100;
+
         }
 
     }
