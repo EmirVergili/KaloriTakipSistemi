@@ -96,10 +96,21 @@ namespace KaloriTakipSistemi.UI
                 ogun.YemekTarihi = dtpYemekTarihi.Value;
                 ogun.OgunId = ((Ogun)cmbOgun.SelectedItem).Id;
                 ogun.YemekId = ((Yemek)cmbYemek.SelectedItem).Id;
-                ogun.Miktar = Convert.ToInt32(nudMiktar.Value);                               
+                ogun.Miktar = Convert.ToInt32(nudMiktar.Value);
             }
             _context.SaveChanges();
             Listele();
+        }
+
+        private void dgvOgunler_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int ogunId = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
+            var ogun = _context.KullaniciYemekler.Find(ogunId);
+            cmbOgun.SelectedValue = ogun.OgunId;
+            cmbYemek.SelectedValue =  ogun.YemekId;
+            dtpYemekTarihi.Value = ogun.YemekTarihi;
+            nudMiktar.Value = ogun.Miktar;
+
         }
     }
 }

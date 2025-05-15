@@ -49,7 +49,7 @@
             // 
             dtpYemekTarihi.Location = new Point(295, 12);
             dtpYemekTarihi.Name = "dtpYemekTarihi";
-            dtpYemekTarihi.Size = new Size(271, 29);
+            dtpYemekTarihi.Size = new Size(271, 34);
             dtpYemekTarihi.TabIndex = 0;
             // 
             // cmbOgun
@@ -57,7 +57,7 @@
             cmbOgun.FormattingEnabled = true;
             cmbOgun.Location = new Point(295, 118);
             cmbOgun.Name = "cmbOgun";
-            cmbOgun.Size = new Size(271, 29);
+            cmbOgun.Size = new Size(271, 36);
             cmbOgun.TabIndex = 2;
             // 
             // label1
@@ -65,7 +65,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(180, 20);
             label1.Name = "label1";
-            label1.Size = new Size(43, 21);
+            label1.Size = new Size(53, 28);
             label1.TabIndex = 3;
             label1.Text = "Tarih";
             // 
@@ -84,7 +84,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(180, 121);
             label2.Name = "label2";
-            label2.Size = new Size(49, 21);
+            label2.Size = new Size(61, 28);
             label2.TabIndex = 3;
             label2.Text = "Öğün";
             // 
@@ -93,7 +93,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(180, 241);
             label3.Name = "label3";
-            label3.Size = new Size(55, 21);
+            label3.Size = new Size(69, 28);
             label3.TabIndex = 3;
             label3.Text = "Miktar";
             // 
@@ -102,7 +102,7 @@
             cmbYemek.FormattingEnabled = true;
             cmbYemek.Location = new Point(295, 174);
             cmbYemek.Name = "cmbYemek";
-            cmbYemek.Size = new Size(271, 29);
+            cmbYemek.Size = new Size(271, 36);
             cmbYemek.TabIndex = 2;
             // 
             // label5
@@ -110,7 +110,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(180, 177);
             label5.Name = "label5";
-            label5.Size = new Size(56, 21);
+            label5.Size = new Size(68, 28);
             label5.TabIndex = 3;
             label5.Text = "Yemek";
             // 
@@ -139,17 +139,18 @@
             label4.AutoSize = true;
             label4.Location = new Point(393, 243);
             label4.Name = "label4";
-            label4.Size = new Size(430, 21);
+            label4.Size = new Size(537, 28);
             label4.TabIndex = 5;
             label4.Text = "Porsiyon ( 1 porsiyon yaklaşık 100 grama denk gelmektedir )";
             // 
             // nudMiktar
             // 
             nudMiktar.Location = new Point(295, 241);
-            nudMiktar.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
+            nudMiktar.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudMiktar.Name = "nudMiktar";
-            nudMiktar.Size = new Size(92, 29);
+            nudMiktar.Size = new Size(92, 34);
             nudMiktar.TabIndex = 6;
+            nudMiktar.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // dgvOgunler
             // 
@@ -160,10 +161,11 @@
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOgunler.Size = new Size(789, 163);
             dgvOgunler.TabIndex = 7;
+            dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 
             // FRMKullaniciOgunCRUD
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(980, 630);
             Controls.Add(dgvOgunler);
