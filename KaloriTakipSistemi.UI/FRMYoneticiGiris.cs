@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,7 +30,7 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Lütfen boş alan bırakmayınız !!! ");
             }
             if (
-               _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == txtSifre.Text))
+               _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text) ))
             {
                 MessageBox.Show("Giriş Başarılı");
                 FRMYoneticiAnaMenu fRMYoneticiAnaMenu = new FRMYoneticiAnaMenu();
