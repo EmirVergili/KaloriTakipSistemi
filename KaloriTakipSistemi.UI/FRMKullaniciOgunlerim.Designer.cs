@@ -49,6 +49,7 @@
             dtpKullaniciOgunGoruntuleme.Name = "dtpKullaniciOgunGoruntuleme";
             dtpKullaniciOgunGoruntuleme.Size = new Size(250, 27);
             dtpKullaniciOgunGoruntuleme.TabIndex = 1;
+            dtpKullaniciOgunGoruntuleme.ValueChanged += dtpKullaniciOgunGoruntuleme_ValueChanged;
             // 
             // label1
             // 
@@ -69,6 +70,7 @@
             Controls.Add(dgvKullaniciOgunlerim);
             Name = "FRMKullaniciOgunlerim";
             Text = "FRMKullaniciOgunlerim";
+            Load += FRMKullaniciOgunlerim_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKullaniciOgunlerim).EndInit();
             ResumeLayout(false);
             PerformLayout();

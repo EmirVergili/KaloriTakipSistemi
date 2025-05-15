@@ -67,7 +67,7 @@ namespace KaloriTakipSistemi.UI
                 kullanici.Ad=txtAd.Text;
                 kullanici.Soyad = txtSoyad.Text;
                 kullanici.Yas = byte.Parse(txtYas.Text);
-                kullanici.Sifre = txtSifre.Text;
+                kullanici.Sifre = _context.sha256_hash(txtSifre.Text);
                 _context.SaveChanges();
                 MessageBox.Show("Bilgileriniz güncellendi.");
             }
