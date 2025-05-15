@@ -23,8 +23,7 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
 
         }
-        public string sha256_hash(string sifre) { using (SHA256 hash = SHA256Managed.Create())
-            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); } }
+       
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
@@ -35,7 +34,7 @@ namespace KaloriTakipSistemi.UI
             var YeniKullanici = new Kullanici()
             {
                 KullaniciAdi = txtKullaniciAdi.Text,
-                Sifre = sha256_hash(txtSifre.Text),
+                Sifre = _context.sha256_hash(txtSifre.Text),
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
                 Yas = Convert.ToByte(txtYas.Text)

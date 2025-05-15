@@ -39,7 +39,7 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz.");
                 return;
             }
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == sha256_hash(txtSifre.Text));
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text));
             
 
             if (kullanici!=null)
@@ -67,11 +67,7 @@ namespace KaloriTakipSistemi.UI
 
 
         }
-        public string sha256_hash(string sifre)
-        {
-            using (SHA256 hash = SHA256Managed.Create())
-            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); }
-        }
+     
 
         private void lnkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
