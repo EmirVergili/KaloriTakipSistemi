@@ -33,6 +33,10 @@ namespace KaloriTakipSistemi.UI.Context
                 new Ogun { Id =4,Ad = "Ara Öğün"}
                 );
 
+            modelBuilder.Entity<Yonetici>().HasData(
+                new Yonetici { Id = 1, YoneticiAdi = "sa", Sifre = sha256_hash("sa") }
+                );
+
             modelBuilder.Entity<Yemek>().HasData(
                 new Yemek { Id = 1, Ad = "Kahvaltı Tabağı", Kalori = 450 },
                 new Yemek { Id = 2, Ad = "Menemen", Kalori = 250 },
