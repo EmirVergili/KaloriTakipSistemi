@@ -29,7 +29,8 @@ namespace KaloriTakipSistemi.UI
         {
             if (txtSifre.Text!=txtSifreTekrar.Text)
             {
-                MessageBox.Show("Sifreler Uyuşmuyor !!!!!");
+                MessageBox.Show("Şifreler Uyuşmuyor !!!!!");
+                return;
             }
             var YeniKullanici = new Kullanici()
             {
