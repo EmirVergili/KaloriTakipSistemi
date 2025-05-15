@@ -77,7 +77,13 @@ namespace KaloriTakipSistemi.UI
 
         private void btnYemekGuncelle_Click(object sender, EventArgs e)
         {
-
+            if (!GirdiKontrolYemek()) return;
+            secilenYemek.Ad = txtYemekAdi.Text;
+            secilenYemek.Kalori = (double)(nudKalori.Value);
+            _db.SaveChanges();
+            TemizleYemek();
+            YemekDgvListele();
+            MessageBox.Show("Yemek başarıyla güncellendi.");
         }
 
         private void dgvYemekler_CellClick(object sender, DataGridViewCellEventArgs e)
