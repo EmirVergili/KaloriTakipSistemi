@@ -37,7 +37,7 @@ namespace KaloriTakipSistemi.UI
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-
+            hatakontrol();
 
             var ogunEkle = new KullaniciYemek()
             {
@@ -72,6 +72,7 @@ namespace KaloriTakipSistemi.UI
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+
             if (dgvOgunler.CurrentRow == null) return;
 
             int ogunıd = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
@@ -85,9 +86,26 @@ namespace KaloriTakipSistemi.UI
                 Listele();
             }
         }
+        public void hatakontrol()
+        {
+            if (cmbOgun.SelectedItem == null || cmbYemek.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen öğün ve yemek seçiniz.");
+                return;
+            }
+            if (nudMiktar.Value <= 0)
+            {
+                MessageBox.Show("Lütfen geçerli bir miktar giriniz.");
+                return;
+            }
+         
+        }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+            hatakontrol();
+            if (dgvOgunler.CurrentRow == null) return;
+          
             int ogunId = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
             var ogun = _context.KullaniciYemekler.Find(ogunId);
 

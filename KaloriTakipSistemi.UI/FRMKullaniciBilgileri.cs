@@ -61,21 +61,28 @@ namespace KaloriTakipSistemi.UI
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
-            if (kullanici != null)
+            try
             {
-                kullanici.Ad=txtAd.Text;
-                kullanici.Soyad = txtSoyad.Text;
-                kullanici.Yas = byte.Parse(txtYas.Text);
-                kullanici.Sifre = _context.sha256_hash(txtSifre.Text);
-                _context.SaveChanges();
-                MessageBox.Show("Bilgileriniz güncellendi.");
+                var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
+                if (kullanici != null)
+                {
+                    kullanici.Ad = txtAd.Text;
+                    kullanici.Soyad = txtSoyad.Text;
+                    kullanici.Yas = byte.Parse(txtYas.Text);
+                    kullanici.Sifre = _context.sha256_hash(txtSifre.Text);
+                    _context.SaveChanges();
+                    MessageBox.Show("Bilgileriniz güncellendi.");
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı bulunamadı.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Kullanıcı bulunamadı.");
+                MessageBox.Show("Güncelleme sırasında hata oluştu: " + ex.Message);
+
             }
-        
         }
     }
 }
