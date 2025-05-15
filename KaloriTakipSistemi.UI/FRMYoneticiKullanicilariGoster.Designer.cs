@@ -39,15 +39,17 @@
             dgvKullanicilariGoster.Name = "dgvKullanicilariGoster";
             dgvKullanicilariGoster.Size = new Size(742, 405);
             dgvKullanicilariGoster.TabIndex = 0;
+            dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
             // 
-            // FRMKullanicilariGoster
+            // FRMYoneticiKullanicilariGoster
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(dgvKullanicilariGoster);
-            Name = "FRMKullanicilariGoster";
+            Name = "FRMYoneticiKullanicilariGoster";
             Text = "FRMKullanicilariGoster";
+            Load += FRMYoneticiKullanicilariGoster_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKullanicilariGoster).EndInit();
             ResumeLayout(false);
         }
