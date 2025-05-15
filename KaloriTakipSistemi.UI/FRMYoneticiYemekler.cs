@@ -141,7 +141,12 @@ namespace KaloriTakipSistemi.UI
 
         private void btnOgunGuncelle_Click(object sender, EventArgs e)
         {
-
+            if (!GirdiKontrolOgun()) return;
+            secilenOgun.Ad = txtOgunAdi.Text;
+            _db.SaveChanges();
+            TemizleOgun();
+            OgunDgvListele();
+            MessageBox.Show("Öğün başarıyla güncellendi.");
         }
 
         private void dgvOgunler_CellClick(object sender, DataGridViewCellEventArgs e)
