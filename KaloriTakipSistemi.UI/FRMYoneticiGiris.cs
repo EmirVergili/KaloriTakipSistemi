@@ -20,22 +20,36 @@ namespace KaloriTakipSistemi.UI
         {
             _context = new MyDbContext();
             InitializeComponent();
-            
+
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text)||(string.IsNullOrWhiteSpace(txtSifre.Text)))
+            if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) || (string.IsNullOrWhiteSpace(txtSifre.Text)))
             {
                 MessageBox.Show("Lütfen boş alan bırakmayınız !!! ");
             }
             if (
-               _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text) ))
+               _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text)))
             {
                 MessageBox.Show("Giriş Başarılı");
                 FRMYoneticiAnaMenu fRMYoneticiAnaMenu = new FRMYoneticiAnaMenu();
                 fRMYoneticiAnaMenu.Show();
                 this.Hide();
+            }
+        }
+
+        private void chbGoster_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (chbGoster.Checked)
+            {
+                txtSifre.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSifre.PasswordChar = '*';
+
             }
         }
     }
