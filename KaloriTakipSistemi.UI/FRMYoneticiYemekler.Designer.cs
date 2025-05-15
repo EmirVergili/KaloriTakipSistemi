@@ -104,6 +104,7 @@
             // 
             nudKalori.Location = new Point(191, 157);
             nudKalori.Margin = new Padding(4);
+            nudKalori.Maximum = new decimal(new int[] { -1530494977, 232830, 0, 0 });
             nudKalori.Name = "nudKalori";
             nudKalori.Size = new Size(206, 34);
             nudKalori.TabIndex = 3;

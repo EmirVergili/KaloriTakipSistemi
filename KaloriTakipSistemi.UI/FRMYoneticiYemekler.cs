@@ -43,12 +43,8 @@ namespace KaloriTakipSistemi.UI
         }
         private void YemekDgvListele()
         {
-            dgvYemekler.DataSource = _db.Yemekler
-                .Select(y => new
-                {
-                    y.Ad,
-                    y.Kalori
-                }).ToList();
+            dgvYemekler.DataSource = _db.Yemekler.ToList();
+            dgvYemekler.Columns["Id"].Visible = false;
         }
         private void TemizleYemek()
         {
@@ -108,10 +104,8 @@ namespace KaloriTakipSistemi.UI
         }
         private void OgunDgvListele()
         {
-            dgvOgunler.DataSource = _db.Ogunler.Select(o => new
-            {
-                o.Ad
-            }).ToList();
+            dgvOgunler.DataSource = _db.Ogunler.ToList();
+            dgvOgunler.Columns["Id"].Visible = false;
         }
         private void TemizleOgun()
         {
