@@ -68,6 +68,13 @@ namespace KaloriTakipSistemi.UI
 
         }
 
+        public void OgunDgvListele()
+        {
+            dgvOgunler.DataSource = _db.Ogunler.Select(o => new
+            {
+                o.Ad
+            }).ToList();
+        }
         private void btnOgunEkle_Click(object sender, EventArgs e)
         {
 
