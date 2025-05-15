@@ -23,32 +23,39 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
 
         }
-       
+
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
-            if (txtSifre.Text!=txtSifreTekrar.Text)
+            try
             {
-                MessageBox.Show("Şifreler Uyuşmuyor !!!!!");
-                return;
+                if (txtSifre.Text != txtSifreTekrar.Text)
+                {
+                    MessageBox.Show("Şifreler Uyuşmuyor !!!!!");
+                    return;
+                }
+                var YeniKullanici = new Kullanici()
+                {
+                    KullaniciAdi = txtKullaniciAdi.Text,
+                    Sifre = _context.sha256_hash(txtSifre.Text),
+                    Ad = txtAd.Text,
+                    Soyad = txtSoyad.Text,
+                    Yas = Convert.ToByte(txtYas.Text)
+
+                };
+                _context.Add(YeniKullanici);
+                _context.SaveChanges();
+                MessageBox.Show("Kayıt Başarılı");
+                FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani();
+                fRMKullaniciGirisEkrani.Show();
+                this.Hide();
             }
-            var YeniKullanici = new Kullanici()
+            catch (Exception ex)
             {
-                KullaniciAdi = txtKullaniciAdi.Text,
-                Sifre = _context.sha256_hash(txtSifre.Text),
-                Ad = txtAd.Text,
-                Soyad = txtSoyad.Text,
-                Yas = Convert.ToByte(txtYas.Text)
-               
-            };
-            _context.Add(YeniKullanici);
-            _context.SaveChanges();
-            MessageBox.Show("Kayıt Başarılı");
-            FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani();
-            fRMKullaniciGirisEkrani.Show();
-            this.Hide();
+                MessageBox.Show("Kayıt Olurken Hata Oluştu: " + ex.Message);
 
 
+            }
         }
     }
 }
