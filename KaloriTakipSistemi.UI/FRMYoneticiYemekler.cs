@@ -25,6 +25,20 @@ namespace KaloriTakipSistemi.UI
         {
 
         }
+        public bool GirdiKontrolYemek()
+        {
+            if (string.IsNullOrWhiteSpace(txtYemekAdi.Text))
+            {
+                MessageBox.Show("Yemek adı boş geçilemez!");
+                return false;
+            }
+            if (nudKalori.Value == 0)
+            {
+                MessageBox.Show("Lütfen geçerli bir kalori giriniz!");
+                return false;
+            }
+            return true;
+        }
 
         private void btnYemekEkle_Click(object sender, EventArgs e)
         {
