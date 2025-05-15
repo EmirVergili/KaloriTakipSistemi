@@ -71,12 +71,6 @@ namespace KaloriTakipSistemi.UI
             dgvYoneticiOgunleri.Columns["Ad"].Width = 200;
             dgvYoneticiOgunleri.Columns["Kalori"].Width = 100;
             dgvYoneticiOgunleri.Columns["YemekTarihi"].Width = 150;
-
-
-
-
-
-
         }
 
     }

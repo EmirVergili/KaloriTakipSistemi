@@ -29,6 +29,7 @@ namespace KaloriTakipSistemi.UI
                 return;
             }
 
+
             if (kullanici != null)
             {
                 kullanici.HesapDurumu = false;
@@ -42,28 +43,7 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Kullanıcı bulunamadı. İşlem gerçekleştirilemedi.");
             }
             
-
-            DataListele();
-        }
-        private void DataListele()
-        {
-            var kullanicilar = _context.Kullanicilar.Select(k => new
-            {
-                k.Id,
-                k.KullaniciAdi,
-                k.Ad,
-                k.Soyad,
-                k.DondurmaSebebi,
-                k.Yas,
-                HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ"
-
-            }).ToList();
-            dgvDondurulanHesaplar.DataSource = kullanicilar;
         }
 
-        private void FRMHesapDondur_Load(object sender, EventArgs e)
-        {
-            DataListele();
-        }
     }
 }
