@@ -69,6 +69,7 @@
             txtSifre.Location = new Point(149, 100);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
+            txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(127, 29);
             txtSifre.TabIndex = 3;
             // 
@@ -93,6 +94,7 @@
             chbGoster.TabIndex = 6;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
+            chbGoster.CheckedChanged += chbGoster_CheckedChanged;
             // 
             // FRMYoneticiGiris
             // 
