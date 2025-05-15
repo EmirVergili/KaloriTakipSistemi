@@ -48,6 +48,12 @@ namespace KaloriTakipSistemi.UI
                     y.Kalori
                 }).ToList();
         }
+        public void TemizleYemek()
+        {
+            txtYemekAdi.Text = string.Empty;
+            nudKalori.Text = string.Empty;
+            secilenYemek = null;
+        }
         private void btnYemekEkle_Click(object sender, EventArgs e)
         {
 
@@ -74,6 +80,10 @@ namespace KaloriTakipSistemi.UI
             {
                 o.Ad
             }).ToList();
+        }
+        public void TemizleOgun()
+        {
+            txtOgunAdi.Text = string.Empty;
         }
         private void btnOgunEkle_Click(object sender, EventArgs e)
         {
