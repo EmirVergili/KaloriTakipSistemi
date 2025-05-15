@@ -26,7 +26,17 @@ namespace KaloriTakipSistemi.UI
 
         private void dtpKullaniciOgunGoruntuleme_ValueChanged(object sender, EventArgs e)
         {
-            var ogunler = _context.KullaniciYemekler.Where(k => dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date).ToList();
+            var ogunler = _context.KullaniciYemekler.Where(k =>k.KullaniciId==FRMKullaniciGirisEkrani.AktifKullaniciId && dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date)
+                .Select(o => new
+                {
+                    AdSoyad=o.Kullanici.Ad + " " + o.Kullanici.Soyad,
+                    Ogun=o.Ogun.Ad,
+                    Yemek=o.Yemek.Ad,
+                    Kalori=o.Yemek.Kalori,
+                    Tarih=o.YemekTarihi
+
+                }).ToList();
+              
             dgvKullaniciOgunlerim.DataSource = ogunler;
 
         }
