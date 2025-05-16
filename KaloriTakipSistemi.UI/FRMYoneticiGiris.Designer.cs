@@ -42,7 +42,7 @@
             lblKullaniciAdi.Location = new Point(15, 26);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(95, 21);
+            lblKullaniciAdi.Size = new Size(120, 28);
             lblKullaniciAdi.TabIndex = 0;
             lblKullaniciAdi.Text = "Kullanıcı Adı";
             // 
@@ -52,7 +52,7 @@
             lblSifre.Location = new Point(15, 100);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(42, 21);
+            lblSifre.Size = new Size(51, 28);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
@@ -61,7 +61,7 @@
             txtKullaniciAdi.Location = new Point(149, 26);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(127, 29);
+            txtKullaniciAdi.Size = new Size(127, 34);
             txtKullaniciAdi.TabIndex = 2;
             // 
             // txtSifre
@@ -70,7 +70,7 @@
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(127, 29);
+            txtSifre.Size = new Size(127, 34);
             txtSifre.TabIndex = 3;
             // 
             // btnGiris
@@ -78,7 +78,7 @@
             btnGiris.Location = new Point(149, 214);
             btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(96, 32);
+            btnGiris.Size = new Size(127, 48);
             btnGiris.TabIndex = 4;
             btnGiris.Text = "Giriş";
             btnGiris.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             chbGoster.Location = new Point(315, 104);
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
-            chbGoster.Size = new Size(129, 25);
+            chbGoster.Size = new Size(158, 32);
             chbGoster.TabIndex = 6;
             chbGoster.Text = "Şifremi Göster";
             chbGoster.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             // 
             // FRMYoneticiGiris
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 373);
             Controls.Add(chbGoster);

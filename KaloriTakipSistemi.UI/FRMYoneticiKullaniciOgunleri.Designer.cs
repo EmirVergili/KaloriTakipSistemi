@@ -39,56 +39,64 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(129, 44);
+            label1.Location = new Point(202, 83);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(33, 15);
+            label1.Size = new Size(53, 28);
             label1.TabIndex = 0;
             label1.Text = "Tarih";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(129, 97);
+            label2.Location = new Point(202, 181);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(52, 15);
+            label2.Size = new Size(85, 28);
             label2.TabIndex = 0;
             label2.Text = "Kullanici";
             // 
             // cmbKullanici
             // 
             cmbKullanici.FormattingEnabled = true;
-            cmbKullanici.Location = new Point(233, 89);
+            cmbKullanici.Location = new Point(366, 167);
+            cmbKullanici.Margin = new Padding(4, 6, 4, 6);
             cmbKullanici.Name = "cmbKullanici";
-            cmbKullanici.Size = new Size(430, 23);
+            cmbKullanici.Size = new Size(555, 36);
             cmbKullanici.TabIndex = 1;
             cmbKullanici.SelectedIndexChanged += cmbKullanici_SelectedIndexChanged;
             // 
             // dtpTarih
             // 
-            dtpTarih.Location = new Point(233, 36);
+            dtpTarih.Location = new Point(366, 67);
+            dtpTarih.Margin = new Padding(4, 6, 4, 6);
             dtpTarih.Name = "dtpTarih";
-            dtpTarih.Size = new Size(430, 23);
+            dtpTarih.Size = new Size(555, 34);
             dtpTarih.TabIndex = 2;
             dtpTarih.ValueChanged += dtpTarih_ValueChanged;
             // 
             // dgvYoneticiOgunleri
             // 
             dgvYoneticiOgunleri.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYoneticiOgunleri.Location = new Point(46, 151);
+            dgvYoneticiOgunleri.Location = new Point(73, 281);
+            dgvYoneticiOgunleri.Margin = new Padding(4, 6, 4, 6);
             dgvYoneticiOgunleri.Name = "dgvYoneticiOgunleri";
-            dgvYoneticiOgunleri.Size = new Size(683, 268);
+            dgvYoneticiOgunleri.RowHeadersWidth = 51;
+            dgvYoneticiOgunleri.Size = new Size(919, 299);
             dgvYoneticiOgunleri.TabIndex = 3;
             // 
             // FRMYoneticiKullaniciOgunleri
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1073, 640);
             Controls.Add(dgvYoneticiOgunleri);
             Controls.Add(dtpTarih);
             Controls.Add(cmbKullanici);
             Controls.Add(label2);
             Controls.Add(label1);
+            Font = new Font("Segoe UI", 12F);
+            Margin = new Padding(4, 6, 4, 6);
             Name = "FRMYoneticiKullaniciOgunleri";
             Text = "FRMYoneticiKullaniciOgunleri";
             Load += FRMYoneticiKullaniciOgunleri_Load;
