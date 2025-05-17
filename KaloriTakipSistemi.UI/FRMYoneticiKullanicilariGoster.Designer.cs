@@ -50,7 +50,9 @@
             ClientSize = new Size(1371, 690);
             Controls.Add(dgvKullanicilariGoster);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "FRMYoneticiKullanicilariGoster";
             Text = "FRMKullanicilariGoster";
             Load += FRMYoneticiKullanicilariGoster_Load;

@@ -85,8 +85,10 @@
             Controls.Add(btnKullanicilariGoster);
             Controls.Add(btnYemekler);
             Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             IsMdiContainer = true;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMYoneticiAnaMenu";
             Text = "FRMYoneticiAnaMenu";
             ResumeLayout(false);

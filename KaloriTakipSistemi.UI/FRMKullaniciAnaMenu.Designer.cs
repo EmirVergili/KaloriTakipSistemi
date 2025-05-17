@@ -111,8 +111,10 @@
             Controls.Add(btnOgunlerim);
             Controls.Add(btnKisiselBilgiler);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             IsMdiContainer = true;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMKullaniciAnaMenu";
             Text = "Kullanıcı Ana Menü";
             ResumeLayout(false);

@@ -84,7 +84,9 @@
             Controls.Add(dtpKullaniciOgunGoruntuleme);
             Controls.Add(dgvKullaniciOgunlerim);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMKullaniciOgunlerim";
             Text = "FRMKullaniciOgunlerim";
             Load += FRMKullaniciOgunlerim_Load;

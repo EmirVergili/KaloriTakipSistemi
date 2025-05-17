@@ -190,7 +190,9 @@
             Controls.Add(cmbOgun);
             Controls.Add(dtpYemekTarihi);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMKullaniciOgunCRUD";
             Text = "Öğün Ekle";
             Load += FRMKullaniciOgunCRUD_Load;

@@ -96,7 +96,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "FRMYoneticiKullaniciOgunleri";
             Text = "FRMYoneticiKullaniciOgunleri";
             Load += FRMYoneticiKullaniciOgunleri_Load;

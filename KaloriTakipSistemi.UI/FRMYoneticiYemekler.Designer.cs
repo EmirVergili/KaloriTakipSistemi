@@ -212,7 +212,9 @@
             Controls.Add(btnYemekSil);
             Controls.Add(btnYemekEkle);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMYoneticiYemekler";
             Text = "FRMYoneticiYemekler";
             Load += FRMYoneticiYemekler_Load;

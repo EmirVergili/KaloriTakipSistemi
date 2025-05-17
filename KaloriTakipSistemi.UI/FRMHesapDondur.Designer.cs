@@ -93,7 +93,9 @@
             Controls.Add(lblSifre);
             Controls.Add(lblDondurmaSebebi);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMHesapDondur";
             Text = "FRMHesapDondur";
             ResumeLayout(false);

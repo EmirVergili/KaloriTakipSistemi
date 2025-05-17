@@ -117,7 +117,9 @@
             Controls.Add(dtpBaslangicTarihi);
             Controls.Add(dtpBitisTarihi);
             Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
             Load += FRMKullaniciAzCokYedikleri_Load;
