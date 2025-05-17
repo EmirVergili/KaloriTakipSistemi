@@ -160,6 +160,7 @@
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "FRMKullaniciGirisEkrani";
+            StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
