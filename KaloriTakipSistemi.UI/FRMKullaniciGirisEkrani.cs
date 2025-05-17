@@ -53,8 +53,6 @@ namespace KaloriTakipSistemi.UI
                 }
 
                 
-                MessageBox.Show("Giriş Başarılı");
-                
                 FRMKullaniciAnaMenu kullaniciAnaMenu = new FRMKullaniciAnaMenu();
                 kullaniciAnaMenu.Show();
                 this.Hide();

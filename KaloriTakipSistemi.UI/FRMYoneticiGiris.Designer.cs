@@ -43,7 +43,7 @@
             // 
             lblKullaniciAdi.AutoSize = true;
             lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
-            lblKullaniciAdi.Location = new Point(67, 193);
+            lblKullaniciAdi.Location = new Point(67, 194);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
             lblKullaniciAdi.Size = new Size(133, 23);
@@ -84,7 +84,7 @@
             // 
             btnGiris.BackColor = Color.FromArgb(199, 234, 203);
             btnGiris.FlatStyle = FlatStyle.Popup;
-            btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnGiris.Location = new Point(168, 352);
             btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
@@ -111,6 +111,7 @@
             // 
             pictureBox1.Image = Properties.Resources.top_view_healthy_ingredients_bowls_white_background_with_blank_space_text;
             pictureBox1.Location = new Point(-358, -248);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1127, 900);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -141,7 +142,7 @@
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
             Controls.Add(pictureBox1);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "FRMYoneticiGiris";
             StartPosition = FormStartPosition.CenterScreen;

@@ -38,29 +38,29 @@
             // lblDondurmaSebebi
             // 
             lblDondurmaSebebi.AutoSize = true;
-            lblDondurmaSebebi.Location = new Point(35, 59);
+            lblDondurmaSebebi.Location = new Point(38, 48);
             lblDondurmaSebebi.Margin = new Padding(4, 0, 4, 0);
             lblDondurmaSebebi.Name = "lblDondurmaSebebi";
-            lblDondurmaSebebi.Size = new Size(171, 28);
+            lblDondurmaSebebi.Size = new Size(188, 23);
             lblDondurmaSebebi.TabIndex = 0;
             lblDondurmaSebebi.Text = "Dondurma Sebebi";
             // 
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(35, 151);
+            lblSifre.Location = new Point(38, 124);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(51, 28);
+            lblSifre.Size = new Size(48, 23);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
             // btnDondur
             // 
-            btnDondur.Location = new Point(152, 239);
-            btnDondur.Margin = new Padding(4);
+            btnDondur.Location = new Point(166, 196);
+            btnDondur.Margin = new Padding(4, 3, 4, 3);
             btnDondur.Name = "btnDondur";
-            btnDondur.Size = new Size(121, 57);
+            btnDondur.Size = new Size(132, 47);
             btnDondur.TabIndex = 2;
             btnDondur.Text = "Dondur";
             btnDondur.UseVisualStyleBackColor = true;
@@ -68,32 +68,34 @@
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(202, 151);
-            txtSifre.Margin = new Padding(4);
+            txtSifre.Location = new Point(220, 124);
+            txtSifre.Margin = new Padding(4, 3, 4, 3);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(127, 34);
+            txtSifre.Size = new Size(138, 32);
             txtSifre.TabIndex = 3;
             // 
             // txtDondurmaSebebi
             // 
-            txtDondurmaSebebi.Location = new Point(202, 55);
-            txtDondurmaSebebi.Margin = new Padding(4);
+            txtDondurmaSebebi.Location = new Point(220, 45);
+            txtDondurmaSebebi.Margin = new Padding(4, 3, 4, 3);
             txtDondurmaSebebi.Name = "txtDondurmaSebebi";
-            txtDondurmaSebebi.Size = new Size(127, 34);
+            txtDondurmaSebebi.Size = new Size(138, 32);
             txtDondurmaSebebi.TabIndex = 4;
             // 
             // FRMHesapDondur
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(701, 537);
+            ClientSize = new Size(765, 441);
             Controls.Add(txtDondurmaSebebi);
             Controls.Add(txtSifre);
             Controls.Add(btnDondur);
             Controls.Add(lblSifre);
             Controls.Add(lblDondurmaSebebi);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4);
+            Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMHesapDondur";
             Text = "FRMHesapDondur";
             ResumeLayout(false);

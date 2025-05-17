@@ -45,7 +45,7 @@ namespace KaloriTakipSistemi.UI
                 };
                 _context.Add(YeniKullanici);
                 _context.SaveChanges();
-                MessageBox.Show("Kayıt Başarılı");
+                MessageBox.Show("Kayıt başarılı! Kullanıcı adı ve şifrenizle giriş yapmanız durumunda hesabınız aktif edilecektir.");
                 FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani();
                 fRMKullaniciGirisEkrani.Show();
                 this.Hide();

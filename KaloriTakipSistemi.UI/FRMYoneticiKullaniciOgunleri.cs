@@ -42,7 +42,7 @@ namespace KaloriTakipSistemi.UI
         {
             if (cmbKullanici.SelectedItem == null)
             {
-                MessageBox.Show("Kisi Seç.");
+                MessageBox.Show("Kullanıcı seçiniz.");
                 return;
             }
 

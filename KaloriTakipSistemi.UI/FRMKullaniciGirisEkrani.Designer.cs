@@ -65,7 +65,7 @@
             // 
             btnGirisYap.BackColor = Color.FromArgb(199, 234, 203);
             btnGirisYap.FlatStyle = FlatStyle.Popup;
-            btnGirisYap.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnGirisYap.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnGirisYap.Location = new Point(168, 352);
             btnGirisYap.Margin = new Padding(4);
             btnGirisYap.Name = "btnGirisYap";

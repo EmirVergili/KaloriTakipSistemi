@@ -140,7 +140,7 @@
             // 
             btnKayitOl.BackColor = Color.FromArgb(199, 234, 203);
             btnKayitOl.FlatStyle = FlatStyle.Flat;
-            btnKayitOl.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKayitOl.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnKayitOl.Location = new Point(148, 508);
             btnKayitOl.Margin = new Padding(4);
             btnKayitOl.Name = "btnKayitOl";

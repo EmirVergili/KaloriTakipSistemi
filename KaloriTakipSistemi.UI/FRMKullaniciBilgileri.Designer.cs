@@ -45,95 +45,95 @@
             // lbl
             // 
             lbl.AutoSize = true;
-            lbl.Location = new Point(26, 43);
+            lbl.Location = new Point(28, 35);
             lbl.Margin = new Padding(4, 0, 4, 0);
             lbl.Name = "lbl";
-            lbl.Size = new Size(120, 28);
+            lbl.Size = new Size(133, 23);
             lbl.TabIndex = 0;
             lbl.Text = "Kullanıcı Adı";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(109, 106);
+            label2.Location = new Point(119, 87);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(37, 28);
+            label2.Size = new Size(39, 23);
             label2.TabIndex = 1;
             label2.Text = "Ad";
             // 
             // lblSoyad
             // 
             lblSoyad.AutoSize = true;
-            lblSoyad.Location = new Point(76, 170);
+            lblSoyad.Location = new Point(83, 140);
             lblSoyad.Margin = new Padding(4, 0, 4, 0);
             lblSoyad.Name = "lblSoyad";
-            lblSoyad.Size = new Size(70, 28);
+            lblSoyad.Size = new Size(73, 23);
             lblSoyad.TabIndex = 2;
             lblSoyad.Text = "SoyAd";
             // 
             // lblYas
             // 
             lblYas.AutoSize = true;
-            lblYas.Location = new Point(107, 251);
+            lblYas.Location = new Point(117, 206);
             lblYas.Margin = new Padding(4, 0, 4, 0);
             lblYas.Name = "lblYas";
-            lblYas.Size = new Size(39, 28);
+            lblYas.Size = new Size(45, 23);
             lblYas.TabIndex = 3;
             lblYas.Text = "Yaş";
             // 
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(95, 320);
+            lblSifre.Location = new Point(104, 263);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(51, 28);
+            lblSifre.Size = new Size(48, 23);
             lblSifre.TabIndex = 4;
             lblSifre.Text = "Şifre";
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(172, 179);
-            txtSoyad.Margin = new Padding(4);
+            txtSoyad.Location = new Point(188, 147);
+            txtSoyad.Margin = new Padding(4, 3, 4, 3);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.ReadOnly = true;
-            txtSoyad.Size = new Size(127, 34);
+            txtSoyad.Size = new Size(138, 32);
             txtSoyad.TabIndex = 6;
             // 
             // txtYas
             // 
-            txtYas.Location = new Point(172, 245);
-            txtYas.Margin = new Padding(4);
+            txtYas.Location = new Point(188, 201);
+            txtYas.Margin = new Padding(4, 3, 4, 3);
             txtYas.Name = "txtYas";
             txtYas.ReadOnly = true;
-            txtYas.Size = new Size(127, 34);
+            txtYas.Size = new Size(138, 32);
             txtYas.TabIndex = 7;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(172, 314);
-            txtSifre.Margin = new Padding(4);
+            txtSifre.Location = new Point(188, 258);
+            txtSifre.Margin = new Padding(4, 3, 4, 3);
             txtSifre.Name = "txtSifre";
             txtSifre.ReadOnly = true;
-            txtSifre.Size = new Size(127, 34);
+            txtSifre.Size = new Size(138, 32);
             txtSifre.TabIndex = 8;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(172, 106);
-            txtAd.Margin = new Padding(4);
+            txtAd.Location = new Point(188, 87);
+            txtAd.Margin = new Padding(4, 3, 4, 3);
             txtAd.Name = "txtAd";
             txtAd.ReadOnly = true;
-            txtAd.Size = new Size(127, 34);
+            txtAd.Size = new Size(138, 32);
             txtAd.TabIndex = 10;
             // 
             // btnGuncelle
             // 
-            btnGuncelle.Location = new Point(300, 384);
-            btnGuncelle.Margin = new Padding(4);
+            btnGuncelle.Location = new Point(327, 315);
+            btnGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(138, 77);
+            btnGuncelle.Size = new Size(151, 63);
             btnGuncelle.TabIndex = 12;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
@@ -142,19 +142,20 @@
             // lblKullaniciAdi
             // 
             lblKullaniciAdi.AutoSize = true;
-            lblKullaniciAdi.Location = new Point(172, 43);
+            lblKullaniciAdi.Location = new Point(188, 35);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(113, 28);
+            lblKullaniciAdi.Size = new Size(119, 23);
             lblKullaniciAdi.TabIndex = 13;
             lblKullaniciAdi.Text = "kullaniciAdi";
             // 
             // chbBilgilerimiGuncelle
             // 
             chbBilgilerimiGuncelle.AutoSize = true;
-            chbBilgilerimiGuncelle.Location = new Point(431, 43);
+            chbBilgilerimiGuncelle.Location = new Point(470, 35);
+            chbBilgilerimiGuncelle.Margin = new Padding(3, 2, 3, 2);
             chbBilgilerimiGuncelle.Name = "chbBilgilerimiGuncelle";
-            chbBilgilerimiGuncelle.Size = new Size(196, 32);
+            chbBilgilerimiGuncelle.Size = new Size(201, 27);
             chbBilgilerimiGuncelle.TabIndex = 14;
             chbBilgilerimiGuncelle.Text = "Bilgilerimi Düzenle";
             chbBilgilerimiGuncelle.UseVisualStyleBackColor = true;
@@ -162,9 +163,9 @@
             // 
             // FRMKullaniciBilgileri
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1029, 630);
+            ClientSize = new Size(1123, 518);
             Controls.Add(chbBilgilerimiGuncelle);
             Controls.Add(lblKullaniciAdi);
             Controls.Add(btnGuncelle);
@@ -177,8 +178,10 @@
             Controls.Add(lblSoyad);
             Controls.Add(label2);
             Controls.Add(lbl);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4);
+            Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMKullaniciBilgileri";
             Text = "FRMKullaniciBilgileri";
             Load += FRMKullaniciBilgileri_Load;

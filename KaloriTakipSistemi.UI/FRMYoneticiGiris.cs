@@ -32,7 +32,7 @@ namespace KaloriTakipSistemi.UI
             if (
                _context.Yoneticiler.Any(k => k.YoneticiAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text)))
             {
-                MessageBox.Show("Giriş Başarılı");
+
                 FRMYoneticiAnaMenu fRMYoneticiAnaMenu = new FRMYoneticiAnaMenu();
                 fRMYoneticiAnaMenu.Show();
                 this.Hide();

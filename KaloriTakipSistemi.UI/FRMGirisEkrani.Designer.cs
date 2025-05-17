@@ -40,7 +40,7 @@
             // 
             btnKullaniciGiris.BackColor = Color.FromArgb(199, 234, 203);
             btnKullaniciGiris.FlatStyle = FlatStyle.Popup;
-            btnKullaniciGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKullaniciGiris.Font = new Font("Century Gothic", 12F);
             btnKullaniciGiris.Location = new Point(227, 164);
             btnKullaniciGiris.Margin = new Padding(4);
             btnKullaniciGiris.Name = "btnKullaniciGiris";
@@ -54,7 +54,7 @@
             // 
             btnYoneticiGiris.BackColor = Color.FromArgb(199, 234, 203);
             btnYoneticiGiris.FlatStyle = FlatStyle.Popup;
-            btnYoneticiGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnYoneticiGiris.Font = new Font("Century Gothic", 12F);
             btnYoneticiGiris.Location = new Point(227, 245);
             btnYoneticiGiris.Margin = new Padding(4);
             btnYoneticiGiris.Name = "btnYoneticiGiris";

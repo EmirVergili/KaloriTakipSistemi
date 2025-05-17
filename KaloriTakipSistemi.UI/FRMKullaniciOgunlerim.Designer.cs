@@ -38,47 +38,55 @@
             // dgvKullaniciOgunlerim
             // 
             dgvKullaniciOgunlerim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKullaniciOgunlerim.Location = new Point(48, 181);
+            dgvKullaniciOgunlerim.Location = new Point(72, 208);
+            dgvKullaniciOgunlerim.Margin = new Padding(4, 3, 4, 3);
             dgvKullaniciOgunlerim.Name = "dgvKullaniciOgunlerim";
             dgvKullaniciOgunlerim.RowHeadersWidth = 51;
-            dgvKullaniciOgunlerim.Size = new Size(867, 344);
+            dgvKullaniciOgunlerim.Size = new Size(1300, 396);
             dgvKullaniciOgunlerim.TabIndex = 0;
             // 
             // dtpKullaniciOgunGoruntuleme
             // 
-            dtpKullaniciOgunGoruntuleme.Location = new Point(591, 103);
+            dtpKullaniciOgunGoruntuleme.Location = new Point(886, 118);
+            dtpKullaniciOgunGoruntuleme.Margin = new Padding(4, 3, 4, 3);
             dtpKullaniciOgunGoruntuleme.Name = "dtpKullaniciOgunGoruntuleme";
-            dtpKullaniciOgunGoruntuleme.Size = new Size(250, 27);
+            dtpKullaniciOgunGoruntuleme.Size = new Size(373, 32);
             dtpKullaniciOgunGoruntuleme.TabIndex = 1;
             dtpKullaniciOgunGoruntuleme.ValueChanged += dtpKullaniciOgunGoruntuleme_ValueChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(115, 108);
+            label1.Location = new Point(172, 124);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(381, 20);
+            label1.Size = new Size(533, 23);
             label1.TabIndex = 2;
             label1.Text = "Yediğiniz öğünleri görüntülemek istediğiniz günü seçiniz";
             // 
             // lblToplamkalori
             // 
             lblToplamkalori.AutoSize = true;
-            lblToplamkalori.Location = new Point(48, 29);
+            lblToplamkalori.Location = new Point(72, 33);
+            lblToplamkalori.Margin = new Padding(4, 0, 4, 0);
             lblToplamkalori.Name = "lblToplamkalori";
-            lblToplamkalori.Size = new Size(102, 20);
+            lblToplamkalori.Size = new Size(142, 23);
             lblToplamkalori.TabIndex = 3;
             lblToplamkalori.Text = "Toplam Kalori";
             // 
             // FRMKullaniciOgunlerim
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(966, 571);
+            ClientSize = new Size(1449, 657);
             Controls.Add(lblToplamkalori);
             Controls.Add(label1);
             Controls.Add(dtpKullaniciOgunGoruntuleme);
             Controls.Add(dgvKullaniciOgunlerim);
+            Font = new Font("Century Gothic", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "FRMKullaniciOgunlerim";
             Text = "FRMKullaniciOgunlerim";
             Load += FRMKullaniciOgunlerim_Load;
