@@ -43,7 +43,7 @@
             // 
             lblKullaniciAdi.AutoSize = true;
             lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
-            lblKullaniciAdi.Location = new Point(67, 193);
+            lblKullaniciAdi.Location = new Point(67, 194);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
             lblKullaniciAdi.Size = new Size(133, 23);
@@ -65,7 +65,7 @@
             // 
             txtKullaniciAdi.Font = new Font("Century Gothic", 12F);
             txtKullaniciAdi.Location = new Point(208, 187);
-            txtKullaniciAdi.Margin = new Padding(4);
+            txtKullaniciAdi.Margin = new Padding(4, 4, 4, 4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(170, 32);
             txtKullaniciAdi.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             txtSifre.Font = new Font("Century Gothic", 12F);
             txtSifre.Location = new Point(208, 233);
-            txtSifre.Margin = new Padding(4);
+            txtSifre.Margin = new Padding(4, 4, 4, 4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(170, 32);
@@ -85,8 +85,8 @@
             btnGiris.BackColor = Color.FromArgb(199, 234, 203);
             btnGiris.FlatStyle = FlatStyle.Popup;
             btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            btnGiris.Location = new Point(168, 352);
-            btnGiris.Margin = new Padding(4);
+            btnGiris.Location = new Point(208, 317);
+            btnGiris.Margin = new Padding(4, 4, 4, 4);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(158, 49);
             btnGiris.TabIndex = 4;
@@ -99,7 +99,7 @@
             chbGoster.AutoSize = true;
             chbGoster.Font = new Font("Century Gothic", 12F);
             chbGoster.Location = new Point(206, 271);
-            chbGoster.Margin = new Padding(4);
+            chbGoster.Margin = new Padding(4, 4, 4, 4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(154, 27);
             chbGoster.TabIndex = 6;
@@ -111,6 +111,7 @@
             // 
             pictureBox1.Image = Properties.Resources.top_view_healthy_ingredients_bowls_white_background_with_blank_space_text;
             pictureBox1.Location = new Point(-358, -248);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1127, 900);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -141,8 +142,8 @@
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
             Controls.Add(pictureBox1);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4);
+            Font = new Font("Segoe UI", 12F);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FRMYoneticiGiris";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

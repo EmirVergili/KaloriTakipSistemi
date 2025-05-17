@@ -35,18 +35,22 @@
             // dgvKullanicilariGoster
             // 
             dgvKullanicilariGoster.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKullanicilariGoster.Location = new Point(22, 23);
+            dgvKullanicilariGoster.Location = new Point(38, 36);
+            dgvKullanicilariGoster.Margin = new Padding(4, 5, 4, 5);
             dgvKullanicilariGoster.Name = "dgvKullanicilariGoster";
-            dgvKullanicilariGoster.Size = new Size(742, 405);
+            dgvKullanicilariGoster.RowHeadersWidth = 51;
+            dgvKullanicilariGoster.Size = new Size(1272, 621);
             dgvKullanicilariGoster.TabIndex = 0;
             dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
             // 
             // FRMYoneticiKullanicilariGoster
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1371, 690);
             Controls.Add(dgvKullanicilariGoster);
+            Font = new Font("Century Gothic", 12F);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FRMYoneticiKullanicilariGoster";
             Text = "FRMKullanicilariGoster";
             Load += FRMYoneticiKullanicilariGoster_Load;

@@ -38,9 +38,10 @@
             // 
             // btnKisiselBilgiler
             // 
-            btnKisiselBilgiler.Location = new Point(23, 382);
+            btnKisiselBilgiler.Location = new Point(25, 314);
+            btnKisiselBilgiler.Margin = new Padding(3, 2, 3, 2);
             btnKisiselBilgiler.Name = "btnKisiselBilgiler";
-            btnKisiselBilgiler.Size = new Size(186, 77);
+            btnKisiselBilgiler.Size = new Size(203, 63);
             btnKisiselBilgiler.TabIndex = 0;
             btnKisiselBilgiler.Text = "Kişisel Bilgiler";
             btnKisiselBilgiler.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // btnOgunEkle
             // 
-            btnOgunEkle.Location = new Point(23, 257);
+            btnOgunEkle.Location = new Point(25, 211);
+            btnOgunEkle.Margin = new Padding(3, 2, 3, 2);
             btnOgunEkle.Name = "btnOgunEkle";
-            btnOgunEkle.Size = new Size(186, 77);
+            btnOgunEkle.Size = new Size(203, 63);
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Öğün Ekle";
             btnOgunEkle.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // btnOgunlerim
             // 
-            btnOgunlerim.Location = new Point(23, 50);
+            btnOgunlerim.Location = new Point(25, 41);
+            btnOgunlerim.Margin = new Padding(3, 2, 3, 2);
             btnOgunlerim.Name = "btnOgunlerim";
-            btnOgunlerim.Size = new Size(186, 77);
+            btnOgunlerim.Size = new Size(203, 63);
             btnOgunlerim.TabIndex = 0;
             btnOgunlerim.Text = "Öğünlerim";
             btnOgunlerim.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // 
             // btnHesapDondur
             // 
-            btnHesapDondur.Location = new Point(23, 501);
+            btnHesapDondur.Location = new Point(25, 412);
+            btnHesapDondur.Margin = new Padding(3, 2, 3, 2);
             btnHesapDondur.Name = "btnHesapDondur";
-            btnHesapDondur.Size = new Size(186, 77);
+            btnHesapDondur.Size = new Size(203, 63);
             btnHesapDondur.TabIndex = 0;
             btnHesapDondur.Text = "Hesap Dondur";
             btnHesapDondur.UseVisualStyleBackColor = true;
@@ -78,9 +82,10 @@
             // 
             // btnEnCokAzYediklerim
             // 
-            btnEnCokAzYediklerim.Location = new Point(23, 153);
+            btnEnCokAzYediklerim.Location = new Point(25, 126);
+            btnEnCokAzYediklerim.Margin = new Padding(3, 2, 3, 2);
             btnEnCokAzYediklerim.Name = "btnEnCokAzYediklerim";
-            btnEnCokAzYediklerim.Size = new Size(186, 77);
+            btnEnCokAzYediklerim.Size = new Size(203, 63);
             btnEnCokAzYediklerim.TabIndex = 0;
             btnEnCokAzYediklerim.Text = "En Çok/Az Yediklerim";
             btnEnCokAzYediklerim.UseVisualStyleBackColor = true;
@@ -88,25 +93,26 @@
             // 
             // pnlKullaniciAnaMenuIcerik
             // 
-            pnlKullaniciAnaMenuIcerik.Location = new Point(245, 12);
+            pnlKullaniciAnaMenuIcerik.Location = new Point(267, 10);
+            pnlKullaniciAnaMenuIcerik.Margin = new Padding(3, 2, 3, 2);
             pnlKullaniciAnaMenuIcerik.Name = "pnlKullaniciAnaMenuIcerik";
-            pnlKullaniciAnaMenuIcerik.Size = new Size(1270, 719);
+            pnlKullaniciAnaMenuIcerik.Size = new Size(1385, 591);
             pnlKullaniciAnaMenuIcerik.TabIndex = 1;
             // 
             // FRMKullaniciAnaMenu
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1527, 743);
+            ClientSize = new Size(1666, 610);
             Controls.Add(pnlKullaniciAnaMenuIcerik);
             Controls.Add(btnEnCokAzYediklerim);
             Controls.Add(btnHesapDondur);
             Controls.Add(btnOgunEkle);
             Controls.Add(btnOgunlerim);
             Controls.Add(btnKisiselBilgiler);
-            Font = new Font("Segoe UI", 12F);
+            Font = new Font("Century Gothic", 12F);
             IsMdiContainer = true;
-            Margin = new Padding(4);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "FRMKullaniciAnaMenu";
             Text = "Kullanıcı Ana Menü";
             ResumeLayout(false);

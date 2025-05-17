@@ -39,59 +39,66 @@
             // 
             // dtpBitisTarihi
             // 
-            dtpBitisTarihi.Location = new Point(331, 16);
+            dtpBitisTarihi.Location = new Point(567, 24);
+            dtpBitisTarihi.Margin = new Padding(4, 5, 4, 5);
             dtpBitisTarihi.Name = "dtpBitisTarihi";
-            dtpBitisTarihi.Size = new Size(200, 23);
+            dtpBitisTarihi.Size = new Size(340, 32);
             dtpBitisTarihi.TabIndex = 0;
             // 
             // dtpBaslangicTarihi
             // 
-            dtpBaslangicTarihi.Location = new Point(81, 12);
+            dtpBaslangicTarihi.Location = new Point(140, 18);
+            dtpBaslangicTarihi.Margin = new Padding(4, 5, 4, 5);
             dtpBaslangicTarihi.Name = "dtpBaslangicTarihi";
-            dtpBaslangicTarihi.Size = new Size(200, 23);
+            dtpBaslangicTarihi.Size = new Size(340, 32);
             dtpBaslangicTarihi.TabIndex = 1;
             // 
             // lblAzYediklerim
             // 
             lblAzYediklerim.AutoSize = true;
-            lblAzYediklerim.Location = new Point(81, 49);
+            lblAzYediklerim.Location = new Point(140, 75);
+            lblAzYediklerim.Margin = new Padding(4, 0, 4, 0);
             lblAzYediklerim.Name = "lblAzYediklerim";
-            lblAzYediklerim.Size = new Size(120, 15);
+            lblAzYediklerim.Size = new Size(221, 23);
             lblAzYediklerim.TabIndex = 2;
             lblAzYediklerim.Text = "En Az Yediğim Yemek";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(81, 93);
+            label2.Location = new Point(140, 143);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(128, 15);
+            label2.Size = new Size(236, 23);
             label2.TabIndex = 3;
             label2.Text = "En Çok Yediğim Yemek";
             // 
             // lblEnAzYedigimYemek
             // 
             lblEnAzYedigimYemek.AutoSize = true;
-            lblEnAzYedigimYemek.Location = new Point(363, 49);
+            lblEnAzYedigimYemek.Location = new Point(622, 75);
+            lblEnAzYedigimYemek.Margin = new Padding(4, 0, 4, 0);
             lblEnAzYedigimYemek.Name = "lblEnAzYedigimYemek";
-            lblEnAzYedigimYemek.Size = new Size(38, 15);
+            lblEnAzYedigimYemek.Size = new Size(72, 23);
             lblEnAzYedigimYemek.TabIndex = 4;
             lblEnAzYedigimYemek.Text = "label3";
             // 
             // lblEnCokYedigimYemek
             // 
             lblEnCokYedigimYemek.AutoSize = true;
-            lblEnCokYedigimYemek.Location = new Point(363, 93);
+            lblEnCokYedigimYemek.Location = new Point(622, 143);
+            lblEnCokYedigimYemek.Margin = new Padding(4, 0, 4, 0);
             lblEnCokYedigimYemek.Name = "lblEnCokYedigimYemek";
-            lblEnCokYedigimYemek.Size = new Size(38, 15);
+            lblEnCokYedigimYemek.Size = new Size(72, 23);
             lblEnCokYedigimYemek.TabIndex = 5;
             lblEnCokYedigimYemek.Text = "label4";
             // 
             // btnGoster
             // 
-            btnGoster.Location = new Point(601, 12);
+            btnGoster.Location = new Point(1030, 18);
+            btnGoster.Margin = new Padding(4, 5, 4, 5);
             btnGoster.Name = "btnGoster";
-            btnGoster.Size = new Size(101, 38);
+            btnGoster.Size = new Size(172, 59);
             btnGoster.TabIndex = 6;
             btnGoster.Text = "Göster";
             btnGoster.UseVisualStyleBackColor = true;
@@ -99,9 +106,9 @@
             // 
             // FRMKullaniciAzCokYedikleri
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1371, 690);
             Controls.Add(btnGoster);
             Controls.Add(lblEnCokYedigimYemek);
             Controls.Add(lblEnAzYedigimYemek);
@@ -109,6 +116,8 @@
             Controls.Add(lblAzYediklerim);
             Controls.Add(dtpBaslangicTarihi);
             Controls.Add(dtpBitisTarihi);
+            Font = new Font("Century Gothic", 12F);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
             Load += FRMKullaniciAzCokYedikleri_Load;

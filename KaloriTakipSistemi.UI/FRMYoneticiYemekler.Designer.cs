@@ -49,10 +49,10 @@
             // 
             // btnYemekEkle
             // 
-            btnYemekEkle.Location = new Point(68, 243);
-            btnYemekEkle.Margin = new Padding(4);
+            btnYemekEkle.Location = new Point(74, 200);
+            btnYemekEkle.Margin = new Padding(4, 3, 4, 3);
             btnYemekEkle.Name = "btnYemekEkle";
-            btnYemekEkle.Size = new Size(129, 41);
+            btnYemekEkle.Size = new Size(141, 34);
             btnYemekEkle.TabIndex = 0;
             btnYemekEkle.Text = "Ekle";
             btnYemekEkle.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // 
             // btnYemekSil
             // 
-            btnYemekSil.Location = new Point(206, 243);
-            btnYemekSil.Margin = new Padding(4);
+            btnYemekSil.Location = new Point(225, 200);
+            btnYemekSil.Margin = new Padding(4, 3, 4, 3);
             btnYemekSil.Name = "btnYemekSil";
-            btnYemekSil.Size = new Size(129, 41);
+            btnYemekSil.Size = new Size(141, 34);
             btnYemekSil.TabIndex = 0;
             btnYemekSil.Text = "Sil";
             btnYemekSil.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // 
             // btnYemekGuncelle
             // 
-            btnYemekGuncelle.Location = new Point(343, 243);
-            btnYemekGuncelle.Margin = new Padding(4);
+            btnYemekGuncelle.Location = new Point(374, 200);
+            btnYemekGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnYemekGuncelle.Name = "btnYemekGuncelle";
-            btnYemekGuncelle.Size = new Size(129, 41);
+            btnYemekGuncelle.Size = new Size(141, 34);
             btnYemekGuncelle.TabIndex = 0;
             btnYemekGuncelle.Text = "Guncelle";
             btnYemekGuncelle.UseVisualStyleBackColor = true;
@@ -83,58 +83,58 @@
             // dgvYemekler
             // 
             dgvYemekler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYemekler.Location = new Point(20, 320);
-            dgvYemekler.Margin = new Padding(4);
+            dgvYemekler.Location = new Point(22, 263);
+            dgvYemekler.Margin = new Padding(4, 3, 4, 3);
             dgvYemekler.Name = "dgvYemekler";
             dgvYemekler.RowHeadersWidth = 51;
             dgvYemekler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvYemekler.Size = new Size(477, 263);
+            dgvYemekler.Size = new Size(520, 216);
             dgvYemekler.TabIndex = 1;
             dgvYemekler.CellClick += dgvYemekler_CellClick;
             // 
             // txtYemekAdi
             // 
-            txtYemekAdi.Location = new Point(191, 111);
-            txtYemekAdi.Margin = new Padding(4);
+            txtYemekAdi.Location = new Point(208, 91);
+            txtYemekAdi.Margin = new Padding(4, 3, 4, 3);
             txtYemekAdi.Name = "txtYemekAdi";
-            txtYemekAdi.Size = new Size(208, 34);
+            txtYemekAdi.Size = new Size(227, 32);
             txtYemekAdi.TabIndex = 2;
             // 
             // nudKalori
             // 
-            nudKalori.Location = new Point(191, 157);
-            nudKalori.Margin = new Padding(4);
+            nudKalori.Location = new Point(208, 129);
+            nudKalori.Margin = new Padding(4, 3, 4, 3);
             nudKalori.Maximum = new decimal(new int[] { -1530494977, 232830, 0, 0 });
             nudKalori.Name = "nudKalori";
-            nudKalori.Size = new Size(206, 34);
+            nudKalori.Size = new Size(225, 32);
             nudKalori.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 159);
+            label1.Location = new Point(74, 131);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(63, 28);
+            label1.Size = new Size(63, 23);
             label1.TabIndex = 4;
             label1.Text = "Kalori";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(68, 114);
+            label2.Location = new Point(74, 94);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(103, 28);
+            label2.Size = new Size(118, 23);
             label2.TabIndex = 5;
             label2.Text = "Yemek Adı";
             // 
             // btnOgunEkle
             // 
-            btnOgunEkle.Location = new Point(610, 243);
-            btnOgunEkle.Margin = new Padding(4);
+            btnOgunEkle.Location = new Point(665, 200);
+            btnOgunEkle.Margin = new Padding(4, 3, 4, 3);
             btnOgunEkle.Name = "btnOgunEkle";
-            btnOgunEkle.Size = new Size(129, 41);
+            btnOgunEkle.Size = new Size(141, 34);
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Ekle";
             btnOgunEkle.UseVisualStyleBackColor = true;
@@ -142,10 +142,10 @@
             // 
             // btnOgunSil
             // 
-            btnOgunSil.Location = new Point(748, 243);
-            btnOgunSil.Margin = new Padding(4);
+            btnOgunSil.Location = new Point(816, 200);
+            btnOgunSil.Margin = new Padding(4, 3, 4, 3);
             btnOgunSil.Name = "btnOgunSil";
-            btnOgunSil.Size = new Size(129, 41);
+            btnOgunSil.Size = new Size(141, 34);
             btnOgunSil.TabIndex = 0;
             btnOgunSil.Text = "Sil";
             btnOgunSil.UseVisualStyleBackColor = true;
@@ -153,10 +153,10 @@
             // 
             // btnOgunGuncelle
             // 
-            btnOgunGuncelle.Location = new Point(885, 243);
-            btnOgunGuncelle.Margin = new Padding(4);
+            btnOgunGuncelle.Location = new Point(965, 200);
+            btnOgunGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnOgunGuncelle.Name = "btnOgunGuncelle";
-            btnOgunGuncelle.Size = new Size(129, 41);
+            btnOgunGuncelle.Size = new Size(141, 34);
             btnOgunGuncelle.TabIndex = 0;
             btnOgunGuncelle.Text = "Guncelle";
             btnOgunGuncelle.UseVisualStyleBackColor = true;
@@ -165,38 +165,38 @@
             // dgvOgunler
             // 
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOgunler.Location = new Point(582, 320);
-            dgvOgunler.Margin = new Padding(4);
+            dgvOgunler.Location = new Point(635, 263);
+            dgvOgunler.Margin = new Padding(4, 3, 4, 3);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvOgunler.Size = new Size(452, 263);
+            dgvOgunler.Size = new Size(493, 216);
             dgvOgunler.TabIndex = 1;
             dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 
             // txtOgunAdi
             // 
-            txtOgunAdi.Location = new Point(768, 176);
-            txtOgunAdi.Margin = new Padding(4);
+            txtOgunAdi.Location = new Point(838, 145);
+            txtOgunAdi.Margin = new Padding(4, 3, 4, 3);
             txtOgunAdi.Name = "txtOgunAdi";
-            txtOgunAdi.Size = new Size(208, 34);
+            txtOgunAdi.Size = new Size(227, 32);
             txtOgunAdi.TabIndex = 2;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(652, 179);
+            label4.Location = new Point(711, 147);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(96, 28);
+            label4.Size = new Size(104, 23);
             label4.TabIndex = 5;
             label4.Text = "Öğün Adı";
             // 
             // FRMYoneticiYemekler
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1100, 630);
+            ClientSize = new Size(1200, 518);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -211,8 +211,8 @@
             Controls.Add(btnOgunEkle);
             Controls.Add(btnYemekSil);
             Controls.Add(btnYemekEkle);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            Margin = new Padding(4);
+            Font = new Font("Century Gothic", 12F);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "FRMYoneticiYemekler";
             Text = "FRMYoneticiYemekler";
             Load += FRMYoneticiYemekler_Load;
