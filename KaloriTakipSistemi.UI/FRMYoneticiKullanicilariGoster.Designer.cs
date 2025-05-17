@@ -35,11 +35,11 @@
             // dgvKullanicilariGoster
             // 
             dgvKullanicilariGoster.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKullanicilariGoster.Location = new Point(38, 36);
+            dgvKullanicilariGoster.Location = new Point(13, 14);
             dgvKullanicilariGoster.Margin = new Padding(4, 5, 4, 5);
             dgvKullanicilariGoster.Name = "dgvKullanicilariGoster";
             dgvKullanicilariGoster.RowHeadersWidth = 51;
-            dgvKullanicilariGoster.Size = new Size(1272, 621);
+            dgvKullanicilariGoster.Size = new Size(1071, 570);
             dgvKullanicilariGoster.TabIndex = 0;
             dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
             // 
@@ -47,7 +47,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 690);
+            ClientSize = new Size(1097, 598);
             Controls.Add(dgvKullanicilariGoster);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;

@@ -42,6 +42,7 @@
             dgvOgunler = new DataGridView();
             txtOgunAdi = new TextBox();
             label4 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvYemekler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudKalori).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).BeginInit();
@@ -49,10 +50,10 @@
             // 
             // btnYemekEkle
             // 
-            btnYemekEkle.Location = new Point(74, 200);
+            btnYemekEkle.Location = new Point(79, 259);
             btnYemekEkle.Margin = new Padding(4, 3, 4, 3);
             btnYemekEkle.Name = "btnYemekEkle";
-            btnYemekEkle.Size = new Size(141, 34);
+            btnYemekEkle.Size = new Size(141, 46);
             btnYemekEkle.TabIndex = 0;
             btnYemekEkle.Text = "Ekle";
             btnYemekEkle.UseVisualStyleBackColor = true;
@@ -60,10 +61,10 @@
             // 
             // btnYemekSil
             // 
-            btnYemekSil.Location = new Point(225, 200);
+            btnYemekSil.Location = new Point(230, 259);
             btnYemekSil.Margin = new Padding(4, 3, 4, 3);
             btnYemekSil.Name = "btnYemekSil";
-            btnYemekSil.Size = new Size(141, 34);
+            btnYemekSil.Size = new Size(141, 46);
             btnYemekSil.TabIndex = 0;
             btnYemekSil.Text = "Sil";
             btnYemekSil.UseVisualStyleBackColor = true;
@@ -71,19 +72,19 @@
             // 
             // btnYemekGuncelle
             // 
-            btnYemekGuncelle.Location = new Point(374, 200);
+            btnYemekGuncelle.Location = new Point(379, 259);
             btnYemekGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnYemekGuncelle.Name = "btnYemekGuncelle";
-            btnYemekGuncelle.Size = new Size(141, 34);
+            btnYemekGuncelle.Size = new Size(141, 46);
             btnYemekGuncelle.TabIndex = 0;
-            btnYemekGuncelle.Text = "Guncelle";
+            btnYemekGuncelle.Text = "Güncelle";
             btnYemekGuncelle.UseVisualStyleBackColor = true;
             btnYemekGuncelle.Click += btnYemekGuncelle_Click;
             // 
             // dgvYemekler
             // 
             dgvYemekler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYemekler.Location = new Point(22, 263);
+            dgvYemekler.Location = new Point(27, 328);
             dgvYemekler.Margin = new Padding(4, 3, 4, 3);
             dgvYemekler.Name = "dgvYemekler";
             dgvYemekler.RowHeadersWidth = 51;
@@ -94,7 +95,7 @@
             // 
             // txtYemekAdi
             // 
-            txtYemekAdi.Location = new Point(208, 91);
+            txtYemekAdi.Location = new Point(230, 135);
             txtYemekAdi.Margin = new Padding(4, 3, 4, 3);
             txtYemekAdi.Name = "txtYemekAdi";
             txtYemekAdi.Size = new Size(227, 32);
@@ -102,7 +103,7 @@
             // 
             // nudKalori
             // 
-            nudKalori.Location = new Point(208, 129);
+            nudKalori.Location = new Point(230, 173);
             nudKalori.Margin = new Padding(4, 3, 4, 3);
             nudKalori.Maximum = new decimal(new int[] { -1530494977, 232830, 0, 0 });
             nudKalori.Name = "nudKalori";
@@ -112,7 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(74, 131);
+            label1.Location = new Point(96, 175);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(63, 23);
@@ -122,7 +123,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(74, 94);
+            label2.Location = new Point(96, 138);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(118, 23);
@@ -131,10 +132,10 @@
             // 
             // btnOgunEkle
             // 
-            btnOgunEkle.Location = new Point(665, 200);
+            btnOgunEkle.Location = new Point(604, 259);
             btnOgunEkle.Margin = new Padding(4, 3, 4, 3);
             btnOgunEkle.Name = "btnOgunEkle";
-            btnOgunEkle.Size = new Size(141, 34);
+            btnOgunEkle.Size = new Size(141, 46);
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Ekle";
             btnOgunEkle.UseVisualStyleBackColor = true;
@@ -142,10 +143,10 @@
             // 
             // btnOgunSil
             // 
-            btnOgunSil.Location = new Point(816, 200);
+            btnOgunSil.Location = new Point(755, 259);
             btnOgunSil.Margin = new Padding(4, 3, 4, 3);
             btnOgunSil.Name = "btnOgunSil";
-            btnOgunSil.Size = new Size(141, 34);
+            btnOgunSil.Size = new Size(141, 46);
             btnOgunSil.TabIndex = 0;
             btnOgunSil.Text = "Sil";
             btnOgunSil.UseVisualStyleBackColor = true;
@@ -153,19 +154,19 @@
             // 
             // btnOgunGuncelle
             // 
-            btnOgunGuncelle.Location = new Point(965, 200);
+            btnOgunGuncelle.Location = new Point(904, 259);
             btnOgunGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnOgunGuncelle.Name = "btnOgunGuncelle";
-            btnOgunGuncelle.Size = new Size(141, 34);
+            btnOgunGuncelle.Size = new Size(141, 46);
             btnOgunGuncelle.TabIndex = 0;
-            btnOgunGuncelle.Text = "Guncelle";
+            btnOgunGuncelle.Text = "Güncelle";
             btnOgunGuncelle.UseVisualStyleBackColor = true;
             btnOgunGuncelle.Click += btnOgunGuncelle_Click;
             // 
             // dgvOgunler
             // 
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOgunler.Location = new Point(635, 263);
+            dgvOgunler.Location = new Point(574, 328);
             dgvOgunler.Margin = new Padding(4, 3, 4, 3);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
@@ -176,7 +177,7 @@
             // 
             // txtOgunAdi
             // 
-            txtOgunAdi.Location = new Point(838, 145);
+            txtOgunAdi.Location = new Point(764, 154);
             txtOgunAdi.Margin = new Padding(4, 3, 4, 3);
             txtOgunAdi.Name = "txtOgunAdi";
             txtOgunAdi.Size = new Size(227, 32);
@@ -185,20 +186,31 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(711, 147);
+            label4.Location = new Point(647, 157);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(104, 23);
             label4.TabIndex = 5;
             label4.Text = "Öğün Adı";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(230, 208);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(152, 23);
+            label3.TabIndex = 4;
+            label3.Text = "(100 gram için)";
+            // 
             // FRMYoneticiYemekler
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 518);
+            ClientSize = new Size(1097, 598);
             Controls.Add(label4);
             Controls.Add(label2);
+            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(nudKalori);
             Controls.Add(txtOgunAdi);
@@ -241,5 +253,6 @@
         private DataGridView dgvOgunler;
         private TextBox txtOgunAdi;
         private Label label4;
+        private Label label3;
     }
 }

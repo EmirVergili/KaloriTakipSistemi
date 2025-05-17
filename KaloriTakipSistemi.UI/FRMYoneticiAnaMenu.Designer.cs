@@ -36,7 +36,7 @@
             // 
             // btnYemekler
             // 
-            btnYemekler.Location = new Point(16, 49);
+            btnYemekler.Location = new Point(74, 192);
             btnYemekler.Margin = new Padding(4, 3, 4, 3);
             btnYemekler.Name = "btnYemekler";
             btnYemekler.Size = new Size(190, 39);
@@ -47,7 +47,7 @@
             // 
             // btnKullanicilariGoster
             // 
-            btnKullanicilariGoster.Location = new Point(16, 109);
+            btnKullanicilariGoster.Location = new Point(74, 278);
             btnKullanicilariGoster.Margin = new Padding(4, 3, 4, 3);
             btnKullanicilariGoster.Name = "btnKullanicilariGoster";
             btnKullanicilariGoster.Size = new Size(220, 67);
@@ -58,7 +58,7 @@
             // 
             // btnKullaniciOgunleri
             // 
-            btnKullaniciOgunleri.Location = new Point(5, 196);
+            btnKullaniciOgunleri.Location = new Point(74, 392);
             btnKullaniciOgunleri.Margin = new Padding(4, 3, 4, 3);
             btnKullaniciOgunleri.Name = "btnKullaniciOgunleri";
             btnKullaniciOgunleri.Size = new Size(201, 61);
@@ -72,18 +72,18 @@
             pnlYoneticiAnamenuIcerik.Location = new Point(305, 2);
             pnlYoneticiAnamenuIcerik.Margin = new Padding(4, 3, 4, 3);
             pnlYoneticiAnamenuIcerik.Name = "pnlYoneticiAnamenuIcerik";
-            pnlYoneticiAnamenuIcerik.Size = new Size(1031, 588);
+            pnlYoneticiAnamenuIcerik.Size = new Size(790, 593);
             pnlYoneticiAnamenuIcerik.TabIndex = 3;
             // 
             // FRMYoneticiAnaMenu
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1351, 601);
+            ClientSize = new Size(1111, 601);
+            Controls.Add(btnYemekler);
             Controls.Add(pnlYoneticiAnamenuIcerik);
             Controls.Add(btnKullaniciOgunleri);
             Controls.Add(btnKullanicilariGoster);
-            Controls.Add(btnYemekler);
             Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             IsMdiContainer = true;
