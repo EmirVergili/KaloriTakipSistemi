@@ -34,83 +34,117 @@
             txtSifre = new TextBox();
             btnGiris = new Button();
             chbGoster = new CheckBox();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblKullaniciAdi
             // 
             lblKullaniciAdi.AutoSize = true;
-            lblKullaniciAdi.Location = new Point(15, 26);
+            lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
+            lblKullaniciAdi.Location = new Point(48, 180);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(120, 28);
+            lblKullaniciAdi.Size = new Size(133, 23);
             lblKullaniciAdi.TabIndex = 0;
             lblKullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(15, 100);
+            lblSifre.Font = new Font("Century Gothic", 12F);
+            lblSifre.Location = new Point(133, 229);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(51, 28);
+            lblSifre.Size = new Size(48, 23);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(149, 26);
+            txtKullaniciAdi.Font = new Font("Century Gothic", 12F);
+            txtKullaniciAdi.Location = new Point(206, 177);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(127, 34);
+            txtKullaniciAdi.Size = new Size(170, 32);
             txtKullaniciAdi.TabIndex = 2;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(149, 100);
+            txtSifre.Font = new Font("Century Gothic", 12F);
+            txtSifre.Location = new Point(206, 226);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(127, 34);
+            txtSifre.Size = new Size(170, 32);
             txtSifre.TabIndex = 3;
             // 
             // btnGiris
             // 
-            btnGiris.Location = new Point(149, 214);
+            btnGiris.BackColor = Color.FromArgb(199, 234, 203);
+            btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnGiris.Location = new Point(172, 337);
             btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(127, 48);
+            btnGiris.Size = new Size(156, 48);
             btnGiris.TabIndex = 4;
-            btnGiris.Text = "Giriş";
-            btnGiris.UseVisualStyleBackColor = true;
+            btnGiris.Text = "Giriş Yap";
+            btnGiris.UseVisualStyleBackColor = false;
             btnGiris.Click += btnGiris_Click;
             // 
             // chbGoster
             // 
             chbGoster.AutoSize = true;
-            chbGoster.Location = new Point(315, 104);
+            chbGoster.Font = new Font("Century Gothic", 12F);
+            chbGoster.Location = new Point(206, 271);
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
-            chbGoster.Size = new Size(158, 32);
+            chbGoster.Size = new Size(154, 27);
             chbGoster.TabIndex = 6;
-            chbGoster.Text = "Şifremi Göster";
+            chbGoster.Text = "Şifreyi Göster";
             chbGoster.UseVisualStyleBackColor = true;
             chbGoster.CheckedChanged += chbGoster_CheckedChanged;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.top_view_healthy_ingredients_bowls_white_background_with_blank_space_text;
+            pictureBox1.Location = new Point(-282, -227);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1032, 822);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label2.Location = new Point(133, 94);
+            label2.Name = "label2";
+            label2.Size = new Size(204, 37);
+            label2.TabIndex = 18;
+            label2.Text = "Yönetici Giriş";
             // 
             // FRMYoneticiGiris
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 373);
+            ClientSize = new Size(504, 475);
+            Controls.Add(label2);
             Controls.Add(chbGoster);
             Controls.Add(btnGiris);
             Controls.Add(txtSifre);
             Controls.Add(txtKullaniciAdi);
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
+            Controls.Add(pictureBox1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             Margin = new Padding(4);
             Name = "FRMYoneticiGiris";
             Text = "Yönetici Giriş";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,5 +157,7 @@
         private TextBox txtSifre;
         private Button btnGiris;
         private CheckBox chbGoster;
+        private PictureBox pictureBox1;
+        private Label label2;
     }
 }
