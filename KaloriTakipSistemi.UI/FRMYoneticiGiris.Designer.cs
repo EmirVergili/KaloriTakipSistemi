@@ -83,6 +83,7 @@
             // btnGiris
             // 
             btnGiris.BackColor = Color.FromArgb(199, 234, 203);
+            btnGiris.FlatStyle = FlatStyle.Popup;
             btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnGiris.Location = new Point(172, 337);
             btnGiris.Margin = new Padding(4);
@@ -143,7 +144,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             Margin = new Padding(4);
             Name = "FRMYoneticiGiris";
-            Text = "Yönetici Giriş";
+            StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
