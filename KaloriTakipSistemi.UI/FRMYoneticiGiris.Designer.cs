@@ -43,7 +43,7 @@
             // 
             lblKullaniciAdi.AutoSize = true;
             lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
-            lblKullaniciAdi.Location = new Point(48, 180);
+            lblKullaniciAdi.Location = new Point(67, 193);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
             lblKullaniciAdi.Size = new Size(133, 23);
@@ -54,7 +54,7 @@
             // 
             lblSifre.AutoSize = true;
             lblSifre.Font = new Font("Century Gothic", 12F);
-            lblSifre.Location = new Point(133, 229);
+            lblSifre.Location = new Point(67, 236);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
             lblSifre.Size = new Size(48, 23);
@@ -64,7 +64,7 @@
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.Font = new Font("Century Gothic", 12F);
-            txtKullaniciAdi.Location = new Point(206, 177);
+            txtKullaniciAdi.Location = new Point(208, 187);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(170, 32);
@@ -73,7 +73,7 @@
             // txtSifre
             // 
             txtSifre.Font = new Font("Century Gothic", 12F);
-            txtSifre.Location = new Point(206, 226);
+            txtSifre.Location = new Point(208, 233);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
@@ -85,10 +85,10 @@
             btnGiris.BackColor = Color.FromArgb(199, 234, 203);
             btnGiris.FlatStyle = FlatStyle.Popup;
             btnGiris.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            btnGiris.Location = new Point(172, 337);
+            btnGiris.Location = new Point(168, 352);
             btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(156, 48);
+            btnGiris.Size = new Size(158, 49);
             btnGiris.TabIndex = 4;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.top_view_healthy_ingredients_bowls_white_background_with_blank_space_text;
-            pictureBox1.Location = new Point(-282, -227);
+            pictureBox1.Location = new Point(-358, -248);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1032, 822);
+            pictureBox1.Size = new Size(1127, 900);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -122,7 +122,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label2.Location = new Point(133, 94);
+            label2.Location = new Point(146, 112);
             label2.Name = "label2";
             label2.Size = new Size(204, 37);
             label2.TabIndex = 18;

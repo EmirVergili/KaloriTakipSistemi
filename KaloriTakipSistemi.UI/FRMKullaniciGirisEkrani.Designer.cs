@@ -79,7 +79,7 @@
             // 
             chbGoster.AutoSize = true;
             chbGoster.Font = new Font("Century Gothic", 12F);
-            chbGoster.Location = new Point(208, 267);
+            chbGoster.Location = new Point(206, 271);
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(154, 27);
