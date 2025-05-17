@@ -41,130 +41,182 @@
             lblSoyad = new Label();
             lblYas = new Label();
             txtYas = new TextBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblKullaniciAdi
             // 
             lblKullaniciAdi.AutoSize = true;
-            lblKullaniciAdi.Location = new Point(22, 65);
+            lblKullaniciAdi.BackColor = Color.FromArgb(250, 250, 248);
+            lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
+            lblKullaniciAdi.Location = new Point(94, 321);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(95, 21);
+            lblKullaniciAdi.Size = new Size(133, 23);
             lblKullaniciAdi.TabIndex = 0;
             lblKullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(22, 117);
+            lblSifre.BackColor = Color.FromArgb(250, 250, 248);
+            lblSifre.Font = new Font("Century Gothic", 12F);
+            lblSifre.Location = new Point(94, 375);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(42, 21);
+            lblSifre.Size = new Size(48, 23);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
             // lblSifreTekrar
             // 
             lblSifreTekrar.AutoSize = true;
-            lblSifreTekrar.Location = new Point(21, 164);
+            lblSifreTekrar.BackColor = Color.FromArgb(250, 250, 248);
+            lblSifreTekrar.Font = new Font("Century Gothic", 12F);
+            lblSifreTekrar.Location = new Point(94, 429);
             lblSifreTekrar.Margin = new Padding(4, 0, 4, 0);
             lblSifreTekrar.Name = "lblSifreTekrar";
-            lblSifreTekrar.Size = new Size(88, 21);
+            lblSifreTekrar.Size = new Size(125, 23);
             lblSifreTekrar.TabIndex = 2;
-            lblSifreTekrar.Text = "Şifre Tekrar";
+            lblSifreTekrar.Text = "Şifre (Tekrar)";
             // 
             // lblAd
             // 
             lblAd.AutoSize = true;
-            lblAd.Location = new Point(21, 232);
+            lblAd.BackColor = Color.FromArgb(250, 250, 248);
+            lblAd.Font = new Font("Century Gothic", 12F);
+            lblAd.Location = new Point(94, 159);
             lblAd.Margin = new Padding(4, 0, 4, 0);
             lblAd.Name = "lblAd";
-            lblAd.Size = new Size(29, 21);
+            lblAd.Size = new Size(39, 23);
             lblAd.TabIndex = 3;
             lblAd.Text = "Ad";
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(153, 62);
+            txtKullaniciAdi.Location = new Point(235, 318);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(127, 29);
+            txtKullaniciAdi.Size = new Size(176, 34);
             txtKullaniciAdi.TabIndex = 5;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(139, 109);
+            txtSifre.Location = new Point(235, 372);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(127, 29);
+            txtSifre.Size = new Size(176, 34);
             txtSifre.TabIndex = 6;
             // 
             // txtSifreTekrar
             // 
-            txtSifreTekrar.Location = new Point(127, 164);
+            txtSifreTekrar.Location = new Point(235, 426);
             txtSifreTekrar.Margin = new Padding(4);
             txtSifreTekrar.Name = "txtSifreTekrar";
-            txtSifreTekrar.Size = new Size(127, 29);
+            txtSifreTekrar.Size = new Size(176, 34);
             txtSifreTekrar.TabIndex = 7;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(127, 232);
+            txtAd.Location = new Point(235, 156);
             txtAd.Margin = new Padding(4);
             txtAd.Name = "txtAd";
-            txtAd.Size = new Size(127, 29);
+            txtAd.Size = new Size(176, 34);
             txtAd.TabIndex = 8;
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(127, 300);
+            txtSoyad.Location = new Point(235, 210);
             txtSoyad.Margin = new Padding(4);
             txtSoyad.Name = "txtSoyad";
-            txtSoyad.Size = new Size(127, 29);
+            txtSoyad.Size = new Size(176, 34);
             txtSoyad.TabIndex = 9;
             // 
             // btnKayitOl
             // 
-            btnKayitOl.Location = new Point(139, 486);
+            btnKayitOl.BackColor = Color.FromArgb(199, 234, 203);
+            btnKayitOl.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKayitOl.Location = new Point(148, 508);
             btnKayitOl.Margin = new Padding(4);
             btnKayitOl.Name = "btnKayitOl";
-            btnKayitOl.Size = new Size(115, 49);
+            btnKayitOl.Size = new Size(179, 49);
             btnKayitOl.TabIndex = 10;
             btnKayitOl.Text = "Kayıt Ol";
-            btnKayitOl.UseVisualStyleBackColor = true;
+            btnKayitOl.UseVisualStyleBackColor = false;
             btnKayitOl.Click += btnKayitOl_Click;
             // 
             // lblSoyad
             // 
             lblSoyad.AutoSize = true;
-            lblSoyad.Location = new Point(21, 303);
+            lblSoyad.BackColor = Color.FromArgb(250, 250, 248);
+            lblSoyad.Font = new Font("Century Gothic", 12F);
+            lblSoyad.Location = new Point(94, 213);
             lblSoyad.Margin = new Padding(4, 0, 4, 0);
             lblSoyad.Name = "lblSoyad";
-            lblSoyad.Size = new Size(53, 21);
+            lblSoyad.Size = new Size(72, 23);
             lblSoyad.TabIndex = 11;
             lblSoyad.Text = "Soyad";
             // 
             // lblYas
             // 
             lblYas.AutoSize = true;
-            lblYas.Location = new Point(22, 380);
+            lblYas.BackColor = Color.FromArgb(250, 250, 248);
+            lblYas.Font = new Font("Century Gothic", 12F);
+            lblYas.Location = new Point(94, 267);
             lblYas.Name = "lblYas";
-            lblYas.Size = new Size(33, 21);
+            lblYas.Size = new Size(45, 23);
             lblYas.TabIndex = 13;
             lblYas.Text = "Yaş";
             // 
             // txtYas
             // 
-            txtYas.Location = new Point(127, 380);
+            txtYas.Location = new Point(235, 264);
             txtYas.Name = "txtYas";
-            txtYas.Size = new Size(100, 29);
+            txtYas.Size = new Size(176, 34);
             txtYas.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.vegetables_white_background_with_copy_space;
+            pictureBox1.Location = new Point(-767, -138);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1449, 867);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.png1;
+            pictureBox2.Location = new Point(-6, -4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(69, 59);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(250, 250, 248);
+            label2.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label2.Location = new Point(148, 62);
+            label2.Name = "label2";
+            label2.Size = new Size(180, 37);
+            label2.TabIndex = 17;
+            label2.Text = "Kayıt Ekranı";
             // 
             // FRMKayitOl
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1029, 630);
+            ClientSize = new Size(504, 630);
+            Controls.Add(label2);
+            Controls.Add(pictureBox2);
             Controls.Add(txtYas);
             Controls.Add(lblYas);
             Controls.Add(lblSoyad);
@@ -178,10 +230,15 @@
             Controls.Add(lblSifreTekrar);
             Controls.Add(lblSifre);
             Controls.Add(lblKullaniciAdi);
+            Controls.Add(pictureBox1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "FRMKayitOl";
-            Text = "FRMKayitOl";
+            StartPosition = FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -201,5 +258,8 @@
         private Label lblSoyad;
         private Label lblYas;
         private TextBox txtYas;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label2;
     }
 }

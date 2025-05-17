@@ -99,5 +99,15 @@ namespace KaloriTakipSistemi.UI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vegetables_white_background_with_copy_space {
+            get {
+                object obj = ResourceManager.GetObject("vegetables-white-background-with-copy-space", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
