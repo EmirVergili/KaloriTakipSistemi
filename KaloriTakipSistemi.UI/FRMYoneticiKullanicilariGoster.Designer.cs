@@ -40,10 +40,10 @@
             dgvKullanicilariGoster.Location = new Point(86, 57);
             dgvKullanicilariGoster.Margin = new Padding(4, 5, 4, 5);
             dgvKullanicilariGoster.Name = "dgvKullanicilariGoster";
+            dgvKullanicilariGoster.ReadOnly = true;
             dgvKullanicilariGoster.RowHeadersWidth = 51;
             dgvKullanicilariGoster.Size = new Size(742, 504);
             dgvKullanicilariGoster.TabIndex = 0;
-            dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
             // 
             // pictureBox1
             // 

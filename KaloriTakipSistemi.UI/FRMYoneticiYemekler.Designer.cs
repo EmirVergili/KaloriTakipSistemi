@@ -97,6 +97,7 @@
             dgvYemekler.Location = new Point(495, 62);
             dgvYemekler.Margin = new Padding(4, 3, 4, 3);
             dgvYemekler.Name = "dgvYemekler";
+            dgvYemekler.ReadOnly = true;
             dgvYemekler.RowHeadersWidth = 51;
             dgvYemekler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvYemekler.Size = new Size(328, 216);
@@ -187,6 +188,7 @@
             dgvOgunler.Location = new Point(534, 327);
             dgvOgunler.Margin = new Padding(4, 3, 4, 3);
             dgvOgunler.Name = "dgvOgunler";
+            dgvOgunler.ReadOnly = true;
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOgunler.Size = new Size(181, 216);

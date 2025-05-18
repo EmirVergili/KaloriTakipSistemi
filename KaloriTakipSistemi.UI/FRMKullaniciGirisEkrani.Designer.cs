@@ -50,7 +50,6 @@
             label1.Size = new Size(133, 23);
             label1.TabIndex = 0;
             label1.Text = "Kullanıcı Adı";
-            label1.Click += label1_Click;
             // 
             // txtKullaniciAdi
             // 

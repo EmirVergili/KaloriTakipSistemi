@@ -20,11 +20,6 @@ namespace KaloriTakipSistemi.UI
             _context = new Context.MyDbContext();
         }
 
-        private void dgvKullanicilariGoster_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void FRMYoneticiKullanicilariGoster_Load(object sender, EventArgs e)
         {
            dgvKullanicilariGoster.DataSource = _context.Kullanicilar

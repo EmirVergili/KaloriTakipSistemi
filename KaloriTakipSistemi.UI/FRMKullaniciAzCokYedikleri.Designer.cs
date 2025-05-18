@@ -54,6 +54,7 @@
             dtpBaslangicTarihi.Name = "dtpBaslangicTarihi";
             dtpBaslangicTarihi.Size = new Size(340, 32);
             dtpBaslangicTarihi.TabIndex = 1;
+            dtpBaslangicTarihi.ValueChanged += dtpBaslangicTarihi_ValueChanged;
             // 
             // lblAzYediklerim
             // 

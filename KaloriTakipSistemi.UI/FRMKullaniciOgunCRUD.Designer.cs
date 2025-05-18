@@ -58,6 +58,7 @@
             // 
             // cmbOgun
             // 
+            cmbOgun.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbOgun.FormattingEnabled = true;
             cmbOgun.Location = new Point(199, 109);
             cmbOgun.Margin = new Padding(3, 2, 3, 2);
@@ -109,6 +110,7 @@
             // 
             // cmbYemek
             // 
+            cmbYemek.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbYemek.FormattingEnabled = true;
             cmbYemek.Location = new Point(199, 168);
             cmbYemek.Margin = new Padding(3, 2, 3, 2);
@@ -177,6 +179,7 @@
             dgvOgunler.Location = new Point(53, 429);
             dgvOgunler.Margin = new Padding(3, 2, 3, 2);
             dgvOgunler.Name = "dgvOgunler";
+            dgvOgunler.ReadOnly = true;
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOgunler.Size = new Size(834, 134);

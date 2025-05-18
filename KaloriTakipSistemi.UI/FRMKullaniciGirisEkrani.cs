@@ -26,11 +26,6 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
 

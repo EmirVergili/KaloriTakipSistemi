@@ -43,6 +43,7 @@
             dgvKullaniciOgunlerim.Location = new Point(64, 208);
             dgvKullaniciOgunlerim.Margin = new Padding(4, 3, 4, 3);
             dgvKullaniciOgunlerim.Name = "dgvKullaniciOgunlerim";
+            dgvKullaniciOgunlerim.ReadOnly = true;
             dgvKullaniciOgunlerim.RowHeadersWidth = 51;
             dgvKullaniciOgunlerim.Size = new Size(808, 396);
             dgvKullaniciOgunlerim.TabIndex = 0;
