@@ -29,26 +29,39 @@
         private void InitializeComponent()
         {
             dgvKullanicilariGoster = new DataGridView();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvKullanicilariGoster).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dgvKullanicilariGoster
             // 
             dgvKullanicilariGoster.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKullanicilariGoster.Location = new Point(13, 14);
+            dgvKullanicilariGoster.Location = new Point(86, 57);
             dgvKullanicilariGoster.Margin = new Padding(4, 5, 4, 5);
             dgvKullanicilariGoster.Name = "dgvKullanicilariGoster";
             dgvKullanicilariGoster.RowHeadersWidth = 51;
-            dgvKullanicilariGoster.Size = new Size(1071, 570);
+            dgvKullanicilariGoster.Size = new Size(742, 504);
             dgvKullanicilariGoster.TabIndex = 0;
             dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.vegetables_white_background_with_copy_space1;
+            pictureBox1.Location = new Point(-29, -65);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1128, 749);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // FRMYoneticiKullanicilariGoster
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1097, 598);
+            ClientSize = new Size(932, 623);
             Controls.Add(dgvKullanicilariGoster);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
@@ -57,11 +70,13 @@
             Text = "FRMKullanicilariGoster";
             Load += FRMYoneticiKullanicilariGoster_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKullanicilariGoster).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private DataGridView dgvKullanicilariGoster;
+        private PictureBox pictureBox1;
     }
 }

@@ -33,13 +33,16 @@
             cmbKullanici = new ComboBox();
             dtpTarih = new DateTimePicker();
             dgvYoneticiOgunleri = new DataGridView();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvYoneticiOgunleri).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 118);
+            label1.BackColor = Color.White;
+            label1.Location = new Point(197, 116);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(53, 23);
@@ -49,7 +52,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(68, 196);
+            label2.BackColor = Color.White;
+            label2.Location = new Point(197, 194);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(93, 23);
@@ -59,7 +63,7 @@
             // cmbKullanici
             // 
             cmbKullanici.FormattingEnabled = true;
-            cmbKullanici.Location = new Point(195, 193);
+            cmbKullanici.Location = new Point(324, 191);
             cmbKullanici.Margin = new Padding(4, 5, 4, 5);
             cmbKullanici.Name = "cmbKullanici";
             cmbKullanici.Size = new Size(376, 31);
@@ -68,7 +72,7 @@
             // 
             // dtpTarih
             // 
-            dtpTarih.Location = new Point(195, 111);
+            dtpTarih.Location = new Point(324, 109);
             dtpTarih.Margin = new Padding(4, 5, 4, 5);
             dtpTarih.Name = "dtpTarih";
             dtpTarih.Size = new Size(376, 32);
@@ -78,23 +82,34 @@
             // dgvYoneticiOgunleri
             // 
             dgvYoneticiOgunleri.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYoneticiOgunleri.Location = new Point(44, 281);
+            dgvYoneticiOgunleri.Location = new Point(118, 265);
             dgvYoneticiOgunleri.Margin = new Padding(4, 5, 4, 5);
             dgvYoneticiOgunleri.Name = "dgvYoneticiOgunleri";
             dgvYoneticiOgunleri.RowHeadersWidth = 51;
-            dgvYoneticiOgunleri.Size = new Size(1003, 246);
+            dgvYoneticiOgunleri.Size = new Size(700, 246);
             dgvYoneticiOgunleri.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.fruit_slices_white;
+            pictureBox1.Location = new Point(-102, -309);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1312, 985);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
             // 
             // FRMYoneticiKullaniciOgunleri
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1097, 598);
+            ClientSize = new Size(932, 623);
             Controls.Add(dgvYoneticiOgunleri);
             Controls.Add(dtpTarih);
             Controls.Add(cmbKullanici);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
@@ -103,6 +118,7 @@
             Text = "FRMYoneticiKullaniciOgunleri";
             Load += FRMYoneticiKullaniciOgunleri_Load;
             ((System.ComponentModel.ISupportInitialize)dgvYoneticiOgunleri).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +135,6 @@
         private DataGridView dgvYoneticiOgunleri;
         private ComboBox comboBox3;
         private ComboBox comboBox4;
+        private PictureBox pictureBox1;
     }
 }

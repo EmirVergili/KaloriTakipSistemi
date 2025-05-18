@@ -32,14 +32,16 @@
             btnKullanicilariGoster = new Button();
             btnKullaniciOgunleri = new Button();
             pnlYoneticiAnamenuIcerik = new Panel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnYemekler
             // 
-            btnYemekler.Location = new Point(74, 192);
+            btnYemekler.Location = new Point(2, 208);
             btnYemekler.Margin = new Padding(4, 3, 4, 3);
             btnYemekler.Name = "btnYemekler";
-            btnYemekler.Size = new Size(190, 39);
+            btnYemekler.Size = new Size(220, 60);
             btnYemekler.TabIndex = 0;
             btnYemekler.Text = "Yemekler";
             btnYemekler.UseVisualStyleBackColor = true;
@@ -47,7 +49,7 @@
             // 
             // btnKullanicilariGoster
             // 
-            btnKullanicilariGoster.Location = new Point(74, 278);
+            btnKullanicilariGoster.Location = new Point(2, 274);
             btnKullanicilariGoster.Margin = new Padding(4, 3, 4, 3);
             btnKullanicilariGoster.Name = "btnKullanicilariGoster";
             btnKullanicilariGoster.Size = new Size(220, 67);
@@ -58,10 +60,10 @@
             // 
             // btnKullaniciOgunleri
             // 
-            btnKullaniciOgunleri.Location = new Point(74, 392);
+            btnKullaniciOgunleri.Location = new Point(2, 347);
             btnKullaniciOgunleri.Margin = new Padding(4, 3, 4, 3);
             btnKullaniciOgunleri.Name = "btnKullaniciOgunleri";
-            btnKullaniciOgunleri.Size = new Size(201, 61);
+            btnKullaniciOgunleri.Size = new Size(220, 61);
             btnKullaniciOgunleri.TabIndex = 2;
             btnKullaniciOgunleri.Text = "Kullanıcı Öğünleri";
             btnKullaniciOgunleri.UseVisualStyleBackColor = true;
@@ -69,17 +71,28 @@
             // 
             // pnlYoneticiAnamenuIcerik
             // 
-            pnlYoneticiAnamenuIcerik.Location = new Point(305, 2);
+            pnlYoneticiAnamenuIcerik.Location = new Point(222, 1);
             pnlYoneticiAnamenuIcerik.Margin = new Padding(4, 3, 4, 3);
             pnlYoneticiAnamenuIcerik.Name = "pnlYoneticiAnamenuIcerik";
-            pnlYoneticiAnamenuIcerik.Size = new Size(790, 593);
+            pnlYoneticiAnamenuIcerik.Size = new Size(934, 621);
             pnlYoneticiAnamenuIcerik.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.png1;
+            pictureBox1.Location = new Point(2, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(220, 201);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // FRMYoneticiAnaMenu
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1111, 601);
+            ClientSize = new Size(1156, 621);
+            Controls.Add(pictureBox1);
             Controls.Add(btnYemekler);
             Controls.Add(pnlYoneticiAnamenuIcerik);
             Controls.Add(btnKullaniciOgunleri);
@@ -90,7 +103,8 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "FRMYoneticiAnaMenu";
-            Text = "FRMYoneticiAnaMenu";
+            Text = "Yönetici Menü";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -100,5 +114,6 @@
         private Button btnKullanicilariGoster;
         private Button btnKullaniciOgunleri;
         private Panel pnlYoneticiAnamenuIcerik;
+        private PictureBox pictureBox1;
     }
 }
