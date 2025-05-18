@@ -49,22 +49,8 @@ namespace KaloriTakipSistemi.UI
             {
                 MessageBox.Show("Bu kullanıcı adı zaten kullanılıyor.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
-            }
+            }           
             
-            //var olan kullanıcı adı varsa uyarı vermesi...
-            string kullaniciAdi = txtKullaniciAdi.Text.Trim();
-            if (_context.Kullanicilar.Any(k => k.KullaniciAdi == kullaniciAdi))
-            {
-                MessageBox.Show("Bu kullanıcı adı kullanılıyor.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            //kullanıcı adında noktalama işareti kullanılmaması...
-            if (kullaniciAdi.Any(char.IsPunctuation))
-            {
-                MessageBox.Show("Kullanıcı adı noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
 
             // Şifre eşleşme kontrolü
             if (txtSifre.Text != txtSifreTekrar.Text)
