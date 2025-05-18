@@ -43,59 +43,67 @@
             txtOgunAdi = new TextBox();
             label4 = new Label();
             label3 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvYemekler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudKalori).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnYemekEkle
             // 
-            btnYemekEkle.Location = new Point(79, 259);
+            btnYemekEkle.BackColor = Color.WhiteSmoke;
+            btnYemekEkle.FlatStyle = FlatStyle.Popup;
+            btnYemekEkle.Location = new Point(59, 179);
             btnYemekEkle.Margin = new Padding(4, 3, 4, 3);
             btnYemekEkle.Name = "btnYemekEkle";
             btnYemekEkle.Size = new Size(141, 46);
             btnYemekEkle.TabIndex = 0;
             btnYemekEkle.Text = "Ekle";
-            btnYemekEkle.UseVisualStyleBackColor = true;
+            btnYemekEkle.UseVisualStyleBackColor = false;
             btnYemekEkle.Click += btnYemekEkle_Click;
             // 
             // btnYemekSil
             // 
-            btnYemekSil.Location = new Point(230, 259);
+            btnYemekSil.BackColor = Color.WhiteSmoke;
+            btnYemekSil.FlatStyle = FlatStyle.Popup;
+            btnYemekSil.Location = new Point(210, 179);
             btnYemekSil.Margin = new Padding(4, 3, 4, 3);
             btnYemekSil.Name = "btnYemekSil";
             btnYemekSil.Size = new Size(141, 46);
             btnYemekSil.TabIndex = 0;
             btnYemekSil.Text = "Sil";
-            btnYemekSil.UseVisualStyleBackColor = true;
+            btnYemekSil.UseVisualStyleBackColor = false;
             btnYemekSil.Click += btnYemekSil_Click;
             // 
             // btnYemekGuncelle
             // 
-            btnYemekGuncelle.Location = new Point(379, 259);
+            btnYemekGuncelle.BackColor = Color.WhiteSmoke;
+            btnYemekGuncelle.FlatStyle = FlatStyle.Popup;
+            btnYemekGuncelle.Location = new Point(359, 179);
             btnYemekGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnYemekGuncelle.Name = "btnYemekGuncelle";
             btnYemekGuncelle.Size = new Size(141, 46);
             btnYemekGuncelle.TabIndex = 0;
             btnYemekGuncelle.Text = "Güncelle";
-            btnYemekGuncelle.UseVisualStyleBackColor = true;
+            btnYemekGuncelle.UseVisualStyleBackColor = false;
             btnYemekGuncelle.Click += btnYemekGuncelle_Click;
             // 
             // dgvYemekler
             // 
             dgvYemekler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYemekler.Location = new Point(27, 328);
+            dgvYemekler.Location = new Point(573, 35);
             dgvYemekler.Margin = new Padding(4, 3, 4, 3);
             dgvYemekler.Name = "dgvYemekler";
             dgvYemekler.RowHeadersWidth = 51;
             dgvYemekler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvYemekler.Size = new Size(520, 216);
+            dgvYemekler.Size = new Size(298, 216);
             dgvYemekler.TabIndex = 1;
             dgvYemekler.CellClick += dgvYemekler_CellClick;
             // 
             // txtYemekAdi
             // 
-            txtYemekAdi.Location = new Point(230, 135);
+            txtYemekAdi.Location = new Point(210, 56);
             txtYemekAdi.Margin = new Padding(4, 3, 4, 3);
             txtYemekAdi.Name = "txtYemekAdi";
             txtYemekAdi.Size = new Size(227, 32);
@@ -103,7 +111,7 @@
             // 
             // nudKalori
             // 
-            nudKalori.Location = new Point(230, 173);
+            nudKalori.Location = new Point(210, 93);
             nudKalori.Margin = new Padding(4, 3, 4, 3);
             nudKalori.Maximum = new decimal(new int[] { -1530494977, 232830, 0, 0 });
             nudKalori.Name = "nudKalori";
@@ -113,7 +121,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(96, 175);
+            label1.BackColor = Color.White;
+            label1.Location = new Point(76, 95);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(63, 23);
@@ -123,7 +132,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(96, 138);
+            label2.BackColor = Color.White;
+            label2.Location = new Point(76, 59);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(118, 23);
@@ -132,52 +142,58 @@
             // 
             // btnOgunEkle
             // 
-            btnOgunEkle.Location = new Point(604, 259);
+            btnOgunEkle.BackColor = Color.WhiteSmoke;
+            btnOgunEkle.FlatStyle = FlatStyle.Popup;
+            btnOgunEkle.Location = new Point(59, 493);
             btnOgunEkle.Margin = new Padding(4, 3, 4, 3);
             btnOgunEkle.Name = "btnOgunEkle";
             btnOgunEkle.Size = new Size(141, 46);
             btnOgunEkle.TabIndex = 0;
             btnOgunEkle.Text = "Ekle";
-            btnOgunEkle.UseVisualStyleBackColor = true;
+            btnOgunEkle.UseVisualStyleBackColor = false;
             btnOgunEkle.Click += btnOgunEkle_Click;
             // 
             // btnOgunSil
             // 
-            btnOgunSil.Location = new Point(755, 259);
+            btnOgunSil.BackColor = Color.WhiteSmoke;
+            btnOgunSil.FlatStyle = FlatStyle.Popup;
+            btnOgunSil.Location = new Point(210, 493);
             btnOgunSil.Margin = new Padding(4, 3, 4, 3);
             btnOgunSil.Name = "btnOgunSil";
             btnOgunSil.Size = new Size(141, 46);
             btnOgunSil.TabIndex = 0;
             btnOgunSil.Text = "Sil";
-            btnOgunSil.UseVisualStyleBackColor = true;
+            btnOgunSil.UseVisualStyleBackColor = false;
             btnOgunSil.Click += btnOgunSil_Click;
             // 
             // btnOgunGuncelle
             // 
-            btnOgunGuncelle.Location = new Point(904, 259);
+            btnOgunGuncelle.BackColor = Color.WhiteSmoke;
+            btnOgunGuncelle.FlatStyle = FlatStyle.Popup;
+            btnOgunGuncelle.Location = new Point(359, 493);
             btnOgunGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnOgunGuncelle.Name = "btnOgunGuncelle";
             btnOgunGuncelle.Size = new Size(141, 46);
             btnOgunGuncelle.TabIndex = 0;
             btnOgunGuncelle.Text = "Güncelle";
-            btnOgunGuncelle.UseVisualStyleBackColor = true;
+            btnOgunGuncelle.UseVisualStyleBackColor = false;
             btnOgunGuncelle.Click += btnOgunGuncelle_Click;
             // 
             // dgvOgunler
             // 
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOgunler.Location = new Point(574, 328);
+            dgvOgunler.Location = new Point(573, 347);
             dgvOgunler.Margin = new Padding(4, 3, 4, 3);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvOgunler.Size = new Size(493, 216);
+            dgvOgunler.Size = new Size(189, 216);
             dgvOgunler.TabIndex = 1;
             dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 
             // txtOgunAdi
             // 
-            txtOgunAdi.Location = new Point(764, 154);
+            txtOgunAdi.Location = new Point(210, 395);
             txtOgunAdi.Margin = new Padding(4, 3, 4, 3);
             txtOgunAdi.Name = "txtOgunAdi";
             txtOgunAdi.Size = new Size(227, 32);
@@ -186,7 +202,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(647, 157);
+            label4.BackColor = Color.White;
+            label4.Location = new Point(93, 398);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(104, 23);
@@ -196,18 +213,29 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(230, 208);
+            label3.BackColor = Color.White;
+            label3.Location = new Point(210, 128);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(152, 23);
             label3.TabIndex = 4;
             label3.Text = "(100 gram için)";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.top_view_healthy_salad_with_mushrooms;
+            pictureBox1.Location = new Point(-40, -26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1266, 854);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // FRMYoneticiYemekler
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1097, 598);
+            ClientSize = new Size(932, 623);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label3);
@@ -223,6 +251,7 @@
             Controls.Add(btnOgunEkle);
             Controls.Add(btnYemekSil);
             Controls.Add(btnYemekEkle);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
@@ -233,6 +262,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvYemekler).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudKalori).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,5 +284,6 @@
         private TextBox txtOgunAdi;
         private Label label4;
         private Label label3;
+        private PictureBox pictureBox1;
     }
 }

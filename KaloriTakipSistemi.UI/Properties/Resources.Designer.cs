@@ -83,9 +83,40 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap frame_ingredients_green_smoothie_vegetables_fruits_fresh_salad_white_background_top_view {
+            get {
+                object obj = ResourceManager.GetObject("frame-ingredients-green-smoothie-vegetables-fruits-fresh-salad-white-background-t" +
+                        "op-view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fruit_slices_white {
+            get {
+                object obj = ResourceManager.GetObject("fruit-slices-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap herbs_vegetables_white_background {
             get {
                 object obj = ResourceManager.GetObject("herbs-vegetables-white-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap herbs_vegetables_white_background1 {
+            get {
+                object obj = ResourceManager.GetObject("herbs-vegetables-white-background1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +144,29 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap top_view_healthy_salad_with_mushrooms {
+            get {
+                object obj = ResourceManager.GetObject("top-view-healthy-salad-with-mushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vegetables_white_background_with_copy_space {
             get {
                 object obj = ResourceManager.GetObject("vegetables-white-background-with-copy-space", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vegetables_white_background_with_copy_space1 {
+            get {
+                object obj = ResourceManager.GetObject("vegetables-white-background-with-copy-space1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
