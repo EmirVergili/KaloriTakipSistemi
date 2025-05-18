@@ -22,8 +22,8 @@ namespace KaloriTakipSistemi.UI
         }
         private void btnDondur_Click(object sender, EventArgs e)
         {
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k=>k.Id==FRMKullaniciGirisEkrani.AktifKullaniciId&&k.Sifre==_context.sha256_hash(txtSifre.Text));
-           
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId && k.Sifre == _context.sha256_hash(txtSifre.Text));
+
             if (string.IsNullOrWhiteSpace(txtDondurmaSebebi.Text))
             {
                 MessageBox.Show("Lütfen bir dondurma sebebi giriniz.");
@@ -55,5 +55,11 @@ namespace KaloriTakipSistemi.UI
 
         }
 
+        private void FRMHesapDondur_Load(object sender, EventArgs e)
+        {
+            lblDondurmaSebebi.Location = new Point(111 - lblDondurmaSebebi.Width / 2, 180);
+            lblSifre.Location = new Point(111 - lblSifre.Width / 2, 332);
+            label1.Location = new Point(338 - label1.Width / 2, 374);
+        }
     }
 }
