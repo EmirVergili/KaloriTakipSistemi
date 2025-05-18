@@ -100,9 +100,9 @@
             // 
             label1.Anchor = AnchorStyles.Left;
             label1.BackColor = Color.FromArgb(201, 231, 182);
-            label1.Location = new Point(-12, 1);
+            label1.Location = new Point(-44, -68);
             label1.Name = "label1";
-            label1.Size = new Size(236, 621);
+            label1.Size = new Size(506, 801);
             label1.TabIndex = 7;
             // 
             // pictureBox1
@@ -142,11 +142,11 @@
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1156, 621);
+            Controls.Add(pnlYoneticiAnamenuIcerik);
             Controls.Add(label2);
             Controls.Add(pictureBox2);
             Controls.Add(btnYemekler);
             Controls.Add(pictureBox1);
-            Controls.Add(pnlYoneticiAnamenuIcerik);
             Controls.Add(btnKullaniciOgunleri);
             Controls.Add(btnKullanicilariGoster);
             Controls.Add(label1);

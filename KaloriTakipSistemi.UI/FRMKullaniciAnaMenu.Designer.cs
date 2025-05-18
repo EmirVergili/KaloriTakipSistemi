@@ -134,9 +134,9 @@
             // 
             label1.Anchor = AnchorStyles.Left;
             label1.BackColor = Color.FromArgb(201, 231, 182);
-            label1.Location = new Point(-12, 1);
+            label1.Location = new Point(-68, -109);
             label1.Name = "label1";
-            label1.Size = new Size(236, 621);
+            label1.Size = new Size(561, 864);
             label1.TabIndex = 8;
             // 
             // pictureBox1

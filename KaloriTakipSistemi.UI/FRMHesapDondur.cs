@@ -55,11 +55,5 @@ namespace KaloriTakipSistemi.UI
 
         }
 
-        private void FRMHesapDondur_Load(object sender, EventArgs e)
-        {
-            lblDondurmaSebebi.Location = new Point(111 - lblDondurmaSebebi.Width / 2, 180);
-            lblSifre.Location = new Point(111 - lblSifre.Width / 2, 332);
-            label1.Location = new Point(338 - label1.Width / 2, 374);
-        }
     }
 }

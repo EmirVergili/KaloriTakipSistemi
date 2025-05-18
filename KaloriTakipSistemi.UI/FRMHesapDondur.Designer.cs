@@ -43,21 +43,23 @@
             // 
             // lblDondurmaSebebi
             // 
-            lblDondurmaSebebi.Location = new Point(111, 180);
+            lblDondurmaSebebi.AutoSize = true;
+            lblDondurmaSebebi.Location = new Point(141, 183);
             lblDondurmaSebebi.Margin = new Padding(4, 0, 4, 0);
             lblDondurmaSebebi.Name = "lblDondurmaSebebi";
-            lblDondurmaSebebi.Size = new Size(188, 58);
+            lblDondurmaSebebi.Size = new Size(171, 46);
             lblDondurmaSebebi.TabIndex = 0;
-            lblDondurmaSebebi.Text = "Hesabını neden donduruyorsun?";
+            lblDondurmaSebebi.Text = "Hesabını neden \r\ndonduruyorsun?";
             // 
             // lblSifre
             // 
-            lblSifre.Location = new Point(111, 332);
+            lblSifre.AutoSize = true;
+            lblSifre.Location = new Point(141, 332);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(207, 53);
+            lblSifre.Size = new Size(195, 46);
             lblSifre.TabIndex = 1;
-            lblSifre.Text = "Devam etmek için lütfen şifreni gir";
+            lblSifre.Text = "Devam etmek için \r\nlütfen şifreni gir";
             // 
             // btnDondur
             // 
@@ -124,13 +126,14 @@
             // 
             // label2
             // 
+            label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
             label2.Location = new Point(338, 374);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(413, 53);
+            label2.Size = new Size(388, 42);
             label2.TabIndex = 1;
-            label2.Text = "Seni özleyeceğiz. Tekrar giriş yaparak hesabını aktif edebileceğini unutma.";
+            label2.Text = "Seni özleyeceğiz. Tekrar giriş yaparak hesabını \r\naktif edebileceğini unutma.";
             // 
             // FRMHesapDondur
             // 
@@ -153,7 +156,6 @@
             MaximizeBox = false;
             Name = "FRMHesapDondur";
             Text = "FRMHesapDondur";
-            Load += FRMHesapDondur_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
