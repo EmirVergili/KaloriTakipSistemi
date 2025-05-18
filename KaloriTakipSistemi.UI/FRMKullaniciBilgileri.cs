@@ -61,11 +61,51 @@ namespace KaloriTakipSistemi.UI
 
 
         }
+        private bool BilgiGuncellemeValidasyonu()
+        {
+            // Boş alan kontrolü
+            if (string.IsNullOrWhiteSpace(txtAd.Text) ||
+                string.IsNullOrWhiteSpace(txtSoyad.Text) ||
+                string.IsNullOrWhiteSpace(txtYas.Text))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Ad ve soyad uzunluk kontrolü
+            if (txtAd.Text.Length < 2 || txtSoyad.Text.Length < 2)
+            {
+                MessageBox.Show("Ad ve soyad en az 2 karakter olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Yaş kontrolü
+            if (!byte.TryParse(txtYas.Text, out byte yas) || yas < 13 || yas > 100)
+            {
+                MessageBox.Show("Yaş 13-100 arasında olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Şifre değişikliği varsa kontrol et
+            if (!string.IsNullOrWhiteSpace(txtSifre.Text))
+            {
+                // Şifre uzunluk kontrolü
+                MessageBox.Show("Sifre Bos Olamaz!!","UYARI",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+
+            return true;
+        }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             try
             {
+                if (!BilgiGuncellemeValidasyonu())
+                {
+                    return;
+                }
                 var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
                 if (kullanici != null)
                 {
@@ -86,6 +126,7 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Güncelleme sırasında hata oluştu: " + ex.Message);
 
             }
+
         }
     }
 }
