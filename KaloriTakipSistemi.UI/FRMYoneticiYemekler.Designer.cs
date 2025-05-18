@@ -44,6 +44,8 @@
             label4 = new Label();
             label3 = new Label();
             pictureBox1 = new PictureBox();
+            label5 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvYemekler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudKalori).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvOgunler).BeginInit();
@@ -54,7 +56,7 @@
             // 
             btnYemekEkle.BackColor = Color.WhiteSmoke;
             btnYemekEkle.FlatStyle = FlatStyle.Popup;
-            btnYemekEkle.Location = new Point(59, 179);
+            btnYemekEkle.Location = new Point(35, 209);
             btnYemekEkle.Margin = new Padding(4, 3, 4, 3);
             btnYemekEkle.Name = "btnYemekEkle";
             btnYemekEkle.Size = new Size(141, 46);
@@ -67,7 +69,7 @@
             // 
             btnYemekSil.BackColor = Color.WhiteSmoke;
             btnYemekSil.FlatStyle = FlatStyle.Popup;
-            btnYemekSil.Location = new Point(210, 179);
+            btnYemekSil.Location = new Point(186, 209);
             btnYemekSil.Margin = new Padding(4, 3, 4, 3);
             btnYemekSil.Name = "btnYemekSil";
             btnYemekSil.Size = new Size(141, 46);
@@ -80,7 +82,7 @@
             // 
             btnYemekGuncelle.BackColor = Color.WhiteSmoke;
             btnYemekGuncelle.FlatStyle = FlatStyle.Popup;
-            btnYemekGuncelle.Location = new Point(359, 179);
+            btnYemekGuncelle.Location = new Point(335, 209);
             btnYemekGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnYemekGuncelle.Name = "btnYemekGuncelle";
             btnYemekGuncelle.Size = new Size(141, 46);
@@ -92,18 +94,18 @@
             // dgvYemekler
             // 
             dgvYemekler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYemekler.Location = new Point(573, 35);
+            dgvYemekler.Location = new Point(495, 62);
             dgvYemekler.Margin = new Padding(4, 3, 4, 3);
             dgvYemekler.Name = "dgvYemekler";
             dgvYemekler.RowHeadersWidth = 51;
             dgvYemekler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvYemekler.Size = new Size(298, 216);
+            dgvYemekler.Size = new Size(328, 216);
             dgvYemekler.TabIndex = 1;
             dgvYemekler.CellClick += dgvYemekler_CellClick;
             // 
             // txtYemekAdi
             // 
-            txtYemekAdi.Location = new Point(210, 56);
+            txtYemekAdi.Location = new Point(186, 86);
             txtYemekAdi.Margin = new Padding(4, 3, 4, 3);
             txtYemekAdi.Name = "txtYemekAdi";
             txtYemekAdi.Size = new Size(227, 32);
@@ -111,7 +113,7 @@
             // 
             // nudKalori
             // 
-            nudKalori.Location = new Point(210, 93);
+            nudKalori.Location = new Point(186, 123);
             nudKalori.Margin = new Padding(4, 3, 4, 3);
             nudKalori.Maximum = new decimal(new int[] { -1530494977, 232830, 0, 0 });
             nudKalori.Name = "nudKalori";
@@ -122,7 +124,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Location = new Point(76, 95);
+            label1.Location = new Point(52, 125);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(63, 23);
@@ -133,7 +135,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Location = new Point(76, 59);
+            label2.Location = new Point(52, 89);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(118, 23);
@@ -144,7 +146,7 @@
             // 
             btnOgunEkle.BackColor = Color.WhiteSmoke;
             btnOgunEkle.FlatStyle = FlatStyle.Popup;
-            btnOgunEkle.Location = new Point(59, 493);
+            btnOgunEkle.Location = new Point(35, 479);
             btnOgunEkle.Margin = new Padding(4, 3, 4, 3);
             btnOgunEkle.Name = "btnOgunEkle";
             btnOgunEkle.Size = new Size(141, 46);
@@ -157,7 +159,7 @@
             // 
             btnOgunSil.BackColor = Color.WhiteSmoke;
             btnOgunSil.FlatStyle = FlatStyle.Popup;
-            btnOgunSil.Location = new Point(210, 493);
+            btnOgunSil.Location = new Point(186, 479);
             btnOgunSil.Margin = new Padding(4, 3, 4, 3);
             btnOgunSil.Name = "btnOgunSil";
             btnOgunSil.Size = new Size(141, 46);
@@ -170,7 +172,7 @@
             // 
             btnOgunGuncelle.BackColor = Color.WhiteSmoke;
             btnOgunGuncelle.FlatStyle = FlatStyle.Popup;
-            btnOgunGuncelle.Location = new Point(359, 493);
+            btnOgunGuncelle.Location = new Point(335, 479);
             btnOgunGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnOgunGuncelle.Name = "btnOgunGuncelle";
             btnOgunGuncelle.Size = new Size(141, 46);
@@ -182,18 +184,18 @@
             // dgvOgunler
             // 
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOgunler.Location = new Point(573, 347);
+            dgvOgunler.Location = new Point(534, 327);
             dgvOgunler.Margin = new Padding(4, 3, 4, 3);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvOgunler.Size = new Size(189, 216);
+            dgvOgunler.Size = new Size(181, 216);
             dgvOgunler.TabIndex = 1;
             dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 
             // txtOgunAdi
             // 
-            txtOgunAdi.Location = new Point(210, 395);
+            txtOgunAdi.Location = new Point(186, 381);
             txtOgunAdi.Margin = new Padding(4, 3, 4, 3);
             txtOgunAdi.Name = "txtOgunAdi";
             txtOgunAdi.Size = new Size(227, 32);
@@ -203,7 +205,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Location = new Point(93, 398);
+            label4.Location = new Point(69, 384);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(104, 23);
@@ -214,7 +216,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.White;
-            label3.Location = new Point(210, 128);
+            label3.Location = new Point(186, 158);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(152, 23);
@@ -231,11 +233,37 @@
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.BorderStyle = BorderStyle.Fixed3D;
+            label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            label5.Location = new Point(611, 34);
+            label5.Name = "label5";
+            label5.Size = new Size(105, 25);
+            label5.TabIndex = 7;
+            label5.Text = "Yemekler";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.BorderStyle = BorderStyle.Fixed3D;
+            label6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            label6.Location = new Point(578, 299);
+            label6.Name = "label6";
+            label6.Size = new Size(90, 25);
+            label6.TabIndex = 7;
+            label6.Text = "Öğünler";
+            // 
             // FRMYoneticiYemekler
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 623);
+            Controls.Add(label6);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label3);
@@ -285,5 +313,7 @@
         private Label label4;
         private Label label3;
         private PictureBox pictureBox1;
+        private Label label5;
+        private Label label6;
     }
 }

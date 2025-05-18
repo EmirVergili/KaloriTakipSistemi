@@ -83,6 +83,36 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adsız_tasarım {
+            get {
+                object obj = ResourceManager.GetObject("Adsız tasarım", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap avakado {
+            get {
+                object obj = ResourceManager.GetObject("avakado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap avakadodogruolan {
+            get {
+                object obj = ResourceManager.GetObject("avakadodogruolan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frame_ingredients_green_smoothie_vegetables_fruits_fresh_salad_white_background_top_view {
             get {
                 object obj = ResourceManager.GetObject("frame-ingredients-green-smoothie-vegetables-fruits-fresh-salad-white-background-t" +
@@ -117,6 +147,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         internal static System.Drawing.Bitmap herbs_vegetables_white_background1 {
             get {
                 object obj = ResourceManager.GetObject("herbs-vegetables-white-background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png {
+            get {
+                object obj = ResourceManager.GetObject("png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
