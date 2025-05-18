@@ -31,6 +31,7 @@ namespace KaloriTakipSistemi.UI
                 .Select(k => new
                 {
                     k.Id,
+                    AdSoyad = k.Ad + " " + k.Soyad,
                     k.KullaniciAdi,
                     k.Sifre,
                     HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ",
