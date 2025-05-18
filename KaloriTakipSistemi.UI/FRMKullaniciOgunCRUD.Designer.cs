@@ -179,6 +179,7 @@
             dgvOgunler.Location = new Point(53, 429);
             dgvOgunler.Margin = new Padding(3, 2, 3, 2);
             dgvOgunler.Name = "dgvOgunler";
+            dgvOgunler.ReadOnly = true;
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOgunler.Size = new Size(834, 134);

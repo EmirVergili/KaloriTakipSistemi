@@ -86,6 +86,7 @@
             dgvYoneticiOgunleri.Location = new Point(109, 265);
             dgvYoneticiOgunleri.Margin = new Padding(4, 5, 4, 5);
             dgvYoneticiOgunleri.Name = "dgvYoneticiOgunleri";
+            dgvYoneticiOgunleri.ReadOnly = true;
             dgvYoneticiOgunleri.RowHeadersWidth = 51;
             dgvYoneticiOgunleri.Size = new Size(700, 246);
             dgvYoneticiOgunleri.TabIndex = 3;
