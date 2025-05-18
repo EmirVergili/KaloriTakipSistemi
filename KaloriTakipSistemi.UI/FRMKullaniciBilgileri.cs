@@ -93,6 +93,20 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Sifre Bos Olamaz!!","UYARI",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+           
+            //şifrede noktalama işareti olmalı...
+            if (txtSifre.Text.Any(char.IsPunctuation))
+            {
+                MessageBox.Show("Şifre de noktalama işareti olmamalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            //ad ve soyad noktalama işareti kontrolü...
+            if (txtAd.Text.Any(char.IsPunctuation) || txtSoyad.Text.Any(char.IsPunctuation))
+            {
+                MessageBox.Show("Ad ve soyad noktalama işareti olmamalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
 
 
             return true;
