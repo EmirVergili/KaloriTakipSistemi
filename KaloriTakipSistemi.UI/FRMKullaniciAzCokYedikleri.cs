@@ -25,7 +25,7 @@ namespace KaloriTakipSistemi.UI.Models
             DateTime bitisTarihi = dtpBitisTarihi.Value.Date;
 
             var filtrelenmisYemekler = _context.KullaniciYemekler
-                .Where(y =>y.KullaniciId==FRMKullaniciGirisEkrani.AktifKullaniciId && y.YemekTarihi >= baslangicTarihi && y.YemekTarihi <= bitisTarihi)
+                .Where(y => y.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId && y.YemekTarihi >= baslangicTarihi && y.YemekTarihi <= bitisTarihi)
                 .GroupBy(y => y.Yemek.Ad)
                 .Select(g => new
                 {
@@ -47,6 +47,17 @@ namespace KaloriTakipSistemi.UI.Models
                 lblEnCokYedigimYemek.Text = "Hiç yemek bulunamadı.";
                 lblEnAzYedigimYemek.Text = "";
             }
+        }
+
+        private void dtpBaslangicTarihi_ValueChanged(object sender, EventArgs e)
+        {
+            dtpBitisTarihi.MinDate = dtpBaslangicTarihi.Value;
+        }
+
+        private void FRMKullaniciAzCokYedikleri_Load(object sender, EventArgs e)
+        {
+            dtpBaslangicTarihi.Value = DateTime.Now;
+            dtpBitisTarihi.MinDate = DateTime.Now;
         }
     }
 }

@@ -54,6 +54,7 @@
             dtpBaslangicTarihi.Name = "dtpBaslangicTarihi";
             dtpBaslangicTarihi.Size = new Size(340, 32);
             dtpBaslangicTarihi.TabIndex = 1;
+            dtpBaslangicTarihi.ValueChanged += dtpBaslangicTarihi_ValueChanged;
             // 
             // lblAzYediklerim
             // 
@@ -138,6 +139,7 @@
             MaximizeBox = false;
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
+            Load += FRMKullaniciAzCokYedikleri_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
