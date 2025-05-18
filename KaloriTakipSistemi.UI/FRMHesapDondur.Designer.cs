@@ -43,7 +43,7 @@
             // 
             // lblDondurmaSebebi
             // 
-            lblDondurmaSebebi.Location = new Point(111, 204);
+            lblDondurmaSebebi.Location = new Point(111, 180);
             lblDondurmaSebebi.Margin = new Padding(4, 0, 4, 0);
             lblDondurmaSebebi.Name = "lblDondurmaSebebi";
             lblDondurmaSebebi.Size = new Size(188, 58);
@@ -52,7 +52,7 @@
             // 
             // lblSifre
             // 
-            lblSifre.Location = new Point(111, 356);
+            lblSifre.Location = new Point(111, 332);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
             lblSifre.Size = new Size(207, 53);
@@ -64,7 +64,7 @@
             btnDondur.BackColor = Color.IndianRed;
             btnDondur.FlatStyle = FlatStyle.Popup;
             btnDondur.ForeColor = Color.White;
-            btnDondur.Location = new Point(338, 487);
+            btnDondur.Location = new Point(338, 472);
             btnDondur.Margin = new Padding(4, 3, 4, 3);
             btnDondur.Name = "btnDondur";
             btnDondur.Size = new Size(314, 41);
@@ -75,7 +75,7 @@
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(338, 356);
+            txtSifre.Location = new Point(338, 332);
             txtSifre.Margin = new Padding(4, 3, 4, 3);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(195, 32);
@@ -83,7 +83,7 @@
             // 
             // txtDondurmaSebebi
             // 
-            txtDondurmaSebebi.Location = new Point(338, 204);
+            txtDondurmaSebebi.Location = new Point(338, 180);
             txtDondurmaSebebi.Margin = new Padding(4, 3, 4, 3);
             txtDondurmaSebebi.Multiline = true;
             txtDondurmaSebebi.Name = "txtDondurmaSebebi";
@@ -94,7 +94,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label1.Location = new Point(111, 81);
+            label1.Location = new Point(111, 78);
             label1.Name = "label1";
             label1.Size = new Size(522, 40);
             label1.TabIndex = 5;
@@ -125,7 +125,7 @@
             // label2
             // 
             label2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label2.Location = new Point(338, 412);
+            label2.Location = new Point(338, 374);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(413, 53);
@@ -136,7 +136,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.White;
             ClientSize = new Size(932, 623);
             Controls.Add(label1);
             Controls.Add(txtDondurmaSebebi);
