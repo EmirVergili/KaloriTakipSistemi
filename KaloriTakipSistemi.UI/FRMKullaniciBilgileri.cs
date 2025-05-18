@@ -85,6 +85,11 @@ namespace KaloriTakipSistemi.UI
                 MessageBox.Show("Yaş 13-100 arasında olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            if (txtAd.Text.Any(char.IsDigit) || txtSoyad.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("Ad ve soyad sayı içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
 
             // Şifre değişikliği varsa kontrol et
             if (string.IsNullOrWhiteSpace(txtSifre.Text))
@@ -131,10 +136,10 @@ namespace KaloriTakipSistemi.UI
                 var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
                 if (kullanici != null)
                 {
-                    kullanici.Ad = txtAd.Text;
-                    kullanici.Soyad = txtSoyad.Text;
+                    kullanici.Ad = txtAd.Text.Trim();
+                    kullanici.Soyad = txtSoyad.Text.Trim();
                     kullanici.Yas = byte.Parse(txtYas.Text);
-                    kullanici.Sifre = _context.sha256_hash(txtSifre.Text);
+                    kullanici.Sifre = _context.sha256_hash(txtSifre.Text.Trim());
                     _context.SaveChanges();
                     MessageBox.Show("Bilgileriniz güncellendi.");
                 }

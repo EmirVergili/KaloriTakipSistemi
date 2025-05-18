@@ -37,13 +37,37 @@ namespace KaloriTakipSistemi.UI
                 return false;
             }
 
+            if(txtAd.Text.Any(char.IsPunctuation) || txtSoyad.Text.Any(char.IsPunctuation))
+            {
+                MessageBox.Show("Ad ve soyad noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            //sayı kontrolü
+            if (txtYas.Text.Any(char.IsLetter))
+            {
+                MessageBox.Show("Yaş sadece sayılardan oluşmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (txtAd.Text.Any(char.IsDigit) || txtSoyad.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("Ad ve soyad sayı içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            string kullaniciAdi = txtKullaniciAdi.Text.Trim();
+
+            if (kullaniciAdi.Any(char.IsPunctuation))
+            {
+                MessageBox.Show("Kullanıcı adı noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             // Kullanıcı adı uzunluk kontrolü
             if (txtKullaniciAdi.Text.Length < 3 || txtKullaniciAdi.Text.Length > 20)
             {
                 MessageBox.Show("Kullanıcı adı 3-20 karakter arasında olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-
+          
             // Kullanıcı adı benzersizlik kontrolü
             if (_context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text.Trim()))
             {
@@ -52,7 +76,6 @@ namespace KaloriTakipSistemi.UI
             }
 
             //var olan kullanıcı adı varsa uyarı vermesi...
-            string kullaniciAdi = txtKullaniciAdi.Text.Trim();
             if (_context.Kullanicilar.Any(k => k.KullaniciAdi == kullaniciAdi))
             {
                 MessageBox.Show("Bu kullanıcı adı kullanılıyor.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -60,11 +83,6 @@ namespace KaloriTakipSistemi.UI
             }
 
             //kullanıcı adında noktalama işareti kullanılmaması...
-            if (kullaniciAdi.Any(char.IsPunctuation))
-            {
-                MessageBox.Show("Kullanıcı adı noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
 
             // Şifre eşleşme kontrolü
             if (txtSifre.Text != txtSifreTekrar.Text)
@@ -101,10 +119,10 @@ namespace KaloriTakipSistemi.UI
                
                 var YeniKullanici = new Kullanici()
                 {
-                    KullaniciAdi = txtKullaniciAdi.Text,
-                    Sifre = _context.sha256_hash(txtSifre.Text),
-                    Ad = txtAd.Text,
-                    Soyad = txtSoyad.Text,
+                    KullaniciAdi = txtKullaniciAdi.Text.Trim(),
+                    Sifre = _context.sha256_hash(txtSifre.Text.Trim()),
+                    Ad = txtAd.Text.Trim(),
+                    Soyad = txtSoyad.Text.Trim(),
                     Yas = Convert.ToByte(txtYas.Text)
 
                 };
