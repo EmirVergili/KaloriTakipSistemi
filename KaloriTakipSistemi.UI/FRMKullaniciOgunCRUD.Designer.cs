@@ -174,12 +174,12 @@
             // dgvOgunler
             // 
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvOgunler.Location = new Point(22, 429);
+            dgvOgunler.Location = new Point(53, 429);
             dgvOgunler.Margin = new Padding(3, 2, 3, 2);
             dgvOgunler.Name = "dgvOgunler";
             dgvOgunler.RowHeadersWidth = 51;
             dgvOgunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvOgunler.Size = new Size(889, 134);
+            dgvOgunler.Size = new Size(834, 134);
             dgvOgunler.TabIndex = 7;
             dgvOgunler.CellClick += dgvOgunler_CellClick;
             // 

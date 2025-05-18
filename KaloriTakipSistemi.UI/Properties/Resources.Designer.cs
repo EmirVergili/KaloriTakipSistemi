@@ -154,6 +154,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap healthy_vegetarian_food_spices {
+            get {
+                object obj = ResourceManager.GetObject("healthy-vegetarian-food-spices", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap herbs_vegetables_white_background {
             get {
                 object obj = ResourceManager.GetObject("herbs-vegetables-white-background", resourceCulture);

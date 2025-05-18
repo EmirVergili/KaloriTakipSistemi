@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="top-view-healthy-ingredients-bowls-white-background-with-blank-space-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top-view-healthy-ingredients-bowls-white-background-with-blank-space-text.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top-view-healthy-salad-with-mushrooms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top-view-healthy-salad-with-mushrooms.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pineapple-slice-wooden-tray-against-white-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pineapple-slice-wooden-tray-against-white-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avakado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avakado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,17 +154,17 @@
   <data name="png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unhappy-broken-egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unhappy-broken-egg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vegetables-white-background-with-copy-space" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vegetables-white-background-with-copy-space.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avakadodogruolan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avakadodogruolan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vegetables-white-background-with-copy-space" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vegetables-white-background-with-copy-space.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top-view-healthy-ingredients-bowls-white-background-with-blank-space-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top-view-healthy-ingredients-bowls-white-background-with-blank-space-text.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="top-view-healthy-salad-with-mushrooms" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top-view-healthy-salad-with-mushrooms.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unhappy-broken-egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unhappy-broken-egg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top-view-table-with-spaghetti-mushrooms" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top-view-table-with-spaghetti-mushrooms.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +181,7 @@
   <data name="flat-lay-tomatoes-holding-hands" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flat-lay-tomatoes-holding-hands.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pineapple-slice-wooden-tray-against-white-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pineapple-slice-wooden-tray-against-white-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="healthy-vegetarian-food-spices" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\healthy-vegetarian-food-spices.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

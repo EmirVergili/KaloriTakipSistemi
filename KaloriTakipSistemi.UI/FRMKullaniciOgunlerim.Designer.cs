@@ -59,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.White;
+            label1.BackColor = Color.FromArgb(249, 250, 251);
             label1.Location = new Point(72, 37);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -70,7 +70,7 @@
             // lblToplamkalori
             // 
             lblToplamkalori.AutoSize = true;
-            lblToplamkalori.BackColor = Color.White;
+            lblToplamkalori.BackColor = Color.FromArgb(249, 250, 251);
             lblToplamkalori.Location = new Point(72, 137);
             lblToplamkalori.Margin = new Padding(4, 0, 4, 0);
             lblToplamkalori.Name = "lblToplamkalori";
