@@ -145,7 +145,7 @@
             pictureBox1.Location = new Point(28, 1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(163, 163);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -155,7 +155,7 @@
             pictureBox2.Location = new Point(-10, 571);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(84, 53);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
             // 
