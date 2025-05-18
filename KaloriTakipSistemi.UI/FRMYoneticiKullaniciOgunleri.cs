@@ -58,7 +58,8 @@ namespace KaloriTakipSistemi.UI
                     k.Yemek.Kalori,
                     OgunAd = k.Ogun.Ad,
                     Porsiyon = k.Miktar,
-                    YTarih = k.YemekTarihi.Date
+                    YTarih = k.YemekTarihi.Date,
+                    ToplamKalori = k.Miktar * k.Yemek.Kalori
                 })
                 .ToList();
 
@@ -68,11 +69,13 @@ namespace KaloriTakipSistemi.UI
             dgvYoneticiOgunleri.Columns["OgunAd"].HeaderText = "Öğün Adı";
             dgvYoneticiOgunleri.Columns["Kalori"].HeaderText = "Kalori";
             dgvYoneticiOgunleri.Columns["Porsiyon"].HeaderText = "Porsiyon";
+            dgvYoneticiOgunleri.Columns["ToplamKalori"].HeaderText = "Toplam Kalori";
             dgvYoneticiOgunleri.Columns["Ad"].Width = 200;
             dgvYoneticiOgunleri.Columns["Kalori"].Width = 100;
             dgvYoneticiOgunleri.Columns["YTarih"].Width = 150;
             dgvYoneticiOgunleri.Columns["OgunAd"].Width = 100;
             dgvYoneticiOgunleri.Columns["Porsiyon"].Width = 100;
+            dgvYoneticiOgunleri.Columns["ToplamKalori"].Width = 100;
 
 
         }

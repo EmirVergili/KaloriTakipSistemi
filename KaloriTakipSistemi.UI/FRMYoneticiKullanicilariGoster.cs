@@ -33,6 +33,7 @@ namespace KaloriTakipSistemi.UI
                     k.Yas,
                                    
                 }).ToList();
+            dgvKullanicilariGoster.Columns["Id"].Visible = false;
         }
     }
 }
