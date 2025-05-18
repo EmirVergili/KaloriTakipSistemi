@@ -175,7 +175,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1069, 518);
+            ClientSize = new Size(932, 623);
             Controls.Add(dgvOgunler);
             Controls.Add(nudMiktar);
             Controls.Add(label4);

@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(765, 441);
+            ClientSize = new Size(932, 623);
             Controls.Add(txtDondurmaSebebi);
             Controls.Add(txtSifre);
             Controls.Add(btnDondur);

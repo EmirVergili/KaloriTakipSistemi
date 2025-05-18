@@ -177,7 +177,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "FRMKullaniciAnaMenu";
-            Text = "Kullanıcı Ana Menü";
+            Text = "Kullanıcı Menü";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

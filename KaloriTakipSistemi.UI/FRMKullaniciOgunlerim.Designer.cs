@@ -42,12 +42,12 @@
             dgvKullaniciOgunlerim.Margin = new Padding(4, 3, 4, 3);
             dgvKullaniciOgunlerim.Name = "dgvKullaniciOgunlerim";
             dgvKullaniciOgunlerim.RowHeadersWidth = 51;
-            dgvKullaniciOgunlerim.Size = new Size(1300, 396);
+            dgvKullaniciOgunlerim.Size = new Size(793, 396);
             dgvKullaniciOgunlerim.TabIndex = 0;
             // 
             // dtpKullaniciOgunGoruntuleme
             // 
-            dtpKullaniciOgunGoruntuleme.Location = new Point(886, 118);
+            dtpKullaniciOgunGoruntuleme.Location = new Point(203, 170);
             dtpKullaniciOgunGoruntuleme.Margin = new Padding(4, 3, 4, 3);
             dtpKullaniciOgunGoruntuleme.Name = "dtpKullaniciOgunGoruntuleme";
             dtpKullaniciOgunGoruntuleme.Size = new Size(373, 32);
@@ -78,7 +78,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1449, 657);
+            ClientSize = new Size(932, 623);
             Controls.Add(lblToplamkalori);
             Controls.Add(label1);
             Controls.Add(dtpKullaniciOgunGoruntuleme);

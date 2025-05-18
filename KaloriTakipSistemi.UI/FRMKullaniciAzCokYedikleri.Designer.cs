@@ -95,7 +95,7 @@
             // 
             // btnGoster
             // 
-            btnGoster.Location = new Point(1030, 18);
+            btnGoster.Location = new Point(337, 224);
             btnGoster.Margin = new Padding(4, 5, 4, 5);
             btnGoster.Name = "btnGoster";
             btnGoster.Size = new Size(172, 59);
@@ -108,7 +108,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 690);
+            ClientSize = new Size(932, 623);
             Controls.Add(btnGoster);
             Controls.Add(lblEnCokYedigimYemek);
             Controls.Add(lblEnAzYedigimYemek);
