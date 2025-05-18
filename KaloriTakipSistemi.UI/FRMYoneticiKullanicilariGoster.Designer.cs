@@ -43,7 +43,6 @@
             dgvKullanicilariGoster.RowHeadersWidth = 51;
             dgvKullanicilariGoster.Size = new Size(742, 504);
             dgvKullanicilariGoster.TabIndex = 0;
-            dgvKullanicilariGoster.CellContentClick += dgvKullanicilariGoster_CellContentClick;
             // 
             // pictureBox1
             // 

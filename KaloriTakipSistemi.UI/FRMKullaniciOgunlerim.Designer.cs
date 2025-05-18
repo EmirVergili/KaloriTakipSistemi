@@ -104,7 +104,6 @@
             MaximizeBox = false;
             Name = "FRMKullaniciOgunlerim";
             Text = "FRMKullaniciOgunlerim";
-            Load += FRMKullaniciOgunlerim_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKullaniciOgunlerim).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -138,7 +138,6 @@
             MaximizeBox = false;
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
-            Load += FRMKullaniciAzCokYedikleri_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

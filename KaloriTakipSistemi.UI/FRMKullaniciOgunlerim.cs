@@ -19,10 +19,6 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
         }
 
-        private void FRMKullaniciOgunlerim_Load(object sender, EventArgs e)
-        {
-           
-        }
 
         private void dtpKullaniciOgunGoruntuleme_ValueChanged(object sender, EventArgs e)
         {

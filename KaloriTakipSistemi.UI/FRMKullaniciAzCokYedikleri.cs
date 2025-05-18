@@ -19,12 +19,6 @@ namespace KaloriTakipSistemi.UI.Models
             _context = new Context.MyDbContext();
         }
 
-        private void FRMKullaniciAzCokYedikleri_Load(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void btnGoster_Click(object sender, EventArgs e)
         {
             DateTime baslangicTarihi = dtpBaslangicTarihi.Value.Date;

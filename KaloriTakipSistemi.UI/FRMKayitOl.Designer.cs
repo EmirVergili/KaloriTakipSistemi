@@ -128,7 +128,6 @@
             txtAd.Size = new Size(176, 29);
             txtAd.TabIndex = 8;
             txtAd.Text = "333333233";
-            txtAd.TextChanged += txtAd_TextChanged;
             // 
             // txtSoyad
             // 

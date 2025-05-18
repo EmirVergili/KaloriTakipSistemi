@@ -123,9 +123,5 @@ namespace KaloriTakipSistemi.UI
             }
         }
 
-        private void txtAd_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
