@@ -58,7 +58,7 @@ namespace KaloriTakipSistemi.UI
                     k.Yemek.Kalori,
                     OgunAd = k.Ogun.Ad,
                     Porsiyon = k.Miktar,
-                    YTarih = k.YemekTarihi.Date,
+                    YTarih = k.YemekTarihi.Day,
                     ToplamKalori = k.Miktar * k.Yemek.Kalori
                 })
                 .ToList();
