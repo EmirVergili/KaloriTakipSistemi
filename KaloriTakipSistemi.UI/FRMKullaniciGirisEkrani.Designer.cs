@@ -69,7 +69,7 @@
             btnGirisYap.Margin = new Padding(4);
             btnGirisYap.Name = "btnGirisYap";
             btnGirisYap.Size = new Size(158, 49);
-            btnGirisYap.TabIndex = 2;
+            btnGirisYap.TabIndex = 3;
             btnGirisYap.Text = "Giriş Yap";
             btnGirisYap.UseVisualStyleBackColor = false;
             btnGirisYap.Click += btnGirisYap_Click;
@@ -82,7 +82,7 @@
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(154, 27);
-            chbGoster.TabIndex = 3;
+            chbGoster.TabIndex = 4;
             chbGoster.Text = "Şifreyi Göster";
             chbGoster.UseVisualStyleBackColor = true;
             chbGoster.CheckedChanged += chbGoster_CheckedChanged;
@@ -106,7 +106,7 @@
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(170, 32);
-            txtSifre.TabIndex = 1;
+            txtSifre.TabIndex = 2;
             // 
             // lnkKayitOl
             // 
@@ -116,7 +116,7 @@
             lnkKayitOl.Location = new Point(67, 310);
             lnkKayitOl.Name = "lnkKayitOl";
             lnkKayitOl.Size = new Size(79, 23);
-            lnkKayitOl.TabIndex = 4;
+            lnkKayitOl.TabIndex = 5;
             lnkKayitOl.TabStop = true;
             lnkKayitOl.Text = "Kaydol";
             lnkKayitOl.LinkClicked += lnkKayitOl_LinkClicked;

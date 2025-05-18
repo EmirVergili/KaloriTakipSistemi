@@ -68,7 +68,7 @@
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(170, 32);
-            txtKullaniciAdi.TabIndex = 2;
+            txtKullaniciAdi.TabIndex = 1;
             // 
             // txtSifre
             // 
@@ -78,7 +78,7 @@
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
             txtSifre.Size = new Size(170, 32);
-            txtSifre.TabIndex = 3;
+            txtSifre.TabIndex = 2;
             // 
             // btnGiris
             // 
@@ -89,7 +89,7 @@
             btnGiris.Margin = new Padding(4);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(158, 49);
-            btnGiris.TabIndex = 4;
+            btnGiris.TabIndex = 3;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
             btnGiris.Click += btnGiris_Click;
@@ -102,7 +102,7 @@
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
             chbGoster.Size = new Size(154, 27);
-            chbGoster.TabIndex = 6;
+            chbGoster.TabIndex = 4;
             chbGoster.Text = "Şifreyi Göster";
             chbGoster.UseVisualStyleBackColor = true;
             chbGoster.CheckedChanged += chbGoster_CheckedChanged;
