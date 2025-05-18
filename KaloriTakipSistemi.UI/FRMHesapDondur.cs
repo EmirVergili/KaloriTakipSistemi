@@ -23,26 +23,36 @@ namespace KaloriTakipSistemi.UI
         private void btnDondur_Click(object sender, EventArgs e)
         {
             var kullanici = _context.Kullanicilar.FirstOrDefault(k=>k.Id==FRMKullaniciGirisEkrani.AktifKullaniciId&&k.Sifre==_context.sha256_hash(txtSifre.Text));
+           
             if (string.IsNullOrWhiteSpace(txtDondurmaSebebi.Text))
             {
                 MessageBox.Show("Lütfen bir dondurma sebebi giriniz.");
                 return;
             }
 
-
+            //kullanıcı hesabı null değilse hesabı dondurmak istiyip istemediğini sor
             if (kullanici != null)
             {
-                kullanici.HesapDurumu = false;
-                kullanici.DondurmaSebebi = txtDondurmaSebebi.Text;
+                var onay = MessageBox.Show("Hesabınızı dondurmak istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                _context.SaveChanges(); 
-                MessageBox.Show("Hesap başarıyla donduruldu");
+                if (onay == DialogResult.Yes)
+                {
+                    kullanici.HesapDurumu = false;
+                    kullanici.DondurmaSebebi = txtDondurmaSebebi.Text;
+
+                    _context.SaveChanges();
+                    MessageBox.Show("Hesap başarıyla donduruldu");
+                }
+                else
+                {
+                    MessageBox.Show("Hesap dondurma işlemi iptal edildi.");
+                }
             }
             else
             {
                 MessageBox.Show("Kullanıcı bulunamadı. İşlem gerçekleştirilemedi.");
             }
-            
+
         }
 
     }
