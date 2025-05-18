@@ -113,6 +113,26 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flat_lay_tomatoes_holding_hands {
+            get {
+                object obj = ResourceManager.GetObject("flat-lay-tomatoes-holding-hands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flat_lay_vegetables_holding_hands {
+            get {
+                object obj = ResourceManager.GetObject("flat-lay-vegetables-holding-hands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frame_ingredients_green_smoothie_vegetables_fruits_fresh_salad_white_background_top_view {
             get {
                 object obj = ResourceManager.GetObject("frame-ingredients-green-smoothie-vegetables-fruits-fresh-salad-white-background-t" +
@@ -187,6 +207,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         internal static System.Drawing.Bitmap top_view_healthy_salad_with_mushrooms {
             get {
                 object obj = ResourceManager.GetObject("top-view-healthy-salad-with-mushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unhappy_broken_egg {
+            get {
+                object obj = ResourceManager.GetObject("unhappy-broken-egg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
