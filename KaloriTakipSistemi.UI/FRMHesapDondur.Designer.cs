@@ -153,6 +153,7 @@
             MaximizeBox = false;
             Name = "FRMHesapDondur";
             Text = "FRMHesapDondur";
+            Load += FRMHesapDondur_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
