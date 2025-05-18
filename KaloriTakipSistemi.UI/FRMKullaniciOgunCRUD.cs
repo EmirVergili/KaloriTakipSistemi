@@ -63,7 +63,7 @@ namespace KaloriTakipSistemi.UI
                     a.Yemek.Ad,
                     ogunAdi = a.Ogun.Ad,
                     a.YemekTarihi,
-                    a.Miktar,
+                   porsiyon = a.Miktar,
                     kullaniciAdi = a.Kullanici.Ad,
                     a.Yemek.Kalori
                 }).ToList();
