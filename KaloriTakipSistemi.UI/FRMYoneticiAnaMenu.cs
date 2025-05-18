@@ -46,5 +46,11 @@ namespace KaloriTakipSistemi.UI
         }
         #endregion
 
+        private void btnCikisY_Click(object sender, EventArgs e)
+        {
+            FRMGirisEkrani fRMGirisEkrani = new();
+            fRMGirisEkrani.Show();
+            this.Hide(); //Bu formu gizle dedik.
+        }
     }
 }

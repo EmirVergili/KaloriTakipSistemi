@@ -45,7 +45,7 @@ namespace KaloriTakipSistemi.UI.Models
             else
             {
                 lblEnCokYedigimYemek.Text = "Hiç yemek bulunamadı.";
-                lblEnAzYedigimYemek.Text = "";
+                lblEnAzYedigimYemek.Text = "Hiç yemek bulunamadı.";
             }
         }
 

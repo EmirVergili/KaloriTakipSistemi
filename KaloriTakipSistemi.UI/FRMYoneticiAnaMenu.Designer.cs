@@ -36,6 +36,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label2 = new Label();
+            btnCikisY = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -137,6 +138,22 @@
             label2.TabIndex = 0;
             label2.Text = "Kalori Takip Programı";
             // 
+            // btnCikisY
+            // 
+            btnCikisY.BackColor = Color.IndianRed;
+            btnCikisY.FlatStyle = FlatStyle.Popup;
+            btnCikisY.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnCikisY.ForeColor = Color.White;
+            btnCikisY.Location = new Point(81, 571);
+            btnCikisY.Margin = new Padding(4, 3, 4, 3);
+            btnCikisY.Name = "btnCikisY";
+            btnCikisY.Size = new Size(133, 53);
+            btnCikisY.TabIndex = 2;
+            btnCikisY.Text = "Çıkış";
+            btnCikisY.TextAlign = ContentAlignment.MiddleLeft;
+            btnCikisY.UseVisualStyleBackColor = false;
+            btnCikisY.Click += btnCikisY_Click;
+            // 
             // FRMYoneticiAnaMenu
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
@@ -147,6 +164,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(btnYemekler);
             Controls.Add(pictureBox1);
+            Controls.Add(btnCikisY);
             Controls.Add(btnKullaniciOgunleri);
             Controls.Add(btnKullanicilariGoster);
             Controls.Add(label1);
@@ -173,5 +191,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label2;
+        private Button btnCikisY;
     }
 }

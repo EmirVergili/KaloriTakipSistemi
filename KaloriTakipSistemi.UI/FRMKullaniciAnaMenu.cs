@@ -63,5 +63,11 @@ namespace KaloriTakipSistemi.UI
 
         #endregion
 
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            FRMGirisEkrani fRMGirisEkrani = new();
+            fRMGirisEkrani.Show(); //Giriş ekranını gösterdik.
+            this.Hide(); //Ana menüyü gizledik.
+        }
     }
 }
