@@ -87,7 +87,7 @@ namespace KaloriTakipSistemi.UI
             }
 
             // Şifre değişikliği varsa kontrol et
-            if (!string.IsNullOrWhiteSpace(txtSifre.Text))
+            if (string.IsNullOrWhiteSpace(txtSifre.Text))
             {
                 // Şifre uzunluk kontrolü
                 MessageBox.Show("Sifre Bos Olamaz!!","UYARI",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
