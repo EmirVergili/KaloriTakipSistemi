@@ -34,6 +34,7 @@ namespace KaloriTakipSistemi.UI
                     Yemek=o.Yemek.Ad,
                     Kalori=o.Yemek.Kalori,
                     Tarih=o.YemekTarihi,
+                    porsiyon = o.Miktar,
                     ToplamKalori = o.Miktar*o.Yemek.Kalori  
 
                 }).ToList();
