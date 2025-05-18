@@ -224,6 +224,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap top_view_table_with_spaghetti_mushrooms {
+            get {
+                object obj = ResourceManager.GetObject("top-view-table-with-spaghetti-mushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap unhappy_broken_egg {
             get {
                 object obj = ResourceManager.GetObject("unhappy-broken-egg", resourceCulture);

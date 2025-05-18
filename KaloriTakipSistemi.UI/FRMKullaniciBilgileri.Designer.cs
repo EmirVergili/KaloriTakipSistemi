@@ -40,22 +40,26 @@
             btnGuncelle = new Button();
             lblKullaniciAdi = new Label();
             chbBilgilerimiGuncelle = new CheckBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbl
             // 
-            lbl.AutoSize = true;
-            lbl.Location = new Point(28, 35);
+            lbl.BackColor = Color.White;
+            lbl.Location = new Point(90, 91);
             lbl.Margin = new Padding(4, 0, 4, 0);
             lbl.Name = "lbl";
-            lbl.Size = new Size(133, 23);
+            lbl.Size = new Size(151, 37);
             lbl.TabIndex = 0;
-            lbl.Text = "Kullanıcı Adı";
+            lbl.Text = "Kullanıcı Adı :";
+            lbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(119, 87);
+            label2.BackColor = Color.White;
+            label2.Location = new Point(90, 147);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(39, 23);
@@ -65,17 +69,19 @@
             // lblSoyad
             // 
             lblSoyad.AutoSize = true;
-            lblSoyad.Location = new Point(83, 140);
+            lblSoyad.BackColor = Color.White;
+            lblSoyad.Location = new Point(90, 202);
             lblSoyad.Margin = new Padding(4, 0, 4, 0);
             lblSoyad.Name = "lblSoyad";
-            lblSoyad.Size = new Size(73, 23);
+            lblSoyad.Size = new Size(72, 23);
             lblSoyad.TabIndex = 2;
-            lblSoyad.Text = "SoyAd";
+            lblSoyad.Text = "Soyad";
             // 
             // lblYas
             // 
             lblYas.AutoSize = true;
-            lblYas.Location = new Point(117, 206);
+            lblYas.BackColor = Color.White;
+            lblYas.Location = new Point(90, 257);
             lblYas.Margin = new Padding(4, 0, 4, 0);
             lblYas.Name = "lblYas";
             lblYas.Size = new Size(45, 23);
@@ -85,7 +91,8 @@
             // lblSifre
             // 
             lblSifre.AutoSize = true;
-            lblSifre.Location = new Point(104, 263);
+            lblSifre.BackColor = Color.White;
+            lblSifre.Location = new Point(90, 312);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
             lblSifre.Size = new Size(48, 23);
@@ -94,55 +101,62 @@
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(188, 147);
+            txtSoyad.BackColor = Color.White;
+            txtSoyad.Location = new Point(241, 199);
             txtSoyad.Margin = new Padding(4, 3, 4, 3);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.ReadOnly = true;
-            txtSoyad.Size = new Size(138, 32);
+            txtSoyad.Size = new Size(232, 32);
             txtSoyad.TabIndex = 6;
             // 
             // txtYas
             // 
-            txtYas.Location = new Point(188, 201);
+            txtYas.BackColor = Color.White;
+            txtYas.Location = new Point(241, 254);
             txtYas.Margin = new Padding(4, 3, 4, 3);
             txtYas.Name = "txtYas";
             txtYas.ReadOnly = true;
-            txtYas.Size = new Size(138, 32);
+            txtYas.Size = new Size(232, 32);
             txtYas.TabIndex = 7;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(188, 258);
+            txtSifre.BackColor = Color.White;
+            txtSifre.Location = new Point(241, 309);
             txtSifre.Margin = new Padding(4, 3, 4, 3);
             txtSifre.Name = "txtSifre";
             txtSifre.ReadOnly = true;
-            txtSifre.Size = new Size(138, 32);
+            txtSifre.Size = new Size(232, 32);
             txtSifre.TabIndex = 8;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(188, 87);
+            txtAd.BackColor = Color.White;
+            txtAd.Location = new Point(241, 144);
             txtAd.Margin = new Padding(4, 3, 4, 3);
             txtAd.Name = "txtAd";
             txtAd.ReadOnly = true;
-            txtAd.Size = new Size(138, 32);
+            txtAd.Size = new Size(232, 32);
             txtAd.TabIndex = 10;
             // 
             // btnGuncelle
             // 
-            btnGuncelle.Location = new Point(327, 315);
+            btnGuncelle.BackColor = SystemColors.ButtonFace;
+            btnGuncelle.FlatStyle = FlatStyle.Popup;
+            btnGuncelle.Location = new Point(90, 453);
             btnGuncelle.Margin = new Padding(4, 3, 4, 3);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(151, 63);
+            btnGuncelle.Size = new Size(151, 50);
             btnGuncelle.TabIndex = 12;
             btnGuncelle.Text = "Güncelle";
-            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.UseVisualStyleBackColor = false;
             btnGuncelle.Click += btnGuncelle_Click;
             // 
             // lblKullaniciAdi
             // 
             lblKullaniciAdi.AutoSize = true;
-            lblKullaniciAdi.Location = new Point(188, 35);
+            lblKullaniciAdi.BackColor = Color.White;
+            lblKullaniciAdi.Location = new Point(241, 98);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
             lblKullaniciAdi.Size = new Size(119, 23);
@@ -152,14 +166,25 @@
             // chbBilgilerimiGuncelle
             // 
             chbBilgilerimiGuncelle.AutoSize = true;
-            chbBilgilerimiGuncelle.Location = new Point(470, 35);
+            chbBilgilerimiGuncelle.BackColor = Color.White;
+            chbBilgilerimiGuncelle.Location = new Point(90, 385);
             chbBilgilerimiGuncelle.Margin = new Padding(3, 2, 3, 2);
             chbBilgilerimiGuncelle.Name = "chbBilgilerimiGuncelle";
-            chbBilgilerimiGuncelle.Size = new Size(201, 27);
+            chbBilgilerimiGuncelle.Size = new Size(372, 27);
             chbBilgilerimiGuncelle.TabIndex = 14;
-            chbBilgilerimiGuncelle.Text = "Bilgilerimi Düzenle";
-            chbBilgilerimiGuncelle.UseVisualStyleBackColor = true;
+            chbBilgilerimiGuncelle.Text = "Bilgilerini güncellemek mi istiyorsun?";
+            chbBilgilerimiGuncelle.UseVisualStyleBackColor = false;
             chbBilgilerimiGuncelle.CheckedChanged += chbBilgilerimiGuncelle_CheckedChanged;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.top_view_table_with_spaghetti_mushrooms;
+            pictureBox1.Location = new Point(-58, -8);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1028, 656);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
             // 
             // FRMKullaniciBilgileri
             // 
@@ -178,6 +203,7 @@
             Controls.Add(lblSoyad);
             Controls.Add(label2);
             Controls.Add(lbl);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
@@ -185,6 +211,7 @@
             Name = "FRMKullaniciBilgileri";
             Text = "FRMKullaniciBilgileri";
             Load += FRMKullaniciBilgileri_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -205,5 +232,6 @@
         private Button btnGuncelle;
         private Label lblKullaniciAdi;
         private CheckBox chbBilgilerimiGuncelle;
+        private PictureBox pictureBox1;
     }
 }
