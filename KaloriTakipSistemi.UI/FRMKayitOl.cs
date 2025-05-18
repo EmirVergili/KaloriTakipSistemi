@@ -23,17 +23,69 @@ namespace KaloriTakipSistemi.UI
             InitializeComponent();
 
         }
+        private bool KayitValidasyonu()
+        {
+            // Boş alan kontrolü
+            if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) ||
+                string.IsNullOrWhiteSpace(txtSifre.Text) ||
+                string.IsNullOrWhiteSpace(txtSifreTekrar.Text) ||
+                string.IsNullOrWhiteSpace(txtAd.Text) ||
+                string.IsNullOrWhiteSpace(txtSoyad.Text) ||
+                string.IsNullOrWhiteSpace(txtYas.Text))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
 
+            // Kullanıcı adı uzunluk kontrolü
+            if (txtKullaniciAdi.Text.Length < 3 || txtKullaniciAdi.Text.Length > 20)
+            {
+                MessageBox.Show("Kullanıcı adı 3-20 karakter arasında olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Kullanıcı adı benzersizlik kontrolü
+            if (_context.Kullanicilar.Any(k => k.KullaniciAdi == txtKullaniciAdi.Text.Trim()))
+            {
+                MessageBox.Show("Bu kullanıcı adı zaten kullanılıyor.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+           
+
+            // Şifre eşleşme kontrolü
+            if (txtSifre.Text != txtSifreTekrar.Text)
+            {
+                MessageBox.Show("Şifreler uyuşmuyor!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Ad ve soyad uzunluk kontrolü
+            if (txtAd.Text.Length < 2 || txtSoyad.Text.Length < 2)
+            {
+                MessageBox.Show("Ad ve soyad en az 2 karakter olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Yaş kontrolü
+            if (!byte.TryParse(txtYas.Text, out byte yas) || yas < 13 || yas > 100)
+            {
+                MessageBox.Show("Yaş 13-100 arasında olmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtSifre.Text != txtSifreTekrar.Text)
+                if (!KayitValidasyonu())
                 {
-                    MessageBox.Show("Şifreler Uyuşmuyor !!!!!");
                     return;
                 }
+               
                 var YeniKullanici = new Kullanici()
                 {
                     KullaniciAdi = txtKullaniciAdi.Text,
@@ -56,6 +108,11 @@ namespace KaloriTakipSistemi.UI
 
 
             }
+        }
+
+        private void txtAd_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

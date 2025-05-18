@@ -52,11 +52,11 @@
             // 
             lblKullaniciAdi.AutoSize = true;
             lblKullaniciAdi.BackColor = Color.FromArgb(250, 250, 248);
-            lblKullaniciAdi.Font = new Font("Century Gothic", 12F);
+            lblKullaniciAdi.Font = new Font("Microsoft Sans Serif", 12F);
             lblKullaniciAdi.Location = new Point(94, 321);
             lblKullaniciAdi.Margin = new Padding(4, 0, 4, 0);
             lblKullaniciAdi.Name = "lblKullaniciAdi";
-            lblKullaniciAdi.Size = new Size(133, 23);
+            lblKullaniciAdi.Size = new Size(93, 20);
             lblKullaniciAdi.TabIndex = 0;
             lblKullaniciAdi.Text = "Kullanıcı Adı";
             // 
@@ -64,11 +64,11 @@
             // 
             lblSifre.AutoSize = true;
             lblSifre.BackColor = Color.FromArgb(250, 250, 248);
-            lblSifre.Font = new Font("Century Gothic", 12F);
+            lblSifre.Font = new Font("Microsoft Sans Serif", 12F);
             lblSifre.Location = new Point(94, 375);
             lblSifre.Margin = new Padding(4, 0, 4, 0);
             lblSifre.Name = "lblSifre";
-            lblSifre.Size = new Size(48, 23);
+            lblSifre.Size = new Size(42, 20);
             lblSifre.TabIndex = 1;
             lblSifre.Text = "Şifre";
             // 
@@ -76,11 +76,11 @@
             // 
             lblSifreTekrar.AutoSize = true;
             lblSifreTekrar.BackColor = Color.FromArgb(250, 250, 248);
-            lblSifreTekrar.Font = new Font("Century Gothic", 12F);
+            lblSifreTekrar.Font = new Font("Microsoft Sans Serif", 12F);
             lblSifreTekrar.Location = new Point(94, 429);
             lblSifreTekrar.Margin = new Padding(4, 0, 4, 0);
             lblSifreTekrar.Name = "lblSifreTekrar";
-            lblSifreTekrar.Size = new Size(125, 23);
+            lblSifreTekrar.Size = new Size(101, 20);
             lblSifreTekrar.TabIndex = 2;
             lblSifreTekrar.Text = "Şifre (Tekrar)";
             // 
@@ -88,11 +88,11 @@
             // 
             lblAd.AutoSize = true;
             lblAd.BackColor = Color.FromArgb(250, 250, 248);
-            lblAd.Font = new Font("Century Gothic", 12F);
+            lblAd.Font = new Font("Microsoft Sans Serif", 12F);
             lblAd.Location = new Point(94, 159);
             lblAd.Margin = new Padding(4, 0, 4, 0);
             lblAd.Name = "lblAd";
-            lblAd.Size = new Size(39, 23);
+            lblAd.Size = new Size(29, 20);
             lblAd.TabIndex = 3;
             lblAd.Text = "Ad";
             // 
@@ -101,7 +101,7 @@
             txtKullaniciAdi.Location = new Point(235, 318);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(176, 34);
+            txtKullaniciAdi.Size = new Size(176, 29);
             txtKullaniciAdi.TabIndex = 5;
             // 
             // txtSifre
@@ -109,7 +109,7 @@
             txtSifre.Location = new Point(235, 372);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(176, 34);
+            txtSifre.Size = new Size(176, 29);
             txtSifre.TabIndex = 6;
             // 
             // txtSifreTekrar
@@ -117,7 +117,7 @@
             txtSifreTekrar.Location = new Point(235, 426);
             txtSifreTekrar.Margin = new Padding(4);
             txtSifreTekrar.Name = "txtSifreTekrar";
-            txtSifreTekrar.Size = new Size(176, 34);
+            txtSifreTekrar.Size = new Size(176, 29);
             txtSifreTekrar.TabIndex = 7;
             // 
             // txtAd
@@ -125,22 +125,24 @@
             txtAd.Location = new Point(235, 156);
             txtAd.Margin = new Padding(4);
             txtAd.Name = "txtAd";
-            txtAd.Size = new Size(176, 34);
+            txtAd.Size = new Size(176, 29);
             txtAd.TabIndex = 8;
+            txtAd.Text = "333333233";
+            txtAd.TextChanged += txtAd_TextChanged;
             // 
             // txtSoyad
             // 
             txtSoyad.Location = new Point(235, 210);
             txtSoyad.Margin = new Padding(4);
             txtSoyad.Name = "txtSoyad";
-            txtSoyad.Size = new Size(176, 34);
+            txtSoyad.Size = new Size(176, 29);
             txtSoyad.TabIndex = 9;
             // 
             // btnKayitOl
             // 
             btnKayitOl.BackColor = Color.FromArgb(199, 234, 203);
             btnKayitOl.FlatStyle = FlatStyle.Flat;
-            btnKayitOl.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            btnKayitOl.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnKayitOl.Location = new Point(148, 508);
             btnKayitOl.Margin = new Padding(4);
             btnKayitOl.Name = "btnKayitOl";
@@ -154,11 +156,11 @@
             // 
             lblSoyad.AutoSize = true;
             lblSoyad.BackColor = Color.FromArgb(250, 250, 248);
-            lblSoyad.Font = new Font("Century Gothic", 12F);
+            lblSoyad.Font = new Font("Microsoft Sans Serif", 12F);
             lblSoyad.Location = new Point(94, 213);
             lblSoyad.Margin = new Padding(4, 0, 4, 0);
             lblSoyad.Name = "lblSoyad";
-            lblSoyad.Size = new Size(72, 23);
+            lblSoyad.Size = new Size(54, 20);
             lblSoyad.TabIndex = 11;
             lblSoyad.Text = "Soyad";
             // 
@@ -166,10 +168,10 @@
             // 
             lblYas.AutoSize = true;
             lblYas.BackColor = Color.FromArgb(250, 250, 248);
-            lblYas.Font = new Font("Century Gothic", 12F);
+            lblYas.Font = new Font("Microsoft Sans Serif", 12F);
             lblYas.Location = new Point(94, 267);
             lblYas.Name = "lblYas";
-            lblYas.Size = new Size(45, 23);
+            lblYas.Size = new Size(37, 20);
             lblYas.TabIndex = 13;
             lblYas.Text = "Yaş";
             // 
@@ -177,7 +179,7 @@
             // 
             txtYas.Location = new Point(235, 264);
             txtYas.Name = "txtYas";
-            txtYas.Size = new Size(176, 34);
+            txtYas.Size = new Size(176, 29);
             txtYas.TabIndex = 14;
             // 
             // pictureBox1
@@ -204,16 +206,16 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(250, 250, 248);
-            label2.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
             label2.Location = new Point(148, 62);
             label2.Name = "label2";
-            label2.Size = new Size(180, 37);
+            label2.Size = new Size(139, 29);
             label2.TabIndex = 17;
             label2.Text = "Kayıt Ekranı";
             // 
             // FRMKayitOl
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(504, 630);
             Controls.Add(label2);
