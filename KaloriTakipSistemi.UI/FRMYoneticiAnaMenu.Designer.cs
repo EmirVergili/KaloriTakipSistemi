@@ -89,7 +89,7 @@
             // 
             // pnlYoneticiAnamenuIcerik
             // 
-            pnlYoneticiAnamenuIcerik.Location = new Point(222, 1);
+            pnlYoneticiAnamenuIcerik.Location = new Point(222, 0);
             pnlYoneticiAnamenuIcerik.Margin = new Padding(4, 3, 4, 3);
             pnlYoneticiAnamenuIcerik.Name = "pnlYoneticiAnamenuIcerik";
             pnlYoneticiAnamenuIcerik.Size = new Size(934, 621);
