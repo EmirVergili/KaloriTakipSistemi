@@ -62,6 +62,7 @@
             // 
             // cmbKullanici
             // 
+            cmbKullanici.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbKullanici.FormattingEnabled = true;
             cmbKullanici.Location = new Point(300, 191);
             cmbKullanici.Margin = new Padding(4, 5, 4, 5);
