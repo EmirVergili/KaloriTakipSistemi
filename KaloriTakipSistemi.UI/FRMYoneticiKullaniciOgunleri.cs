@@ -24,6 +24,8 @@ namespace KaloriTakipSistemi.UI
 
         private void FRMYoneticiKullaniciOgunleri_Load(object sender, EventArgs e)
         {
+            dtpTarih.MaxDate = DateTime.Now;
+
             cmbKullanici.SelectedIndexChanged -= cmbKullanici_SelectedIndexChanged;
             cmbKullanici.DataSource = _context.Kullanicilar
                .Select(k => new
