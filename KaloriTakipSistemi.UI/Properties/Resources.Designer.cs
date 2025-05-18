@@ -113,6 +113,26 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flat_lay_tomatoes_holding_hands {
+            get {
+                object obj = ResourceManager.GetObject("flat-lay-tomatoes-holding-hands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flat_lay_vegetables_holding_hands {
+            get {
+                object obj = ResourceManager.GetObject("flat-lay-vegetables-holding-hands", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frame_ingredients_green_smoothie_vegetables_fruits_fresh_salad_white_background_top_view {
             get {
                 object obj = ResourceManager.GetObject("frame-ingredients-green-smoothie-vegetables-fruits-fresh-salad-white-background-t" +
@@ -127,6 +147,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         internal static System.Drawing.Bitmap fruit_slices_white {
             get {
                 object obj = ResourceManager.GetObject("fruit-slices-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap healthy_vegetarian_food_spices {
+            get {
+                object obj = ResourceManager.GetObject("healthy-vegetarian-food-spices", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -154,6 +184,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pineapple_slice_wooden_tray_against_white_background {
+            get {
+                object obj = ResourceManager.GetObject("pineapple-slice-wooden-tray-against-white-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png {
             get {
                 object obj = ResourceManager.GetObject("png", resourceCulture);
@@ -174,6 +214,16 @@ namespace KaloriTakipSistemi.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap red_apples_concept_fresh_healthy_food {
+            get {
+                object obj = ResourceManager.GetObject("red-apples-concept-fresh-healthy-food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap top_view_healthy_ingredients_bowls_white_background_with_blank_space_text {
             get {
                 object obj = ResourceManager.GetObject("top-view-healthy-ingredients-bowls-white-background-with-blank-space-text", resourceCulture);
@@ -187,6 +237,26 @@ namespace KaloriTakipSistemi.UI.Properties {
         internal static System.Drawing.Bitmap top_view_healthy_salad_with_mushrooms {
             get {
                 object obj = ResourceManager.GetObject("top-view-healthy-salad-with-mushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_view_table_with_spaghetti_mushrooms {
+            get {
+                object obj = ResourceManager.GetObject("top-view-table-with-spaghetti-mushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unhappy_broken_egg {
+            get {
+                object obj = ResourceManager.GetObject("unhappy-broken-egg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

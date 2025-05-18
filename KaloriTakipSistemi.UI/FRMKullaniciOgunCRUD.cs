@@ -37,7 +37,7 @@ namespace KaloriTakipSistemi.UI
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            hatakontrol();
+            HataKontrol();
 
             var ogunEkle = new KullaniciYemek()
             {
@@ -68,6 +68,7 @@ namespace KaloriTakipSistemi.UI
                     a.Yemek.Kalori
                 }).ToList();
             dgvOgunler.DataSource = kullaniciYemek;
+            dgvOgunler.Columns[0].Visible = false;
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -86,7 +87,7 @@ namespace KaloriTakipSistemi.UI
                 Listele();
             }
         }
-        public void hatakontrol()
+        public void HataKontrol()
         {
             if (cmbOgun.SelectedItem == null || cmbYemek.SelectedItem == null)
             {
@@ -103,7 +104,7 @@ namespace KaloriTakipSistemi.UI
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            hatakontrol();
+            HataKontrol();
             if (dgvOgunler.CurrentRow == null) return;
           
             int ogunId = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;

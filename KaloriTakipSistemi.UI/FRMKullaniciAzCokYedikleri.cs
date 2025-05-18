@@ -45,8 +45,8 @@ namespace KaloriTakipSistemi.UI.Models
                 var enCokYemek = filtrelenmisYemekler.OrderByDescending(y => y.ToplamMiktar).First();
                 var enAzYemek = filtrelenmisYemekler.OrderBy(y => y.ToplamMiktar).First();
 
-                lblEnCokYedigimYemek.Text = $"En Çok Yenen Yemek: {enCokYemek.YemekAd} - Miktar: {enCokYemek.ToplamMiktar}";
-                lblEnAzYedigimYemek.Text = $"En Az Yenen Yemek: {enAzYemek.YemekAd} - Miktar: {enAzYemek.ToplamMiktar}";
+                lblEnCokYedigimYemek.Text = $"{enCokYemek.YemekAd} - Miktar: {enCokYemek.ToplamMiktar}";
+                lblEnAzYedigimYemek.Text = $"{enAzYemek.YemekAd} - Miktar: {enAzYemek.ToplamMiktar}";
             }
             else
             {

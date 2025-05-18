@@ -42,7 +42,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Location = new Point(197, 116);
+            label1.Location = new Point(173, 116);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(53, 23);
@@ -53,7 +53,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Location = new Point(197, 194);
+            label2.Location = new Point(173, 194);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(93, 23);
@@ -63,7 +63,7 @@
             // cmbKullanici
             // 
             cmbKullanici.FormattingEnabled = true;
-            cmbKullanici.Location = new Point(324, 191);
+            cmbKullanici.Location = new Point(300, 191);
             cmbKullanici.Margin = new Padding(4, 5, 4, 5);
             cmbKullanici.Name = "cmbKullanici";
             cmbKullanici.Size = new Size(376, 31);
@@ -72,7 +72,7 @@
             // 
             // dtpTarih
             // 
-            dtpTarih.Location = new Point(324, 109);
+            dtpTarih.Location = new Point(300, 109);
             dtpTarih.Margin = new Padding(4, 5, 4, 5);
             dtpTarih.Name = "dtpTarih";
             dtpTarih.Size = new Size(376, 32);
@@ -82,7 +82,7 @@
             // dgvYoneticiOgunleri
             // 
             dgvYoneticiOgunleri.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvYoneticiOgunleri.Location = new Point(118, 265);
+            dgvYoneticiOgunleri.Location = new Point(109, 265);
             dgvYoneticiOgunleri.Margin = new Padding(4, 5, 4, 5);
             dgvYoneticiOgunleri.Name = "dgvYoneticiOgunleri";
             dgvYoneticiOgunleri.RowHeadersWidth = 51;

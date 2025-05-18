@@ -35,11 +35,13 @@
             lblEnAzYedigimYemek = new Label();
             lblEnCokYedigimYemek = new Label();
             btnGoster = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dtpBitisTarihi
             // 
-            dtpBitisTarihi.Location = new Point(567, 24);
+            dtpBitisTarihi.Location = new Point(509, 44);
             dtpBitisTarihi.Margin = new Padding(4, 5, 4, 5);
             dtpBitisTarihi.Name = "dtpBitisTarihi";
             dtpBitisTarihi.Size = new Size(340, 32);
@@ -47,7 +49,7 @@
             // 
             // dtpBaslangicTarihi
             // 
-            dtpBaslangicTarihi.Location = new Point(140, 18);
+            dtpBaslangicTarihi.Location = new Point(86, 44);
             dtpBaslangicTarihi.Margin = new Padding(4, 5, 4, 5);
             dtpBaslangicTarihi.Name = "dtpBaslangicTarihi";
             dtpBaslangicTarihi.Size = new Size(340, 32);
@@ -56,59 +58,72 @@
             // lblAzYediklerim
             // 
             lblAzYediklerim.AutoSize = true;
-            lblAzYediklerim.Location = new Point(140, 75);
+            lblAzYediklerim.BackColor = Color.FromArgb(249, 250, 251);
+            lblAzYediklerim.Location = new Point(150, 217);
             lblAzYediklerim.Margin = new Padding(4, 0, 4, 0);
             lblAzYediklerim.Name = "lblAzYediklerim";
-            lblAzYediklerim.Size = new Size(221, 23);
+            lblAzYediklerim.Size = new Size(232, 23);
             lblAzYediklerim.TabIndex = 2;
-            lblAzYediklerim.Text = "En Az Yediğim Yemek";
+            lblAzYediklerim.Text = "En Az Yediğim Yemek :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(140, 143);
+            label2.BackColor = Color.FromArgb(249, 250, 251);
+            label2.Location = new Point(150, 271);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(236, 23);
+            label2.Size = new Size(247, 23);
             label2.TabIndex = 3;
-            label2.Text = "En Çok Yediğim Yemek";
+            label2.Text = "En Çok Yediğim Yemek :";
             // 
             // lblEnAzYedigimYemek
             // 
             lblEnAzYedigimYemek.AutoSize = true;
-            lblEnAzYedigimYemek.Location = new Point(622, 75);
+            lblEnAzYedigimYemek.BackColor = Color.FromArgb(249, 250, 251);
+            lblEnAzYedigimYemek.Location = new Point(464, 217);
             lblEnAzYedigimYemek.Margin = new Padding(4, 0, 4, 0);
             lblEnAzYedigimYemek.Name = "lblEnAzYedigimYemek";
-            lblEnAzYedigimYemek.Size = new Size(72, 23);
+            lblEnAzYedigimYemek.Size = new Size(0, 23);
             lblEnAzYedigimYemek.TabIndex = 4;
-            lblEnAzYedigimYemek.Text = "label3";
             // 
             // lblEnCokYedigimYemek
             // 
             lblEnCokYedigimYemek.AutoSize = true;
-            lblEnCokYedigimYemek.Location = new Point(622, 143);
+            lblEnCokYedigimYemek.BackColor = Color.FromArgb(249, 250, 251);
+            lblEnCokYedigimYemek.Location = new Point(464, 271);
             lblEnCokYedigimYemek.Margin = new Padding(4, 0, 4, 0);
             lblEnCokYedigimYemek.Name = "lblEnCokYedigimYemek";
-            lblEnCokYedigimYemek.Size = new Size(72, 23);
+            lblEnCokYedigimYemek.Size = new Size(0, 23);
             lblEnCokYedigimYemek.TabIndex = 5;
-            lblEnCokYedigimYemek.Text = "label4";
             // 
             // btnGoster
             // 
-            btnGoster.Location = new Point(1030, 18);
+            btnGoster.FlatStyle = FlatStyle.Popup;
+            btnGoster.Location = new Point(397, 108);
             btnGoster.Margin = new Padding(4, 5, 4, 5);
             btnGoster.Name = "btnGoster";
-            btnGoster.Size = new Size(172, 59);
+            btnGoster.Size = new Size(139, 44);
             btnGoster.TabIndex = 6;
             btnGoster.Text = "Göster";
             btnGoster.UseVisualStyleBackColor = true;
             btnGoster.Click += btnGoster_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.healthy_vegetarian_food_spices;
+            pictureBox1.Location = new Point(-304, -368);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1490, 1020);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // FRMKullaniciAzCokYedikleri
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 690);
+            ClientSize = new Size(932, 623);
             Controls.Add(btnGoster);
             Controls.Add(lblEnCokYedigimYemek);
             Controls.Add(lblEnAzYedigimYemek);
@@ -116,6 +131,7 @@
             Controls.Add(lblAzYediklerim);
             Controls.Add(dtpBaslangicTarihi);
             Controls.Add(dtpBitisTarihi);
+            Controls.Add(pictureBox1);
             Font = new Font("Century Gothic", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
@@ -123,6 +139,7 @@
             Name = "FRMKullaniciAzCokYedikleri";
             Text = "FRMKullaniciAzCokYedikleri";
             Load += FRMKullaniciAzCokYedikleri_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +153,6 @@
         private Label lblEnAzYedigimYemek;
         private Label lblEnCokYedigimYemek;
         private Button btnGoster;
+        private PictureBox pictureBox1;
     }
 }

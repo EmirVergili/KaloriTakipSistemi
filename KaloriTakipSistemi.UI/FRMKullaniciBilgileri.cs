@@ -22,6 +22,7 @@ namespace KaloriTakipSistemi.UI
 
         private void FRMKullaniciBilgileri_Load(object sender, EventArgs e)
         {
+            btnGuncelle.Enabled = false;
             var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
             if (kullanici != null)
             {
@@ -47,6 +48,7 @@ namespace KaloriTakipSistemi.UI
                 txtSoyad.ReadOnly = false;
                 txtYas.ReadOnly = false;
                 txtSifre.ReadOnly = false;
+                btnGuncelle.Enabled = true;
             }
             else
             {
@@ -54,6 +56,7 @@ namespace KaloriTakipSistemi.UI
                 txtSoyad.ReadOnly = true;
                 txtYas.ReadOnly = true;
                 txtSifre.ReadOnly = true;
+                btnGuncelle.Enabled = false;
             }
 
 
