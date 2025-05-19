@@ -39,6 +39,7 @@
             // 
             // dgvKullaniciOgunlerim
             // 
+            dgvKullaniciOgunlerim.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvKullaniciOgunlerim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvKullaniciOgunlerim.Location = new Point(64, 208);
             dgvKullaniciOgunlerim.Margin = new Padding(4, 3, 4, 3);

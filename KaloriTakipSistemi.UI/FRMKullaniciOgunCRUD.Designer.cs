@@ -53,7 +53,7 @@
             dtpYemekTarihi.Location = new Point(199, 46);
             dtpYemekTarihi.Margin = new Padding(3, 2, 3, 2);
             dtpYemekTarihi.Name = "dtpYemekTarihi";
-            dtpYemekTarihi.Size = new Size(295, 26);
+            dtpYemekTarihi.Size = new Size(295, 30);
             dtpYemekTarihi.TabIndex = 0;
             // 
             // cmbOgun
@@ -63,7 +63,7 @@
             cmbOgun.Location = new Point(199, 109);
             cmbOgun.Margin = new Padding(3, 2, 3, 2);
             cmbOgun.Name = "cmbOgun";
-            cmbOgun.Size = new Size(295, 28);
+            cmbOgun.Size = new Size(295, 33);
             cmbOgun.TabIndex = 2;
             // 
             // label1
@@ -72,7 +72,7 @@
             label1.BackColor = Color.FromArgb(243, 245, 247);
             label1.Location = new Point(73, 53);
             label1.Name = "label1";
-            label1.Size = new Size(44, 20);
+            label1.Size = new Size(57, 25);
             label1.TabIndex = 3;
             label1.Text = "Tarih";
             // 
@@ -94,7 +94,7 @@
             label2.BackColor = Color.FromArgb(243, 245, 247);
             label2.Location = new Point(73, 112);
             label2.Name = "label2";
-            label2.Size = new Size(48, 20);
+            label2.Size = new Size(61, 25);
             label2.TabIndex = 3;
             label2.Text = "Öğün";
             // 
@@ -104,7 +104,7 @@
             label3.BackColor = Color.FromArgb(243, 245, 247);
             label3.Location = new Point(73, 230);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
+            label3.Size = new Size(65, 25);
             label3.TabIndex = 3;
             label3.Text = "Miktar";
             // 
@@ -115,7 +115,7 @@
             cmbYemek.Location = new Point(199, 168);
             cmbYemek.Margin = new Padding(3, 2, 3, 2);
             cmbYemek.Name = "cmbYemek";
-            cmbYemek.Size = new Size(295, 28);
+            cmbYemek.Size = new Size(295, 33);
             cmbYemek.TabIndex = 2;
             // 
             // label5
@@ -124,7 +124,7 @@
             label5.BackColor = Color.FromArgb(243, 245, 247);
             label5.Location = new Point(73, 171);
             label5.Name = "label5";
-            label5.Size = new Size(59, 20);
+            label5.Size = new Size(73, 25);
             label5.TabIndex = 3;
             label5.Text = "Yemek";
             // 
@@ -159,7 +159,7 @@
             label4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
             label4.Location = new Point(199, 262);
             label4.Name = "label4";
-            label4.Size = new Size(322, 17);
+            label4.Size = new Size(377, 20);
             label4.TabIndex = 5;
             label4.Text = "(1 porsiyon yaklaşık 100 grama denk gelmektedir)";
             // 
@@ -169,12 +169,13 @@
             nudMiktar.Margin = new Padding(3, 2, 3, 2);
             nudMiktar.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudMiktar.Name = "nudMiktar";
-            nudMiktar.Size = new Size(100, 26);
+            nudMiktar.Size = new Size(100, 30);
             nudMiktar.TabIndex = 6;
             nudMiktar.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // dgvOgunler
             // 
+            dgvOgunler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOgunler.Location = new Point(53, 429);
             dgvOgunler.Margin = new Padding(3, 2, 3, 2);
@@ -202,13 +203,13 @@
             label6.BackColor = Color.FromArgb(243, 245, 247);
             label6.Location = new Point(305, 230);
             label6.Name = "label6";
-            label6.Size = new Size(69, 20);
+            label6.Size = new Size(88, 25);
             label6.TabIndex = 5;
             label6.Text = "Porsiyon";
             // 
             // FRMKullaniciOgunCRUD
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(12F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 623);
             Controls.Add(dgvOgunler);

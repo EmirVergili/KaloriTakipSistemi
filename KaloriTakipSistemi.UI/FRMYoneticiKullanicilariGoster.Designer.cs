@@ -36,6 +36,7 @@
             // 
             // dgvKullanicilariGoster
             // 
+            dgvKullanicilariGoster.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvKullanicilariGoster.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvKullanicilariGoster.Location = new Point(86, 57);
             dgvKullanicilariGoster.Margin = new Padding(4, 5, 4, 5);
