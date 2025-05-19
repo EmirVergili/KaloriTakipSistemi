@@ -144,13 +144,12 @@
             btnCikisY.FlatStyle = FlatStyle.Popup;
             btnCikisY.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             btnCikisY.ForeColor = Color.White;
-            btnCikisY.Location = new Point(81, 571);
+            btnCikisY.Location = new Point(133, 571);
             btnCikisY.Margin = new Padding(4, 3, 4, 3);
             btnCikisY.Name = "btnCikisY";
-            btnCikisY.Size = new Size(133, 53);
+            btnCikisY.Size = new Size(89, 53);
             btnCikisY.TabIndex = 2;
             btnCikisY.Text = "Çıkış";
-            btnCikisY.TextAlign = ContentAlignment.MiddleLeft;
             btnCikisY.UseVisualStyleBackColor = false;
             btnCikisY.Click += btnCikisY_Click;
             // 
@@ -174,6 +173,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "FRMYoneticiAnaMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Yönetici Menü";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

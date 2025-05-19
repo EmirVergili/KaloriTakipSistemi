@@ -22,7 +22,7 @@ namespace KaloriTakipSistemi.UI.Context
         {
             if (!optionsBuilder.IsConfigured) // Eğer DbContext yapılandırılmamışsa
             {
-                optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=True;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("server = DO¦A\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=True;TrustServerCertificate=True");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder) //burada veritabanı tablolarının iliskilerini veriyoruz 
