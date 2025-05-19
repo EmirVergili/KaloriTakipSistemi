@@ -20,20 +20,20 @@ namespace KaloriTakipSistemi.UI
         }
 
 
-        private void FRMKullaniciBilgileri_Load(object sender, EventArgs e)
+        private void FRMKullaniciBilgileri_Load(object sender, EventArgs e) // 
         {
-            btnGuncelle.Enabled = false;
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
+            btnGuncelle.Enabled = false; // burda butonun başlangıçta kapalı olmasını sağlıyoruz
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId); // burada kullanıcının bilgilerini alıyoruz
             if (kullanici != null)
             {
-                lblKullaniciAdi.Text = kullanici.KullaniciAdi;
+                lblKullaniciAdi.Text = kullanici.KullaniciAdi; 
                 txtAd.Text = kullanici.Ad;
                 txtSoyad.Text = kullanici.Soyad;
                 txtYas.Text = kullanici.Yas.ToString();
             }
             else
             {
-                MessageBox.Show("Kullanıcı bulunamadı.");
+                MessageBox.Show("Kullanıcı bulunamadı."); // kullanıcı bulunamadı mesajını veriyoruz 
             }
 
 
@@ -42,13 +42,13 @@ namespace KaloriTakipSistemi.UI
 
         private void chbBilgilerimiGuncelle_CheckedChanged(object sender, EventArgs e)
         {
-            if (chbBilgilerimiGuncelle.Checked)
+            if (chbBilgilerimiGuncelle.Checked) // burada checkbox işaretli ise
             {
-                txtAd.ReadOnly = false;
-                txtSoyad.ReadOnly = false;
-                txtYas.ReadOnly = false;
-                txtSifre.ReadOnly = false;
-                btnGuncelle.Enabled = true;
+                txtAd.ReadOnly = false; // burada textboxların readonly özelliğini false yapıyoruz
+                txtSoyad.ReadOnly = false; // burada textboxların readonly özelliğini false yapıyoruz
+                txtYas.ReadOnly = false;  // burada textboxların readonly özelliğini false yapıyoruz
+                txtSifre.ReadOnly = false; // burada textboxların readonly özelliğini false yapıyoruz
+                btnGuncelle.Enabled = true; // burada butonu aktif yapıyoruz
             }
             else
             {
@@ -63,7 +63,7 @@ namespace KaloriTakipSistemi.UI
         }
         private bool BilgiGuncellemeValidasyonu()
         {
-            // Boş alan kontrolü
+            // Boş alan kontrolollerini yapıyoruz 
             if (string.IsNullOrWhiteSpace(txtAd.Text) ||
                 string.IsNullOrWhiteSpace(txtSoyad.Text) ||
                 string.IsNullOrWhiteSpace(txtYas.Text))
@@ -129,11 +129,11 @@ namespace KaloriTakipSistemi.UI
         {
             try
             {
-                if (!BilgiGuncellemeValidasyonu())
+                if (!BilgiGuncellemeValidasyonu()) // burada bilgi güncelleme validasyonunu kontrol ediyoruz 
                 {
                     return;
                 }
-                var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId);
+                var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.Id == FRMKullaniciGirisEkrani.AktifKullaniciId); // burada kullanıcı bilgilerini alıyoruz 
                 if (kullanici != null)
                 {
                     kullanici.Ad = txtAd.Text.Trim();

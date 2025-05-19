@@ -22,7 +22,7 @@ namespace KaloriTakipSistemi.UI
 
         private void dtpKullaniciOgunGoruntuleme_ValueChanged(object sender, EventArgs e)
         {
-            var ogunler = _context.KullaniciYemekler.Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId && dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date)
+            var ogunler = _context.KullaniciYemekler.Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId && dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date) // burada kullanici yemekler tablosunu alıyoruz
                 .Select(o => new
                 {
                     AdSoyad = o.Kullanici.Ad + " " + o.Kullanici.Soyad,
@@ -35,7 +35,7 @@ namespace KaloriTakipSistemi.UI
 
                 }).ToList();
             var toplamkalori = _context.KullaniciYemekler.Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId && dtpKullaniciOgunGoruntuleme.Value.Date == k.YemekTarihi.Date).Sum(o => o.Miktar * o.Yemek.Kalori);
-            lblToplamkalori.Text = "Günlük toplam kalori : " + toplamkalori.ToString() + " kcal";
+            lblToplamkalori.Text = "Günlük toplam kalori : " + toplamkalori.ToString() + " kcal"; // burada toplam kalori labela yazdırıyoruz
 
             dgvKullaniciOgunlerim.DataSource = ogunler;
 
@@ -43,7 +43,7 @@ namespace KaloriTakipSistemi.UI
 
         private void FRMKullaniciOgunlerim_Load(object sender, EventArgs e)
         {
-            dtpKullaniciOgunGoruntuleme.MaxDate = DateTime.Now;
+            dtpKullaniciOgunGoruntuleme.MaxDate = DateTime.Now; // burada tarih seçimini max tarihini bugüne ayarlıyoruz
         }
     }
 }

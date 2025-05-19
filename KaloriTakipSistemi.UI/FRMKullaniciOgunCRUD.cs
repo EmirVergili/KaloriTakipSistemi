@@ -17,7 +17,7 @@ namespace KaloriTakipSistemi.UI
     {
         private readonly MyDbContext _context;
 
-        public FRMKullaniciOgunCRUD()
+        public FRMKullaniciOgunCRUD() // burada veri tabanını bağlıyoruz
         {
             _context = new MyDbContext();
             InitializeComponent();
@@ -26,38 +26,38 @@ namespace KaloriTakipSistemi.UI
 
         private void FRMKullaniciOgunCRUD_Load(object sender, EventArgs e)
         {
-            cmbOgun.DataSource = _context.Ogunler.ToList();
-            cmbOgun.DisplayMember = "Ad";
-            cmbOgun.ValueMember = "Id";
+            cmbOgun.DataSource = _context.Ogunler.ToList(); // burada veri tabanından öğünleri alıyoruz
+            cmbOgun.DisplayMember = "Ad"; // burada öğün adını gösteriyoruz
+            cmbOgun.ValueMember = "Id"; // burada öğün id'sini gösteriyoruz
 
-            cmbYemek.DataSource = _context.Yemekler.ToList();
-            cmbYemek.DisplayMember = "Ad";
-            cmbYemek.ValueMember = "Id";
+            cmbYemek.DataSource = _context.Yemekler.ToList(); // burada veri tabanından yemekleri alıyoruz
+            cmbYemek.DisplayMember = "Ad"; // burada yemek adını gösteriyoruz
+            cmbYemek.ValueMember = "Id"; // burada yemek id'sini gösteriyoruz
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            HataKontrol();
+            HataKontrol(); // burada hata kontrolü yapıyoruz
 
-            var ogunEkle = new KullaniciYemek()
+            var ogunEkle = new KullaniciYemek() // burada yeni bir nesne oluşturuyoruz
             {
-                YemekTarihi = dtpYemekTarihi.Value,
-                OgunId = ((Ogun)cmbOgun.SelectedItem).Id,
-                YemekId = ((Yemek)cmbYemek.SelectedItem).Id,
-                Miktar = Convert.ToInt32(nudMiktar.Value),
-                KullaniciId = FRMKullaniciGirisEkrani.AktifKullaniciId
+                YemekTarihi = dtpYemekTarihi.Value, // burada yemek tarihini alıyoruz
+                OgunId = ((Ogun)cmbOgun.SelectedItem).Id, // burada öğün id'sini alıyoruz
+                YemekId = ((Yemek)cmbYemek.SelectedItem).Id, // burada yemek id'sini alıyoruz
+                Miktar = Convert.ToInt32(nudMiktar.Value), // burada miktarı alıyoruz
+                KullaniciId = FRMKullaniciGirisEkrani.AktifKullaniciId // burada aktif kullanici id'sini alıyoruz
 
             };
-            _context.KullaniciYemekler.Add(ogunEkle);
-            _context.SaveChanges();
-            Listele();
+            _context.KullaniciYemekler.Add(ogunEkle); // burada yeni öğünü ekliyoruz
+            _context.SaveChanges(); // burada değişiklikleri kaydediyoruz
+            Listele(); // burada listeyi güncelliyoruz
         }
 
-        private void Listele()
+        private void Listele() // listele metodunu cagırıyoruz 
         {
-            var kullaniciYemek = _context.KullaniciYemekler
-                .Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId)
-                .Select(a => new
+            var kullaniciYemek = _context.KullaniciYemekler // burada kullanici yemekler tablosunu alıyoruz
+                .Where(k => k.KullaniciId == FRMKullaniciGirisEkrani.AktifKullaniciId) // burada aktif kullanici id'sine göre filtreliyoruz
+                .Select(a => new // burada yeni bir nesne oluşturuyoruz
                 {
                     a.Id,
                     a.Yemek.Ad,
@@ -74,29 +74,29 @@ namespace KaloriTakipSistemi.UI
         private void btnSil_Click(object sender, EventArgs e)
         {
 
-            if (dgvOgunler.CurrentRow == null) return;
+            if (dgvOgunler.CurrentRow == null) return; // burada eğer seçili satır yoksa return yapıyoruz
 
-            int ogunıd = (int)dgvOgunler.CurrentRow.Cells["Id"].Value;
+            int ogunıd = (int)dgvOgunler.CurrentRow.Cells["Id"].Value; // burada seçili satırın id'sini alıyoruz
 
-            var ogun = _context.KullaniciYemekler.Find(ogunıd);
+            var ogun = _context.KullaniciYemekler.Find(ogunıd); // burada id'sine göre öğünü buluyoruz
 
             if (ogun != null)
             {
-                _context.KullaniciYemekler.Remove(ogun);
-                _context.SaveChanges();
-                Listele();
+                _context.KullaniciYemekler.Remove(ogun); // burada öğünü siliyoruz
+                _context.SaveChanges(); // degisiklikleri kaydediyoruz 
+                Listele(); // burada listeyi güncelliyoruz
             }
         }
-        public void HataKontrol()
+        public void HataKontrol() // burada hata kontrolü yapıyoruz
         {
-            if (cmbOgun.SelectedItem == null || cmbYemek.SelectedItem == null)
+            if (cmbOgun.SelectedItem == null || cmbYemek.SelectedItem == null) // burada öğün ve yemek seçilip seçilmediğini kontrol ediyoruz
             {
-                MessageBox.Show("Lütfen öğün ve yemek seçiniz.");
+                MessageBox.Show("Lütfen öğün ve yemek seçiniz."); // burada hata mesajı veriyoruz
                 return;
             }
-            if (nudMiktar.Value <= 0)
+            if (nudMiktar.Value <= 0) // burada miktarın 0'dan büyük olup olmadığını kontrol ediyoruz
             {
-                MessageBox.Show("Lütfen geçerli bir miktar giriniz.");
+                MessageBox.Show("Lütfen geçerli bir miktar giriniz."); // burada hata mesajı veriyoruz
                 return;
             }
          

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KaloriTakipSistemi.UI.Models
-{
+{ // burada classlarımızı olsuturuyoruz ve tablolarda istenilenlere göre propertylerimizi ekliyoruz
     public class Kullanici
     {
         public int Id { get; set; }

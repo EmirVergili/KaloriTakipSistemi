@@ -9,28 +9,32 @@ using System.Threading.Tasks;
 
 namespace KaloriTakipSistemi.UI.Context
 {
-    public class MyDbContext:DbContext
+    public class MyDbContext : DbContext
     {
-        public DbSet<KullaniciYemek> KullaniciYemekler { get; set; }
-        public DbSet<Ogun> Ogunler { get; set; }
-        public DbSet<Kullanici> Kullanicilar { get; set; }
-        public DbSet<Yemek> Yemekler { get; set; }
-        public DbSet<Yonetici> Yoneticiler { get; set; }
+        public DbSet<KullaniciYemek> KullaniciYemekler { get; set; }  // Kullanici ve Yemek arasındaki ilişkiyi temsil eder
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DbSet<Ogun> Ogunler { get; set; } // Ogun tablosunu temsil eder
+        public DbSet<Kullanici> Kullanicilar { get; set; } // Kullanici tablosunu temsil eder
+        public DbSet<Yemek> Yemekler { get; set; } // Yemek tablosunu temsil eder
+        public DbSet<Yonetici> Yoneticiler { get; set; } // Yonetici tablosunu temsil eder
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // Bu metot, DbContext'in yapılandırılmasını sağlar
         {
-            optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=True;TrustServerCertificate=True");
+            if (!optionsBuilder.IsConfigured) // Eğer DbContext yapılandırılmamışsa
+            {
+                optionsBuilder.UseSqlServer("Server=ERHANLAPTOP\\SQLEXPRESS;Database=KaloriTakipProgramDB;Trusted_Connection=True;TrustServerCertificate=True");
+            }
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //burada veritabanı tablolarının iliskilerini veriyoruz 
         {
             modelBuilder.Entity<Kullanici>().HasIndex(k => k.KullaniciAdi).IsUnique();
 
 
             modelBuilder.Entity<Ogun>().HasData(
-                new Ogun { Id =1,Ad = "Sabah"},
-                new Ogun { Id =2,Ad = "Öğle"},
-                new Ogun { Id =3,Ad = "Akşam"},
-                new Ogun { Id =4,Ad = "Ara Öğün"}
+                new Ogun { Id = 1, Ad = "Sabah" },
+                new Ogun { Id = 2, Ad = "Öğle" },
+                new Ogun { Id = 3, Ad = "Akşam" },
+                new Ogun { Id = 4, Ad = "Ara Öğün" }
                 );
 
             modelBuilder.Entity<Yonetici>().HasData(
@@ -90,10 +94,10 @@ namespace KaloriTakipSistemi.UI.Context
                 new Yemek { Id = 50, Ad = "Mücver", Kalori = 240 }
             );
         }
-        public string sha256_hash(string sifre)
+        public string sha256_hash(string sifre) //  sifreyi burada hsa256 algoritması ile hashliyoruz
         {
             using (SHA256 hash = SHA256Managed.Create())
-            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); }
+            { return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(sifre)).Select(b => b.ToString("X2"))); } // buraada hashliyoruz
         }
 
 

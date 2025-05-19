@@ -40,7 +40,7 @@ namespace KaloriTakipSistemi.UI
             cmbKullanici.SelectedIndexChanged += cmbKullanici_SelectedIndexChanged;
         }
 
-        private void cmbKullanici_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbKullanici_SelectedIndexChanged(object sender, EventArgs e) 
         {
             if (cmbKullanici.SelectedItem == null)
             {
@@ -48,10 +48,10 @@ namespace KaloriTakipSistemi.UI
                 return;
             }
 
-            var kullaniciId = (int)cmbKullanici.SelectedValue;
+            var kullaniciId = (int)cmbKullanici.SelectedValue; // burada seçilen kullanıcının id'sini alıyoruz
 
             var ogunler = _context.KullaniciYemekler
-                .Where(k => k.KullaniciId == kullaniciId && k.YemekTarihi.Date == dtpTarih.Value.Date)
+                .Where(k => k.KullaniciId == kullaniciId && k.YemekTarihi.Date == dtpTarih.Value.Date) // burada kullanici yemekler tablosunu alıyoruz
                 .Select(k => new
                 {
                     k.Yemek.Ad,
@@ -63,8 +63,8 @@ namespace KaloriTakipSistemi.UI
                 })
                 .ToList();
 
-            dgvYoneticiOgunleri.DataSource = ogunler;
-            dgvYoneticiOgunleri.Columns["Ad"].HeaderText = "Yemek Adı";
+            dgvYoneticiOgunleri.DataSource = ogunler; // burada ogunleri datagridview'e bağlıyoruz
+            dgvYoneticiOgunleri.Columns["Ad"].HeaderText = "Yemek Adı"; // burada yemek adını başlık olarak ayarlıyoruz
             dgvYoneticiOgunleri.Columns["YTarih"].HeaderText = "Yemek Tarihi";
             dgvYoneticiOgunleri.Columns["OgunAd"].HeaderText = "Öğün Adı";
             dgvYoneticiOgunleri.Columns["Kalori"].HeaderText = "Kalori";

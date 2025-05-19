@@ -29,13 +29,13 @@ namespace KaloriTakipSistemi.UI
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(txtKullaniciAdi.Text) || string.IsNullOrEmpty(txtSifre.Text))
+            if (string.IsNullOrEmpty(txtKullaniciAdi.Text) || string.IsNullOrEmpty(txtSifre.Text)) //  kullanıcı adı ve sifre bosmu diye kontrol ediyoruz 
             {
-                MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz.");
+                MessageBox.Show("Lütfen kullanıcı adı ve şifre giriniz."); //  bos lkalırsa hata mesajımızı veriyoruz 
                 return;
             }
-            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text));
-            
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtKullaniciAdi.Text && k.Sifre == _context.sha256_hash(txtSifre.Text)); // burada veri tabanında kullanici adı ve sifreyi kontrol ediyoruz
+
 
             if (kullanici!=null)
             {
@@ -64,20 +64,20 @@ namespace KaloriTakipSistemi.UI
 
         private void lnkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FRMKayitOl frmKayitOl = new FRMKayitOl();
+            FRMKayitOl frmKayitOl = new FRMKayitOl(); // burada kayıt ol formunu açıyoruz
             frmKayitOl.Show();
             this.Hide();
         }
 
         private void chbGoster_CheckedChanged(object sender, EventArgs e)
         {
-            if (chbGoster.Checked)
+            if (chbGoster.Checked) // burada checkbox işaretli ise
             {
-                txtSifre.PasswordChar = '\0';
+                txtSifre.PasswordChar = '\0'; // burada şifreyi gösteriyoruz
             }
             else
             {
-                txtSifre.PasswordChar = '*';
+                txtSifre.PasswordChar = '*'; // burada şifreyi gizliyoruz 
 
             }
         }

@@ -43,28 +43,28 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F);
+            label1.Font = new Font("Microsoft Sans Serif", 12F);
             label1.Location = new Point(67, 193);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(133, 23);
+            label1.Size = new Size(93, 20);
             label1.TabIndex = 0;
             label1.Text = "Kullanıcı Adı";
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Font = new Font("Century Gothic", 12F);
+            txtKullaniciAdi.Font = new Font("Microsoft Sans Serif", 12F);
             txtKullaniciAdi.Location = new Point(208, 187);
             txtKullaniciAdi.Margin = new Padding(4);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(170, 32);
+            txtKullaniciAdi.Size = new Size(170, 26);
             txtKullaniciAdi.TabIndex = 1;
             // 
             // btnGirisYap
             // 
             btnGirisYap.BackColor = Color.FromArgb(199, 234, 203);
             btnGirisYap.FlatStyle = FlatStyle.Popup;
-            btnGirisYap.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            btnGirisYap.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnGirisYap.Location = new Point(168, 352);
             btnGirisYap.Margin = new Padding(4);
             btnGirisYap.Name = "btnGirisYap";
@@ -77,11 +77,11 @@
             // chbGoster
             // 
             chbGoster.AutoSize = true;
-            chbGoster.Font = new Font("Century Gothic", 12F);
+            chbGoster.Font = new Font("Microsoft Sans Serif", 12F);
             chbGoster.Location = new Point(206, 271);
             chbGoster.Margin = new Padding(4);
             chbGoster.Name = "chbGoster";
-            chbGoster.Size = new Size(154, 27);
+            chbGoster.Size = new Size(124, 24);
             chbGoster.TabIndex = 4;
             chbGoster.Text = "Şifreyi Göster";
             chbGoster.UseVisualStyleBackColor = true;
@@ -90,32 +90,32 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F);
+            label2.Font = new Font("Microsoft Sans Serif", 12F);
             label2.Location = new Point(67, 236);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(48, 23);
+            label2.Size = new Size(42, 20);
             label2.TabIndex = 0;
             label2.Text = "Şifre";
             // 
             // txtSifre
             // 
-            txtSifre.Font = new Font("Century Gothic", 12F);
+            txtSifre.Font = new Font("Microsoft Sans Serif", 12F);
             txtSifre.Location = new Point(208, 233);
             txtSifre.Margin = new Padding(4);
             txtSifre.Name = "txtSifre";
             txtSifre.PasswordChar = '*';
-            txtSifre.Size = new Size(170, 32);
+            txtSifre.Size = new Size(170, 26);
             txtSifre.TabIndex = 2;
             // 
             // lnkKayitOl
             // 
             lnkKayitOl.AutoSize = true;
-            lnkKayitOl.Font = new Font("Century Gothic", 12F);
+            lnkKayitOl.Font = new Font("Microsoft Sans Serif", 12F);
             lnkKayitOl.LinkColor = Color.Green;
             lnkKayitOl.Location = new Point(67, 310);
             lnkKayitOl.Name = "lnkKayitOl";
-            lnkKayitOl.Size = new Size(79, 23);
+            lnkKayitOl.Size = new Size(56, 20);
             lnkKayitOl.TabIndex = 5;
             lnkKayitOl.TabStop = true;
             lnkKayitOl.Text = "Kaydol";
@@ -125,17 +125,17 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
             label3.Location = new Point(146, 112);
             label3.Name = "label3";
-            label3.Size = new Size(203, 37);
+            label3.Size = new Size(160, 29);
             label3.TabIndex = 22;
             label3.Text = "Kullanıcı Giriş";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.top_view_healthy_ingredients_bowls_white_background_with_blank_space_text;
-            pictureBox1.Location = new Point(-358, -248);
+            pictureBox1.Location = new Point(-367, -238);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1127, 900);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -144,7 +144,7 @@
             // 
             // FRMKullaniciGirisEkrani
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(504, 475);
             Controls.Add(lnkKayitOl);
