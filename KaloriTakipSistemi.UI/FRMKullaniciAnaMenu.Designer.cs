@@ -178,13 +178,12 @@
             btnCikis.FlatStyle = FlatStyle.Popup;
             btnCikis.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             btnCikis.ForeColor = Color.White;
-            btnCikis.Location = new Point(80, 566);
+            btnCikis.Location = new Point(133, 571);
             btnCikis.Margin = new Padding(3, 2, 3, 2);
             btnCikis.Name = "btnCikis";
-            btnCikis.Size = new Size(136, 55);
+            btnCikis.Size = new Size(89, 53);
             btnCikis.TabIndex = 0;
             btnCikis.Text = "Çıkış";
-            btnCikis.TextAlign = ContentAlignment.MiddleLeft;
             btnCikis.UseVisualStyleBackColor = false;
             btnCikis.Click += btnCikis_Click;
             // 
@@ -210,6 +209,7 @@
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "FRMKullaniciAnaMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Kullanıcı Menü";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
