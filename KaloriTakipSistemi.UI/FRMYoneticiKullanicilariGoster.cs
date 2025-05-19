@@ -28,7 +28,6 @@ namespace KaloriTakipSistemi.UI
                     k.Id,
                     AdSoyad = k.Ad + " " + k.Soyad,
                     k.KullaniciAdi,
-                    k.Sifre,
                     HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ", // burada hesap durumunu metin olarak gösteriyoruz
                     k.Yas,
                                    

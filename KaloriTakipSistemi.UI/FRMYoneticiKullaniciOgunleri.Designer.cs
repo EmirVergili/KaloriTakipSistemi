@@ -82,6 +82,7 @@
             // 
             // dgvYoneticiOgunleri
             // 
+            dgvYoneticiOgunleri.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvYoneticiOgunleri.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvYoneticiOgunleri.Location = new Point(109, 265);
             dgvYoneticiOgunleri.Margin = new Padding(4, 5, 4, 5);

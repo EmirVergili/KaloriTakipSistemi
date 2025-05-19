@@ -93,6 +93,7 @@
             // 
             // dgvYemekler
             // 
+            dgvYemekler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvYemekler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvYemekler.Location = new Point(495, 62);
             dgvYemekler.Margin = new Padding(4, 3, 4, 3);
@@ -184,6 +185,7 @@
             // 
             // dgvOgunler
             // 
+            dgvOgunler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvOgunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOgunler.Location = new Point(534, 327);
             dgvOgunler.Margin = new Padding(4, 3, 4, 3);
