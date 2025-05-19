@@ -22,16 +22,16 @@ namespace KaloriTakipSistemi.UI
             _db = new MyDbContext();
             InitializeComponent();
         }
-        private void FRMYoneticiYemekler_Load(object sender, EventArgs e)
+        private void FRMYoneticiYemekler_Load(object sender, EventArgs e) // burada form yüklendiğinde çalışacak olan kodlar
         {
             YemekDgvListele();
             OgunDgvListele();
         }
-        private bool GirdiKontrolYemek()
+        private bool GirdiKontrolYemek() // burada yemek girdi kontrolü yapıyoruz
         {
-            if (string.IsNullOrWhiteSpace(txtYemekAdi.Text))
+            if (string.IsNullOrWhiteSpace(txtYemekAdi.Text)) // burada yemek adı boş geçilemez
             {
-                MessageBox.Show("Yemek adı boş geçilemez!");
+                MessageBox.Show("Yemek adı boş geçilemez!"); 
                 return false;
             }
             if (nudKalori.Value == 0)
@@ -41,21 +41,21 @@ namespace KaloriTakipSistemi.UI
             }
             return true;
         }
-        private void YemekDgvListele()
+        private void YemekDgvListele() // burada yemekleri listeleme işlemini yapıyoruz
         {
             dgvYemekler.DataSource = _db.Yemekler.ToList();
             dgvYemekler.Columns["Id"].Visible = false;
         }
-        private void TemizleYemek()
+        private void TemizleYemek() // burada yemekleri temizleme işlemini yapıyoruz
         {
             txtYemekAdi.Text = string.Empty;
             nudKalori.Text = string.Empty;
             secilenYemek = null;
         }
-        private void btnYemekEkle_Click(object sender, EventArgs e)
+        private void btnYemekEkle_Click(object sender, EventArgs e) // burada yemek ekleme işlemini yapıyoruz
         {
-            if (!GirdiKontrolYemek()) return;
-            Yemek yemek = new Yemek { Ad = txtYemekAdi.Text, Kalori = (double)(nudKalori.Value) };
+            if (!GirdiKontrolYemek()) return; // burada girdi kontrolü yapıyoruz
+            Yemek yemek = new Yemek { Ad = txtYemekAdi.Text, Kalori = (double)(nudKalori.Value) }; // burada yeni bir yemek nesnesi oluşturuyoruz
             _db.Yemekler.Add(yemek);
             _db.SaveChanges();
             TemizleYemek();
@@ -63,7 +63,7 @@ namespace KaloriTakipSistemi.UI
             MessageBox.Show("Yemek başarıyla eklendi.");
         }
 
-        private void btnYemekSil_Click(object sender, EventArgs e)
+        private void btnYemekSil_Click(object sender, EventArgs e) // burada yemek silme işlemini yapıyoruz
         {
             if (!GirdiKontrolYemek()) return;
             _db.Yemekler.Remove(secilenYemek);
@@ -73,7 +73,7 @@ namespace KaloriTakipSistemi.UI
             MessageBox.Show("Yemek başarıyla silindi.");
         }
 
-        private void btnYemekGuncelle_Click(object sender, EventArgs e)
+        private void btnYemekGuncelle_Click(object sender, EventArgs e) // burada yemek güncelleme işlemini yapıyoruz
         {
             if (!GirdiKontrolYemek()) return;
             secilenYemek.Ad = txtYemekAdi.Text;
@@ -84,15 +84,15 @@ namespace KaloriTakipSistemi.UI
             MessageBox.Show("Yemek başarıyla güncellendi.");
         }
 
-        private void dgvYemekler_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvYemekler_CellClick(object sender, DataGridViewCellEventArgs e) // burada yemekler datagridview'ine tıkladığımızda çalışacak olan kodlar
         {
-            TemizleYemek();
+            TemizleYemek(); 
             secilenYemek = dgvYemekler.SelectedRows[0].DataBoundItem as Yemek;
             txtYemekAdi.Text = secilenYemek.Ad;
             nudKalori.Value = (decimal)secilenYemek.Kalori;
         }
 
-        private bool GirdiKontrolOgun()
+        private bool GirdiKontrolOgun() // burada öğün girdi kontrolü yapıyoruz
         {
             if(string.IsNullOrWhiteSpace(txtOgunAdi.Text))
             {

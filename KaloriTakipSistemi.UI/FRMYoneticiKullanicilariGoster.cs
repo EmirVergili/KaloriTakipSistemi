@@ -20,20 +20,20 @@ namespace KaloriTakipSistemi.UI
             _context = new Context.MyDbContext();
         }
 
-        private void FRMYoneticiKullanicilariGoster_Load(object sender, EventArgs e)
+        private void FRMYoneticiKullanicilariGoster_Load(object sender, EventArgs e) 
         {
-           dgvKullanicilariGoster.DataSource = _context.Kullanicilar
+           dgvKullanicilariGoster.DataSource = _context.Kullanicilar // burada kullanicilar tablosunu alıyoruz
                 .Select(k => new
                 {
                     k.Id,
                     AdSoyad = k.Ad + " " + k.Soyad,
                     k.KullaniciAdi,
                     k.Sifre,
-                    HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ",
+                    HesapDurumuMetin = k.HesapDurumu ? "AKTİF" : "DONDURULMUŞ", // burada hesap durumunu metin olarak gösteriyoruz
                     k.Yas,
                                    
                 }).ToList();
-            dgvKullanicilariGoster.Columns["Id"].Visible = false;
+            dgvKullanicilariGoster.Columns["Id"].Visible = false; // burada id kolonunu gizliyoruz
         }
     }
 }

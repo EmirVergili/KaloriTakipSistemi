@@ -16,14 +16,14 @@ namespace KaloriTakipSistemi.UI
 {
     public partial class FRMKayitOl : Form
     {
-        private readonly MyDbContext _context;
-        public FRMKayitOl()
+        private readonly MyDbContext _context; //  Burada Veri tabını baglıyoruz 
+        public FRMKayitOl() 
         {
             _context = new MyDbContext();
             InitializeComponent();
 
         }
-        private bool KayitValidasyonu()
+        private bool KayitValidasyonu()  // Kayıt Validasyonunu yapıyoruz 
         {
             // Boş alan kontrolü
             if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) ||
@@ -33,30 +33,30 @@ namespace KaloriTakipSistemi.UI
                 string.IsNullOrWhiteSpace(txtSoyad.Text) ||
                 string.IsNullOrWhiteSpace(txtYas.Text))
             {
-                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); // burada boş alan kontrolü yapıyoruz
                 return false;
             }
 
-            if(txtAd.Text.Any(char.IsPunctuation) || txtSoyad.Text.Any(char.IsPunctuation))
+            if(txtAd.Text.Any(char.IsPunctuation) || txtSoyad.Text.Any(char.IsPunctuation)) // burada ad ve soyadın noktalama işareti içerip içermediğini kontrol ediyoruz
             {
-                MessageBox.Show("Ad ve soyad noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ad ve soyad noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); // Burada uyarı mesajımızı veriyoruz 
                 return false;
             }
             //sayı kontrolü
-            if (txtYas.Text.Any(char.IsLetter))
+            if (txtYas.Text.Any(char.IsLetter)) // burada yaşın harf içerip içermediğini kontrol ediyoruz
             {
                 MessageBox.Show("Yaş sadece sayılardan oluşmalıdır.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (txtAd.Text.Any(char.IsDigit) || txtSoyad.Text.Any(char.IsDigit))
+            if (txtAd.Text.Any(char.IsDigit) || txtSoyad.Text.Any(char.IsDigit)) // burada ad ve soyadın sayı içerip içermediğini kontrol ediyoruz
             {
                 MessageBox.Show("Ad ve soyad sayı içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
-            string kullaniciAdi = txtKullaniciAdi.Text.Trim();
+            string kullaniciAdi = txtKullaniciAdi.Text.Trim(); // burada kullanıcı adını alıyoruz
 
-            if (kullaniciAdi.Any(char.IsPunctuation))
+            if (kullaniciAdi.Any(char.IsPunctuation)) // burada kullanıcı adının noktalama işareti içerip içermediğini kontrol ediyoruz
             {
                 MessageBox.Show("Kullanıcı adı noktalama işareti içermemelidir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -110,26 +110,26 @@ namespace KaloriTakipSistemi.UI
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
-            try
+            try // burada kayıt ol butonuna tıkladığımızda çalışacak olan kodları yazıyoruz
             {
                 if (!KayitValidasyonu())
                 {
                     return;
                 }
                
-                var YeniKullanici = new Kullanici()
+                var YeniKullanici = new Kullanici() // burada yeni kullanıcı nesnesi oluşturuyoruz
                 {
-                    KullaniciAdi = txtKullaniciAdi.Text.Trim(),
-                    Sifre = _context.sha256_hash(txtSifre.Text.Trim()),
-                    Ad = txtAd.Text.Trim(),
-                    Soyad = txtSoyad.Text.Trim(),
-                    Yas = Convert.ToByte(txtYas.Text)
+                    KullaniciAdi = txtKullaniciAdi.Text.Trim(), // burada kullanıcı adını alıyoruz
+                    Sifre = _context.sha256_hash(txtSifre.Text.Trim()), // burada şifreyi alıyoruz ve sha256 ile hashliyoruz
+                    Ad = txtAd.Text.Trim(), // burada adı alıyoruz
+                    Soyad = txtSoyad.Text.Trim(), // burada soyadı alıyoruz
+                    Yas = Convert.ToByte(txtYas.Text) // burada yaşı alıyoruz
 
                 };
                 _context.Add(YeniKullanici);
                 _context.SaveChanges();
-                MessageBox.Show("Kayıt başarılı! Kullanıcı adı ve şifrenizle giriş yapmanız durumunda hesabınız aktif edilecektir.");
-                FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani();
+                MessageBox.Show("Kayıt başarılı! Kullanıcı adı ve şifrenizle giriş yapmanız durumunda hesabınız aktif edilecektir."); // burada kayıt başarılı mesajı veriyoruz
+                FRMKullaniciGirisEkrani fRMKullaniciGirisEkrani = new FRMKullaniciGirisEkrani(); // burada kullanıcı giriş ekranını açıyoruz
                 fRMKullaniciGirisEkrani.Show();
                 this.Hide();
             }
